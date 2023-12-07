@@ -23,9 +23,8 @@ function Services() {
                </div>
                <div>
                   <h2 className='font-medium text-2xl pt-4'>Strategy</h2>
-                  <p className="text-1xl text-textColor pt-2">Defining powerful endgames for your</p>
-                  <p className="text-1xl text-textColor pb-3">business and how to achieve them</p>
-                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0 inline">Get Started <FaArrowRight/></button>
+                  <p className="text-1xl text-textColor pt-2 pb-3 w-100">Defining powerful endgames for your business and how to achieve them.</p>
+                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0 inline">Get Started <FaArrowRight className='inline'/></button>
                </div>
             </div>
             <div className='mt-5'>
@@ -34,9 +33,8 @@ function Services() {
                </div>
                <div>
                   <h2 className='font-medium text-2xl pt-4'>Design</h2>
-                  <p className="text-1xl text-textColor pt-2">Transforming vision into human-centered</p>
-                  <p className="text-1xl text-textColor pb-3">digital and physical experiences</p>
-                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Get Started <FaArrowRight/></button>
+                  <p className="text-1xl text-textColor pt-2 pb-3">Transforming vision into human-centered digital {/* and physical */} experiences.</p>
+                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Get Started <FaArrowRight className='inline'/></button>
                </div>
             </div>
             <div className='mt-5'>
@@ -45,9 +43,8 @@ function Services() {
                </div>
                <div>
                   <h2 className='font-medium text-2xl pt-4'>Engineering</h2>
-                  <p className="text-1xl text-textColor pt-2">Building and developing full stack scalable</p>
-                  <p className="text-1xl text-textColor pb-3">technology solutions</p>
-                  <button class="border border-black rounded-full px-8 py-2 w-25 mt-3 md:mt-0">Get Started <FaArrowRight/></button>
+                  <p className="text-1xl text-textColor pt-2 pb-3">Building and developing full stack scalable technology solutions.</p>
+                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Get Started <FaArrowRight className='inline'/></button>
                </div>
             </div>
          </div>

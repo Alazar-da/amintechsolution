@@ -82,8 +82,9 @@ function Home() {
         </a>
       </li>
     </ul>
-    <div className='border-t md:border-none'>
-      <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Contact Us</button>
+    <div className='border-t md:border-none md:flex md:justify-center md:items-center'>
+      {/* <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Contact Us</button> */}
+      <a class="py-2 md:mt-2 md:p-0 no-underline hover:underline text-grey-darkest hover:text-black md:border-none" href='#'>Contact Us</a>
     </div>
   </nav>
 
