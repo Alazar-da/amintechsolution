@@ -10,7 +10,7 @@ function Home() {
 
  return(
 
-    <div className="bg-secondary md:pl-[85px] md:h-[753px] h-[400px]">
+    <div className="bg-secondary md:pl-[85px] md:h-[753px] pb-5">
       {/* <header>
         <nav class="flex justify-between px-5 w-full py-4 md:py-0 text-textColor">
           <div>
@@ -66,18 +66,23 @@ function Home() {
           Home
         </a>
       </li>
-      <li className="md:mx-[35px] lg:mx-[40px]">
+      <li className="md:mx-[15px] lg:mx-[30px]">
+        <a className="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
+          Services
+        </a>
+      </li>
+      <li className="md:mx-[15px] lg:mx-[30px]">
         <a className="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
           Team
         </a>
       </li>
-      <li className="md:mx-[35px] lg:mx-[40px]">
+      <li className="md:mx-[15px] lg:mx-[30px]">
         <a className="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
           Portfolio
         </a>
       </li>
     </ul>
-    <div className='border-tmd:border-none'>
+    <div className='border-t md:border-none'>
       <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Contact Us</button>
     </div>
   </nav>

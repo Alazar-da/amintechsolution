@@ -15,10 +15,11 @@ module.exports = {
         blue:"#669EFF"
       },
       fontFamily:{
-        mainFont:"'Lucida Console', Courier, monospace"
+        mainFont:"'Inter', Courier, monospace"
       }
     },
   },
   plugins: [],
 }
 
+/* Lucida Console */
