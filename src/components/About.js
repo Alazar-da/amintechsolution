@@ -7,7 +7,7 @@ function About() {
       const less ="Read Less...";
       const more ="Read More...";
        document.querySelector('#readmore').classList.toggle('hidden');
-       if(buttonText==more){
+       if(buttonText===more){
          setButtonText(less);
        }
        else{
