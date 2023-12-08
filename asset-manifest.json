@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/amintechsolution/static/css/main.3a8ec346.css",
+    "main.js": "/amintechsolution/static/js/main.bf297dc7.js",
+    "static/js/787.a86f9e67.chunk.js": "/amintechsolution/static/js/787.a86f9e67.chunk.js",
+    "static/media/serivice-3.jpg-removebg-preview-transformed.png": "/amintechsolution/static/media/serivice-3.jpg-removebg-preview-transformed.bdb37287715b1ad01e19.png",
+    "static/media/why.svg": "/amintechsolution/static/media/why.1bc9aac3f5d8f66919f369efdbb72361.svg",
+    "static/media/serivice-2.jpg-removebg-preview-transformed.png": "/amintechsolution/static/media/serivice-2.jpg-removebg-preview-transformed.19b3ea86af396d8e1525.png",
+    "static/media/serivice-1.jpg-removebg-preview-transformed.png": "/amintechsolution/static/media/serivice-1.jpg-removebg-preview-transformed.7517b8e07eafe4306196.png",
+    "static/media/lotti.svg": "/amintechsolution/static/media/lotti.fb9e1d18c1d5f1101de351af82955b85.svg",
+    "static/media/logo.svg": "/amintechsolution/static/media/logo.914860c4b739e1193eb3bdee6f9b6ddd.svg",
+    "index.html": "/amintechsolution/index.html",
+    "main.3a8ec346.css.map": "/amintechsolution/static/css/main.3a8ec346.css.map",
+    "main.bf297dc7.js.map": "/amintechsolution/static/js/main.bf297dc7.js.map",
+    "787.a86f9e67.chunk.js.map": "/amintechsolution/static/js/787.a86f9e67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a8ec346.css",
+    "static/js/main.bf297dc7.js"
+  ]
+}
