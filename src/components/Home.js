@@ -10,7 +10,7 @@ function Home() {
 
  return(
 
-    <div className="bg-secondary md:pl-[85px] md:h-[753px] pb-5">
+    <div className="bg-gradient-to-r from-secondary to-[#B3DAFF] md:pl-[85px] md:h-[753px] pb-5">
       {/* <header>
         <nav class="flex justify-between px-5 w-full py-4 md:py-0 text-textColor">
           <div>
