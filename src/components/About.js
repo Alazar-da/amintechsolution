@@ -1,7 +1,19 @@
+import { useState } from 'react';
+
 function About() {
 
+   const [buttonText, setButtonText] = useState("Read More..."); //same as creating your state variable where "Next" is the default value for buttonText and setButtonText is the setter function for your state variable instead of setState   
       const Readmore=()=>{
+      const less ="Read Less...";
+      const more ="Read More...";
        document.querySelector('#readmore').classList.toggle('hidden');
+       if(buttonText==more){
+         setButtonText(less);
+       }
+       else{
+         setButtonText(more);
+       }
+
       }
     return(
        <main className="grid grid-cols-6 bg-third px-5 py-5 md:pl-[85px] lg:h-[600px]">
@@ -23,8 +35,8 @@ function About() {
             <p className="text-textColor mt-1 md:flex hidden" id="readmore">
                Collaboration is key to our success. We believe in building strong partnerships with our clients, working hand-in-hand throughout the development process. We value open communication and transparency, ensuring that our clients are involved at every stage and have full visibility into the progress of their projects. Our goal is to build long-term relationships based on trust, reliability, and mutual success.
             </p>
-            <button className="text-black hover:text-orange md:hidden" onClick={Readmore}>
-               Read More...
+            <button className="text-black hover:text-orange md:hidden" id="change" onClick={Readmore}>
+              {buttonText}
             </button>
          </div>
        </main>
