@@ -1,5 +1,5 @@
-import Lotti from '../lotti.svg';
-import Logo from '../logo.svg';
+import Lotti from '../img/lotti.svg';
+import Logo from '../img/logo.svg';
 import { FaBars } from "react-icons/fa";
 
 
