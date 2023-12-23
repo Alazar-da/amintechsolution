@@ -5,101 +5,48 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React from 'react';
 import './CircularCarousel.css';
 function Teams() {
-  const carouselItems = [
-    {
-      id: 1,
-      content: (
-        <div>
-          <div className="card">
-            <h2 className="text-white text-2xl">Emran Hayredin</h2>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: 2,
-      content: (
-        <div>
-          <div className="card">
-            <h2 className="text-white text-2xl">Alazar Damena</h2>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: 3,
-      content: (
-        <div>
-          <div className="card">
-            <h2 className="text-white text-2xl">Natnael Mengistu</h2>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: 4,
-      content: (
-        <div>
-          <div className="card">
-            <h2 className="text-white text-2xl">Natnael Mengistu</h2>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: 5,
-      content: (
-        <div>
-          <div className="card">
-            <h2 className="text-white text-2xl">Natnael Mengistu</h2>
-          </div>
-        </div>
-      ),
-    },
-    // Add more card items as needed
-  ];
+ 
 
 
     return(
-      <>
+      <div className=" justify-center">
+
+        <h1 className="text-cyan-900 text-center text-5xl  ">Our Team</h1>
   
    
-       <h1 className="text-3xl font-bold text-textColor">Teams</h1>
-
-     
-       <div className="carousel-container">
-      <Carousel
-        showArrows={true}
-        infiniteLoop={true}
-        emulateTouch={true}
-        selectedItem={0}
-        centerMode={true}
-        centerSlidePercentage={23.33}
-        renderIndicator={() => null}
-        renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && (
-            <button type="button" onClick={onClickHandler} title={label} className="arrow-prev">
-              <span className="arrow-icon">&lt;</span>
-            </button>
-          )
-        }
-        renderArrowNext={(onClickHandler, hasNext, label) =>
-          hasNext && (
-            <button type="button" onClick={onClickHandler} title={label} className="arrow-next">
-              <span className="arrow-icon">&gt;</span>
-            </button>
-          )
-        }
-      >
-        {carouselItems.map((item) => (
-          <div key={item.id}>{item.content}</div>
-        ))}
-      </Carousel>
+  <div className="carousel w-full">
+  <div id="slide1" className="carousel-item relative w-full">
+    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" className="btn btn-circle">❮</a> 
+      <a href="#slide2" className="btn btn-circle">❯</a>
     </div>
-  
+  </div> 
+  <div id="slide2" className="carousel-item relative w-full">
+    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" className="btn btn-circle">❮</a> 
+      <a href="#slide3" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide3" className="carousel-item relative w-full">
+    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" className="btn btn-circle">❮</a> 
+      <a href="#slide4" className="btn btn-circle">❯</a>
+    </div>
+  </div> 
+  <div id="slide4" className="carousel-item relative w-full">
+    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" className="btn btn-circle">❮</a> 
+      <a href="#slide1" className="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
 
 
-       </>
+       </div>
    
     );
    }
