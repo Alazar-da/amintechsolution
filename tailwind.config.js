@@ -14,8 +14,8 @@ module.exports = {
         green:"#9FEB93",
         blue:"#669EFF"
       },
-      fontFamily:{
-        mainFont:"'Inter', Courier, monospace"
+      fontFamily: {
+        mainFont: "'Poppins', sans-serif"
       }
     },
   },

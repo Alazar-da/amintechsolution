@@ -2,15 +2,37 @@ import Lotti from '../img/lotti.svg';
 import Logo from '../img/logo.svg';
 import { FaBars } from "react-icons/fa";
 
+import React, { useEffect, useRef } from 'react';
+import lottie from 'lottie-web';
+import animationData from '../assets/software.json';
+
 
 function Home() {
   const collapse=()=>{
    document.querySelector('#menu').classList.toggle('hidden');
+
+   
   }
+
+  const animationContainer = useRef(null);
+
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: animationContainer.current,
+      animationData: animationData,
+      renderer: 'svg', // Choose the renderer (svg, canvas, html)
+      loop: true, // Set loop to true or false
+      autoplay: true, // Set autoplay to true or false
+    });
+  
+    return () => {
+      anim.destroy(); // Cleanup on unmount
+    };
+  }, []);
 
  return(
 
-    <div className="bg-gradient-to-r from-[#fff] to-[#f5f7fa] md:pl-[85px] md:h-[753px] pb-5">
+    <div className="bg-white md:pl-[85px] md:h-[753px] pb-5">
       {/* <header>
         <nav class="flex justify-between px-5 w-full py-4 md:py-0 text-textColor">
           <div>
@@ -98,10 +120,13 @@ function Home() {
               We help you launch and scale your Mobile and Web Apps. Since 2014 we build
               custom applications loved by millions
               </p>
-              <button class="border border-black rounded-full px-8 py-2 mt-3">Get in touch</button>
+              <button className="btn btn-outline btn-info px-8 py-2 mt-3">Get in touch</button>
+             
         </div>
         <div className='hidden md:inline'>
-        <img src={Lotti} alt="logo" className='h-[600px] w-100 float-right'></img>
+
+        <div ref={animationContainer}></div>
+  
         </div>
       </div>
     </div>
@@ -109,3 +134,8 @@ function Home() {
 }
 
 export default Home;
+
+
+//<img src={Lotti} alt="logo" className='h-[600px] w-100 float-right'></img>
+//<div className="bg-gradient-to-r from-[#fff] to-[#f5f7fa] md:pl-[85px] md:h-[753px] pb-5">
+//<button className="border border-black rounded-full px-8 py-2 mt-3">Get in touch</button>
