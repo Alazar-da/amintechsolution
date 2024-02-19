@@ -42,7 +42,7 @@ function Portfolio() {
                      <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">View More  <FaArrowRight className='inline'/></button>
                   </div>
                </div>
-               <div className='my-5 bg-white'>
+               <div className='mt-5  bg-white'>
                   <div className='bg-primary rounded-md'>
                      <img src={Services3} alt='service3'></img>
                   </div>

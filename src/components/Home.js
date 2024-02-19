@@ -1,6 +1,8 @@
 import Lotti from '../img/lotti.svg';
 import Logo from '../img/logo.svg';
 import { FaBars } from "react-icons/fa";
+
+import '../index.css';
 import "../assets/color.css"
 
 import React, { useEffect, useRef } from 'react';
@@ -12,9 +14,16 @@ function Home() {
   const collapse=()=>{
    document.querySelector('#menu').classList.toggle('hidden');
 
-   
   }
 
+  const lottieBackground = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: -1,
+  };
   const animationContainer = useRef(null);
 
   useEffect(() => {
@@ -25,7 +34,7 @@ function Home() {
       loop: true, // Set loop to true or false
       autoplay: true, // Set autoplay to true or false
     });
-  
+
     return () => {
       anim.destroy(); // Cleanup on unmount
     };
@@ -34,6 +43,9 @@ function Home() {
  return(
 
     <div className="bg-white md:pl-[85px] md:h-[753px] pb-5">
+       {window.innerWidth < 768 ? (
+    <div style={lottieBackground} ref={animationContainer}></div>
+  ) : null}
       {/* <header>
         <nav class="flex justify-between px-5 w-full py-4 md:py-0 text-textColor">
           <div>
@@ -64,7 +76,7 @@ function Home() {
           </div>
         </nav>
       </header> */}
-      <header className="md:flex md:items-center md:justify-between p-4 pb-0 md:pb-4 text-textColor">
+      <header className="md:flex md:items-center md:justify-between p-4 pb-0 md:pb-4 text-textColor p-">
 
   <div className="flex items-center justify-between mb-4 md:mb-0">
     <h1 className="leading-none text-2xl text-grey-darkest">
@@ -85,49 +97,52 @@ function Home() {
   <nav className='hidden md:grid md:grid-cols-3 md:gap-4 w-full' id='menu'>
     <ul class="md:flex md:col-span-2 md:justify-center md:items-center">
       <li className="md:mx-[35px] lg:mx-[40px]">
-        <a className="block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
+        <a className="block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
           Home
         </a>
       </li>
       <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
+        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
           Services
         </a>
       </li>
       <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
+        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
           Team
         </a>
       </li>
       <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
+        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
           Portfolio
         </a>
       </li>
     </ul>
     <div className='border-t md:border-none md:flex md:justify-center md:items-center'>
       {/* <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Contact Us</button> */}
-      <a class="py-2 md:mt-2 md:p-0 no-underline hover:underline text-grey-darkest hover:text-black md:border-none" href='#'>Contact Us</a>
+      <a class="py-2 md:mt-2 md:p-0 no-underline hover:underline text-primary text-base font-bold hover:text-[#0b476c] md:border-none" href='#'>Contact Us</a>
     </div>
   </nav>
 
 
 </header>
-      <div className='md:grid md:grid-cols-2'>
+      <div className='md:grid md:grid-cols-2 '>
         <div className='my-auto pt-5 md:pt-0 px-5 md:px-0'>
           <h1 className='font-bold lg:text-3xl text-2xl animate-charcter'>Software Development Services</h1>
            
-              <p className='mt-3'>
-              We help you launch and scale your Mobile and Web Apps. Since 2014 we build
-              custom applications loved by millions
-              </p>
+              <div className="grid grid-cols-4">
+                <div className="col-span-3">
+                <p className='mt-3'>
+                We help you launch and scale your Mobile and Web Apps. Since 2014 we build
+                custom applications loved by millions
+                </p>
+                </div>
+              </div>
               <button className="btn btn-outline btn-info px-8 py-2 mt-3">Get in touch</button>
-             
+
         </div>
         <div className='hidden md:inline'>
 
         <div ref={animationContainer}></div>
-  
         </div>
       </div>
     </div>

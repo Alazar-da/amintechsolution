@@ -2,7 +2,7 @@ import Why from '../img/why.svg';
 
 function Whyus() {
     return(
-      <main className='grid justify-center grid-cols-1 md:grid-cols-6  gap-1 md:gap-2 lg:gap-4 my-5 mx-2'>
+      <main className='grid justify-center grid-cols-1 md:grid-cols-6  gap-1 md:gap-2 lg:gap-4 my-5 mx-2 bg-white'>
          <div className='grid grid-cols-2 lg:col-start-2 lg:col-span-4 md:col-start-2 md:col-span-4'>
             <div className='bg-primary  rounded-l-[20px] md:rounded-l-[40px] grid grid-cols-1 content-center p-5 '>
                <h2 className="font-bold text-[#FFF] lg:text-3xl text-2xl">Why US?</h2>
