@@ -2,12 +2,13 @@ import Services1 from '../img/serivice-1.jpg-removebg-preview-transformed.png';
 import Services2 from '../img/serivice-2.jpg-removebg-preview-transformed.png';
 import Services3 from '../img/serivice-3.jpg-removebg-preview-transformed.png';
 import  {FaArrowRight} from "react-icons/fa";
+import "../assets/color.css"
 function Portfolio() {
     return(
 
        <>
          <div className='grid grid-cols-1 bg-third px-5 py-5 md:pl-[85px]'>
-            <h2>Portfolio</h2>
+            <h1 className='animate-charcter font-bold lg:text-3xl text-2xl'>Portfolio</h1>
             <p>Take a tour through the spotlight of the projects that we have
                successfully delivered to our clients
             </p>

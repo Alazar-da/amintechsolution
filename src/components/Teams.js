@@ -3,6 +3,7 @@ import 'swiper/swiper-bundle.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; */
 /* import React from 'react';
 import './CircularCarousel.css'; */
+import "../assets/color.css"
 function Teams() {
  
 
@@ -10,7 +11,7 @@ function Teams() {
     return(
       <div className=" justify-center">
 
-        <h1 className="text-cyan-900 text-center text-5xl  ">Our Team</h1>
+        <h1 className="text-cyan-900 text-center text-5xl animate-charcter  ">Our Team</h1>
   
    
   <div className="carousel w-full">

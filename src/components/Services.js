@@ -2,13 +2,15 @@ import Services1 from '../img/serivice-1.jpg-removebg-preview-transformed.png';
 import Services2 from '../img/serivice-2.jpg-removebg-preview-transformed.png';
 import Services3 from '../img/serivice-3.jpg-removebg-preview-transformed.png';
 import  {FaArrowRight} from "react-icons/fa";
+import "../assets/color.css"
+
 
 function Services() {
     return(
       <main className="grid grid-cols-1 bg-third px-5 py-5 md:pl-[85px]">
          <div className='grid md:grid-cols-2 grid-cols-1 mt-5'>
             <div className='mt-5'>
-            <h2 className='font-bold lg:text-3xl text-2xl'>Services</h2>
+            <h2 className='font-bold lg:text-3xl text-2xl animate-charcter'>Services</h2>
             <p className="text-1xl text-textColor py-5">
                Our website and mobile application development company serves clients with R&D, prototyping, infrastructure
                and architecture development, and ongoing agile product delivery, all while adhering to strict compliance and

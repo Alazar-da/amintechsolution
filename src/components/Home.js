@@ -1,6 +1,7 @@
 import Lotti from '../img/lotti.svg';
 import Logo from '../img/logo.svg';
 import { FaBars } from "react-icons/fa";
+import "../assets/color.css"
 
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
@@ -114,8 +115,8 @@ function Home() {
 </header>
       <div className='md:grid md:grid-cols-2'>
         <div className='my-auto pt-5 md:pt-0 px-5 md:px-0'>
-          <h1 className='font-bold lg:text-3xl text-2xl'>Software Development</h1>
-              <h1 className='font-bold lg:text-3xl text-2xl'>Services</h1>
+          <h1 className='font-bold lg:text-3xl text-2xl animate-charcter'>Software Development Services</h1>
+           
               <p className='mt-3'>
               We help you launch and scale your Mobile and Web Apps. Since 2014 we build
               custom applications loved by millions

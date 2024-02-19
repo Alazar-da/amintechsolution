@@ -11,12 +11,13 @@ import {ReactComponent as Nativ} from "../assets/react-native-1.svg"
 import {ReactComponent as Figma} from "../assets/figma-5.svg"
 import {ReactComponent as Adobe} from "../assets/adobe-2.svg"
 import {ReactComponent as Blender} from "../assets/blender-2.svg"
+import "../assets/color.css"
 
 function Technology() {
     return(
       <>
       <div className="text-center">
-      <h1 className="text-3xl font-bold text-blue-500 italic mb-4">Technology we use</h1>
+      <h1 className="text-3xl font-bold text-blue-500 italic mb-4 animate-charcter">Technology we use</h1>
       <p className="text-gray-700">
         Our team utilizes cutting-edge technology to provide innovative solutions to our clients.
         This includes software development tools and machine learning algorithms.

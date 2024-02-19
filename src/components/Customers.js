@@ -1,12 +1,13 @@
 import cImage from '../assets/palm.png';
 import bImage from '../assets/blue2.png';
 import sImage from '../assets/sup2.jpg';
+import "../assets/color.css"
 
 
 function Customers() {
     return(
       <div>
-           <h1 className="text-3xl  font-bold text-textColor">What our Customers say</h1>
+           <h1 className="text-3xl  font-bold text-textColor animate-charcter">What our Customers say</h1>
            <div className="flex">
 
        

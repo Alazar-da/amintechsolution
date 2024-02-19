@@ -1,4 +1,5 @@
 import cImage from '../assets/c.jpg';
+import "../assets/color.css"
 
 function Contactus() {
     return(
@@ -9,7 +10,7 @@ function Contactus() {
       
    
    
-       <h1 className="text-2xl text-primary bg-red">Contact Us</h1>
+       <h1 className="text-2xl text-primary bg-red animate-charcter">Contact Us</h1>
 
        <div className="flex  mt-5 justify-evenly"> 
 

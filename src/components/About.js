@@ -1,6 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import "../assets/color.css"
+import "../assets/border.css"
+
 
 function About() {
+
 
    const [buttonText, setButtonText] = useState("Read More..."); //same as creating your state variable where "Next" is the default value for buttonText and setButtonText is the setter function for your state variable instead of setState   
       const Readmore=()=>{
@@ -15,13 +19,17 @@ function About() {
        }
 
       }
+      
     return(
-       <main className="grid grid-cols-6 bg-third px-5 py-5 md:pl-[85px] lg:h-[600px]">
-         <div className="col-start-1 lg:col-end-5 col-end-7 mt-5">
-            <h2 className="font-bold lg:text-3xl text-2xl">About us</h2>
+      <div className='body'>
+
+    
+       <main className="grid grid-cols-6 bg-third px-5 py-5 md:pl-[85px] lg:h-[600px] box">
+         <div className="col-start-1 lg:col-end-5 col-end-7 mt-5 ">
+            <h2 className="font-bold lg:text-3xl text-2xl animate-charcter text-center">About us</h2>
          </div>
          <div className="col-start-1 lg:col-end-5 col-end-7 mt-5">
-            <p className="font-bold text-1xl text-textColor"> Welcome to our software, web, and mobile development company!</p>
+            <p className="font-bold text-1xl text-textColor" > Welcome to our software, web, and mobile development company!</p>
          </div>
          <div className="col-start-1 lg:col-end-5 col-end-7 mt-5">
             <p className="text-textColor">
@@ -39,7 +47,13 @@ function About() {
               {buttonText}
             </button>
          </div>
+
+   
+		
+	
+
        </main>
+       </div>
     );
    }
 
