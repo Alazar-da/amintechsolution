@@ -7,11 +7,11 @@ import Technology from './components/Technology';
 import Pricing from './components/Pricing';
 import Security from './components/Security';
 import Teams from './components/Teams';
-
 import Portfolio from './components/Portfolio';
 import Customers from './components/Customers';
 import Contactus from './components/Contactus';
 import Footer from './components/Footer';
+
 
 function App() {
   return (
