@@ -1,9 +1,9 @@
-import "./Teams.css"
+/*import "./Teams.css"
 import 'swiper/swiper-bundle.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React from 'react';
-import './CircularCarousel.css';
+import './CircularCarousel.css';*/
 function Teams() {
  
 
