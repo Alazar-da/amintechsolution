@@ -19,7 +19,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
 /* Lucida Console */
