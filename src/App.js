@@ -15,7 +15,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App font-mainFont">
+    <div className="App font-mainFont bg-white">
       <Home/>
       <About/>
       <Services/>

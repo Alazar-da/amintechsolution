@@ -15,16 +15,17 @@ import {ReactComponent as Blender} from "../assets/blender-2.svg"
 function Technology() {
     return(
       <>
-      <div className="text-center">
-      <h1 className="text-3xl font-bold text-blue-500 italic mb-4">Technology we use</h1>
+      <main className="bg-third">
+      <div className="text-center mt-5">
+      <h2 className="text-3xl font-bold text-blue-500 italic mb-4">Technology we use</h2>
       <p className="text-gray-700">
         Our team utilizes cutting-edge technology to provide innovative solutions to our clients.
         This includes software development tools and machine learning algorithms.
       </p>
     </div>
-  <div className="m-4">
+  <div className="">
   <h2 className="text-xl font-bold text-blue ml-10 italic">Front-End</h2>
-  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center mt-4">
+  <div className="grid grid-cols-4 gap-4 mt-4">
     <div className="flex flex-col items-center">
       <Logo className="w-8 h-8" />
       <h3 className="font-bold text-blue italic text-center mt-2">React</h3>
@@ -46,7 +47,7 @@ function Technology() {
 
 <div className="m-4">
   <h2 className="text-xl font-bold text-blue ml-10 italic">Back-End</h2>
-  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-items-center mt-4">
+  <div className="grid grid-cols-4 gap-4 mt-4">
     <div className="flex flex-col items-center">
       <Php className="w-8 h-8" />
       <h3 className="font-bold text-black italic text-center mt-1">PHP</h3>
@@ -64,7 +65,7 @@ function Technology() {
 
 <div className="m-4">
   <h2 className="text-xl font-bold text-blue ml-10 italic">Design</h2>
-  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-items-center mt-4">
+  <div className="grid grid-cols-4 gap-4 mt-4">
     <div className="flex flex-col items-center">
       <Figma className="w-8 h-8" />
         <h3 className="font-bold text-red italic text-center mt-2">Figma</h3>
@@ -82,7 +83,7 @@ function Technology() {
 
 <div className="m-4">
   <h2 className="text-xl font-bold text-blue ml-10 italic">Mobile App</h2>
-  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 justify-items-center mt-4">
+  <div className="grid grid-cols-4 gap-4 mt-4">
     <div className="flex flex-col items-center">
       <Android className="w-8 h-8" />
       <h3 className="font-bold text-green italic text-center mt-1">Android</h3>
@@ -97,10 +98,11 @@ function Technology() {
     </div>
   </div>
 </div>
+      </main>
+
     </>
-      
-   
+
     );
    }
-   
+
    export default Technology;
