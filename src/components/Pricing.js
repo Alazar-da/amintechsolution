@@ -4,11 +4,12 @@ function Pricing() {
     return(
       <>
    
-       <h1 className="text-3xl font-bold text-textColor animate-charcter">Pricing option</h1>
+     
 
        <div className="pricing">
   <div className="container">
-    <div className="pricing__title">Pricing</div>
+  <h2 className="text-3xl font-bold text-textColor animate-charcter pricing__title text-center">Pricing option</h2>
+    
     <div className="pricing__grid">
       <div className="pricing__card pricing-card pricing-card_free">
         <div className="pricing-card__top">

@@ -1,4 +1,5 @@
 import Why from '../img/why.svg';
+import "../assets/why.css"
 
 function Whyus() {
     return(
@@ -14,12 +15,32 @@ function Whyus() {
                </p>
             </div>
             <div className='md:p-5 bg-[#F7FDFF] grid content-center  rounded-r-[20px] md:rounded-r-[40px]'>
-               <img src={Why} alt='why us'></img>
+              
+            <div className="cards">
+    <div className="card red">
+        <p className="tip">Mission</p>
+        <p className="second-text">some information about the misio of the companh go  ndsk</p>
+    </div>
+    <div className="card blue">
+        <p className="tip">Vision</p>
+        <p className="second-text">Lorem Ipsum</p>
+    </div>
+    <div className="card green">
+        <p className="tip">Ethics</p>
+        <p className="second-text">Lorem Ipsum</p>
+    </div>
+</div>
+
             </div>
          </div>
+
+       
       </main>
 
     );
    }
 
    export default Whyus;
+
+
+ //  <img src={Why} alt='why us'></img>

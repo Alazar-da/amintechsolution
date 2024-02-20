@@ -8,7 +8,20 @@ function Customers() {
     return(
       <div>
            <h1 className="text-3xl  font-bold text-textColor animate-charcter">What our Customers say</h1>
-           <div className="flex">
+         
+
+      </div>
+   
+     
+       
+   
+    );
+   }
+   
+   export default Customers;
+
+   /*
+     <div className="flex">
 
        
          <div className="card card-side bg-base-100 shadow-xl">
@@ -40,12 +53,5 @@ function Customers() {
 
         </div>
 
-      </div>
-   
-     
-       
-   
-    );
-   }
-   
-   export default Customers;
+
+   */

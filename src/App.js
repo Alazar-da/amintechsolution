@@ -11,6 +11,7 @@ import Portfolio from './components/Portfolio';
 import Customers from './components/Customers';
 import Contactus from './components/Contactus';
 import Footer from './components/Footer';
+import Trial from './components/Trial';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Portfolio/>
       <Customers/>
       <Contactus/>
+    
       <Footer/>
     </div>
   );
