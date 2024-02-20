@@ -64,6 +64,24 @@ function Customers() {
    export default Customers;
 
    /*    <div className="flex">
+      <div>
+           <h1 className="text-3xl  font-bold text-textColor animate-charcter">What our Customers say</h1>
+         
+
+      </div>
+   
+     
+       
+   
+    );
+   }
+   
+   export default Customers;
+
+   /*
+     <div className="flex">
+
+       
          <div className="card card-side bg-base-100 shadow-xl">
   <figure><img src={cImage} alt="Movie"/></figure>
   <div className="card-body">
@@ -91,4 +109,7 @@ function Customers() {
   </div>
 </div>
 
-        </div> */
+        </div>
+
+
+   */
