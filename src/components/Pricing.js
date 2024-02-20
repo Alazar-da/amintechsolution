@@ -3,13 +3,11 @@ import "../assets/pricing.css"
 function Pricing() {
     return(
       <>
-   
-     
+
 
        <div className="pricing">
   <div className="container">
-  <h2 className="text-3xl font-bold text-textColor animate-charcter pricing__title text-center">Pricing option</h2>
-    
+  <h2 className="text-2xl font-bold text-textColor animate-charcter pricing__title text-center">Pricing option</h2>
     <div className="pricing__grid">
       <div className="pricing__card pricing-card pricing-card_free">
         <div className="pricing-card__top">

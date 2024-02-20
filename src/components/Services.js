@@ -7,7 +7,7 @@ import "../assets/color.css"
 
 function Services() {
     return(
-      <main className="grid grid-cols-1 bg-third px-5 py-5 md:pl-[85px]">
+      <main className="grid grid-cols-1 bg-third px-5 md:pl-[85px]">
          <div className='mt-5 grid grid-cols-6'>
             <div className='mt-5 col-span-4 col-start-2'>
                <h2 className='font-bold lg:text-3xl text-2xl text-textColor text-center animate-charcter'>Services</h2>

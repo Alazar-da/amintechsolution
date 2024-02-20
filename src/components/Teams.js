@@ -9,45 +9,69 @@ function Teams() {
 
 
     return(
-      <div className=" justify-center">
-
-        <h1 className="text-cyan-900 text-center text-5xl animate-charcter  ">Our Team</h1>
-
-  <div className="carousel w-full">
-  <div id="slide1" className="carousel-item relative w-full">
-    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" className="btn btn-circle">❮</a>
-      <a href="#slide2" className="btn btn-circle">❯</a>
+      <>
+        <div className="grid grid-cols-1 py-5">
+        <h2 className="text-cyan-900 text-center text-5xl animate-charcter py-3">Portfolio</h2>
+        <div className="grid md:grid-cols-6 grid-cols-10">
+        <div className="carousel w-full md:col-start-2 md:col-span-4 col-start-2 col-span-8">
+          <div id="slide1" className="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" alt="img1" className="w-full lg:h-[400px] md:h-[300px] h-[200px]" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" className="btn btn-circle">❮</a>
+              <a href="#slide2" className="btn btn-circle">❯</a>
+            </div>
+            <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-3/4">
+              <div className="grid grid-cols-1">
+                <h2 className="text-black text-3xl">new text</h2>
+                <p className="text-black text-1xl">discription text here....</p>
+              </div>
+            </div>
+          </div>
+          <div id="slide2" className="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" alt="img2" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" className="btn btn-circle">❮</a>
+              <a href="#slide3" className="btn btn-circle">❯</a>
+            </div>
+            <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-3/4">
+              <div className="grid grid-cols-1">
+                <h2 className="text-black text-3xl">new text</h2>
+                <p className="text-black text-1xl">discription text here....</p>
+              </div>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" alt="img3" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" className="btn btn-circle">❮</a>
+              <a href="#slide4" className="btn btn-circle">❯</a>
+            </div>
+            <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-3/4">
+              <div className="grid grid-cols-1">
+                <h2 className="text-black text-3xl">new text</h2>
+                <p className="text-black text-1xl">discription text here....</p>
+              </div>
+            </div>
+          </div>
+          <div id="slide4" className="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" alt="img4" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" className="btn btn-circle">❮</a>
+              <a href="#slide1" className="btn btn-circle">❯</a>
+            </div>
+            <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-3/4">
+              <div className="grid grid-cols-1">
+                <h2 className="text-black text-3xl">new text</h2>
+                <p className="text-black text-1xl">discription text here....</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id="slide2" className="carousel-item relative w-full">
-    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" className="btn btn-circle">❮</a>
-      <a href="#slide3" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide3" className="carousel-item relative w-full">
-    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-circle">❮</a>
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide4" className="carousel-item relative w-full">
-    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" className="btn btn-circle">❮</a>
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
-
-
-       </div>
+      </>
 
     );
    }
-   
+
    export default Teams;

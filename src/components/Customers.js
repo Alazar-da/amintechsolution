@@ -39,14 +39,15 @@ function Customers() {
     return rating;
   };
     return(
-      <div className='grid grid-cols-1'>
-        <h2 className="text-3xl  font-bold text-textColor animate-charcter text-center">What our Customers say</h2>
+      <div className='grid grid-cols-1 py-5'>
+        <h2 className="text-3xl py-3 font-bold text-textColor animate-charcter text-center">What our Customers say</h2>
         <p className='text-center'>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring
         to the table win-win strategies to ensure domination.</p>
 
-        <div className='grid md:grid-cols-8 gap-4 justify-center'>
+        <div className='grid lg:grid-cols-8 md:grid-cols-12 grid-cols-12 pt-4'>
+          <div className='grid md:grid-cols-3 gap-4 md:px-5 lg:col-start-2 col-start-3 md:col-span-12 lg:col-span-6 col-span-8'>
           {Customer.map((lists)=>
-          <div className='grid grid-cols-1 col-span-2'>
+          <div className='grid grid-cols-1 border p-3 rounded-md'>
             <ul className='text-yellow flex flex-row'>{getStarRating(lists.rating)
                     }
                     </ul>
@@ -55,6 +56,7 @@ function Customers() {
             <h6>{lists.name}</h6>
           </div>
         )}
+          </div>
         </div>
 
 

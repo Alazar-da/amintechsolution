@@ -4,7 +4,7 @@ import "../assets/why.css"
 function Whyus() {
     return(
       <main className='grid justify-center grid-cols-1 md:grid-cols-6  gap-1 md:gap-2 lg:gap-4 my-5 mx-2 bg-white'>
-         <div className='grid grid-cols-2 lg:col-start-2 lg:col-span-4 md:col-start-2 md:col-span-4'>
+         <div className='grid md:grid-cols-2 grid-cols-1  lg:col-start-2 lg:col-span-4 md:col-start-2 md:col-span-4'>
             <div className='bg-primary  rounded-l-[20px] md:rounded-l-[40px] grid grid-cols-1 content-center p-5 '>
                <h2 className="font-bold text-[#FFF] lg:text-3xl text-2xl">Why US?</h2>
                <p className="text-[#FFF] md:flex text-xs md:text-base mt-1">
@@ -14,8 +14,7 @@ function Whyus() {
                maintain top-notch code standards.
                </p>
             </div>
-            <div className='md:p-5 bg-[#F7FDFF] grid content-center  rounded-r-[20px] md:rounded-r-[40px]'>
-              
+            <div className='p-5 bg-[#F7FDFF] grid content-center  rounded-r-[20px] md:rounded-r-[40px]'>
             <div className="cards">
     <div className="card red">
         <p className="tip">Mission</p>
@@ -33,8 +32,6 @@ function Whyus() {
 
             </div>
          </div>
-
-       
       </main>
 
     );

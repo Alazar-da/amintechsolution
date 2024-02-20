@@ -6,9 +6,8 @@ import "../assets/security.css"
 function Security() {
     return(
       <>
- 
-   
-       <h1 className="text-3xl font-bold text-textColor animate-charcter">Security</h1>
+
+       <h2 className="text-3xl font-bold text-center text-textColor animate-charcter">Security</h2>
 
        <section className="bg-gray-100 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
