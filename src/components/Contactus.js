@@ -1,4 +1,4 @@
-import cImage from '../assets/c3.png';
+import cImage from '../assets/c5.jpg';
 import "../assets/color.css"
 
 function Contactus() {
@@ -20,7 +20,7 @@ function Contactus() {
         
        </div>
      
-       <form className="w-1/2" style={{ backgroundColor: "#123957",borderTopRightRadius:"40px",borderBottomRightRadius:"40px" }}>
+       <form className="w-1/2" style={{ backgroundColor: "#0b4bb3",borderTopRightRadius:"40px",borderBottomRightRadius:"40px" }}>
         <h2 className="text-3xl font-bold text-white italic mb-4 text-center">Get In Touch</h2>
       
         <label className="input input-bordered input-info bg-white flex items-center gap-2 mb-5 m-5">
