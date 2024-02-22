@@ -17,7 +17,6 @@ function Services() {
                   and architecture development, and ongoing agile product delivery, all while adhering to strict compliance and
                   security standards.
                </p>
-               </div>
             </div>
          </div>
          <div className='grid grid-cols-7 md:gap-4'>
@@ -51,6 +50,7 @@ function Services() {
                   <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Get Started <FaArrowRight className='inline'/></button>
                </div>
             </div>
+         </div>
          </div>
       </main>
     );

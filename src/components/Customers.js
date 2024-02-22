@@ -40,7 +40,7 @@ function Customers() {
   };
     return(
       <div className='grid grid-cols-1 py-5'>
-        <h2 className="text-3xl py-3 font-bold text-textColor animate-charcter text-center">What our Customers say</h2>
+        <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">What our Customers say</h2>
         <p className='text-center'>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring
         to the table win-win strategies to ensure domination.</p>
 

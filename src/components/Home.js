@@ -7,7 +7,7 @@ import "../assets/color.css"
 
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
-import animationData from '../assets/software.json';
+import animationData from '../assets/software3.json';
 
 
 function Home() {

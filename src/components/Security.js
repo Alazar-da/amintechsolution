@@ -5,24 +5,24 @@ import "../assets/security.css"
 
 function Security() {
     return(
-      <>
+      <div className="text-center mt-5">
 
-       <h2 className="text-3xl font-bold text-center text-textColor animate-charcter">Security</h2>
+       <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">Security</h2>
 
        <section className="bg-gray-100 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h3 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
             Your Data is Safe with Us
-          </h2>
+          </h3>
           <p className="mt-4 text-lg text-gray-600">
             We prioritize the security of your information
           </p>
         </div>
         <div className="mt-10">
-          <div className="flex flex-col sm:flex-row justify-evenly">
+          <div className="flex flex-col lg:flex-row justify-evenly items-center md:flex-row flex-wrap ">
 
-          <div className="container2">
+          <div className="container2 mb-5 mt-5">
   <div className="card2">
     <div className="front2">
     <FiLock className="mx-auto h-12 w-12 text-blue-600" />
@@ -40,7 +40,7 @@ function Security() {
   </div>
 </div>
 
-<div className="container2">
+<div className="container2 mb-5 mt-5">
   <div className="card2">
     <div className="front2">
     <FiDatabase className="mx-auto h-12 w-12 text-blue-600" />
@@ -57,7 +57,7 @@ function Security() {
   </div>
 </div>
 
-<div className="container2">
+<div className="container2 mb-5 mt-5">
   <div className="card2">
     <div className="front2">
     <FiShield className="mx-auto h-12 w-12 text-blue-600" />
@@ -85,7 +85,7 @@ function Security() {
 
      
 
-       </>
+       </div>
    
     );
    }

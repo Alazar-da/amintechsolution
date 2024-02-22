@@ -11,7 +11,7 @@ function Teams() {
     return(
       <>
         <div className="grid grid-cols-1 py-5">
-        <h2 className="text-cyan-900 text-center text-5xl animate-charcter py-3">Portfolio</h2>
+        <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center mb-5">Portfolio</h2>
         <div className="grid md:grid-cols-6 grid-cols-10">
         <div className="carousel w-full md:col-start-2 md:col-span-4 col-start-2 col-span-8">
           <div id="slide1" className="carousel-item relative w-full">
