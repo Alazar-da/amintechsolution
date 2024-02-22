@@ -41,7 +41,7 @@ function Customers() {
     return(
       <div className='grid grid-cols-1 py-5'>
         <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">What our Customers say</h2>
-        <p className='text-center'>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring
+        <p className='text-center text-black'>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring
         to the table win-win strategies to ensure domination.</p>
 
         <div className='grid lg:grid-cols-8 md:grid-cols-12 grid-cols-12 pt-4'>
@@ -51,9 +51,9 @@ function Customers() {
             <ul className='text-yellow flex flex-row'>{getStarRating(lists.rating)
                     }
                     </ul>
-            <p>{lists.discription}</p>
+            <p className=' text-black'>{lists.discription}</p>
             <img className='rounded-full' src={lists.img} alt='customer'/>
-            <h6>{lists.name}</h6>
+            <h6 className=' text-black'>{lists.name}</h6>
           </div>
         )}
           </div>
