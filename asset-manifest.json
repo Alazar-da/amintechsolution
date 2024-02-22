@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/amintechsolution/static/css/main.8f81d05e.css",
-    "main.js": "/amintechsolution/static/js/main.a5544378.js",
+    "main.css": "/amintechsolution/static/css/main.c9bfb120.css",
+    "main.js": "/amintechsolution/static/js/main.280493ba.js",
     "static/js/453.84257e65.chunk.js": "/amintechsolution/static/js/453.84257e65.chunk.js",
     "static/media/why.svg": "/amintechsolution/static/media/why.1bc9aac3f5d8f66919f369efdbb72361.svg",
     "static/media/me.jpg": "/amintechsolution/static/media/me.e312fa215f67ba804407.jpg",
@@ -27,12 +27,12 @@
     "index.html": "/amintechsolution/index.html",
     "static/media/vue.svg": "/amintechsolution/static/media/vue.0ef14c0c68274e9c0bf524a87a06c285.svg",
     "static/media/javascript-1.svg": "/amintechsolution/static/media/javascript-1.dfd9c06e3e70b5272c91e3695ea46fa1.svg",
-    "main.8f81d05e.css.map": "/amintechsolution/static/css/main.8f81d05e.css.map",
-    "main.a5544378.js.map": "/amintechsolution/static/js/main.a5544378.js.map",
+    "main.c9bfb120.css.map": "/amintechsolution/static/css/main.c9bfb120.css.map",
+    "main.280493ba.js.map": "/amintechsolution/static/js/main.280493ba.js.map",
     "453.84257e65.chunk.js.map": "/amintechsolution/static/js/453.84257e65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f81d05e.css",
-    "static/js/main.a5544378.js"
+    "static/css/main.c9bfb120.css",
+    "static/js/main.280493ba.js"
   ]
 }
