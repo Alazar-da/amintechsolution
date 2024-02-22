@@ -5,7 +5,7 @@ function Contactus() {
     return(
       <div className='container my-5 py-5'>
         <div>
-          <h2 className="text-2xl text-pretty text-primary animate-charcter text-center w-full py-4">Contact Us</h2>
+          <h2 className="lg:text-4xl text-2xl font-bold text-pretty text-primary animate-charcter text-center w-full py-4">Contact Us</h2>
         </div>
         <div className="flex flex-row justify-center">
           <div className='hidden md:flex'>

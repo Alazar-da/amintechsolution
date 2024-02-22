@@ -34,7 +34,11 @@ function About() {
             </div> */}
             <div className='w-2/3 box'>
                <div className="mt-3">
-                  <h2 className="font-bold text-black lg:text-4xl text-2xl animate-charcter">About us</h2>
+                  <div className='text-center'>
+                  <h2 className="font-bold text-center lg:text-4xl text-2xl animate-charcter">About us</h2>
+
+                  </div>
+                
                </div>
                <div className="mt-3">
                   <p className="font-bold text-2xl text-black" > Welcome to our software, web, and mobile development company!</p>
