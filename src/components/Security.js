@@ -20,9 +20,9 @@ function Security() {
           </p>
         </div>
         <div className="mt-10">
-          <div className="flex flex-col sm:flex-row justify-evenly">
+          <div className="flex flex-col lg:flex-row justify-evenly items-center md:flex-row flex-wrap ">
 
-          <div className="container2">
+          <div className="container2 mb-5 mt-5">
   <div className="card2">
     <div className="front2">
     <FiLock className="mx-auto h-12 w-12 text-blue-600" />
@@ -40,7 +40,7 @@ function Security() {
   </div>
 </div>
 
-<div className="container2">
+<div className="container2 mb-5 mt-5">
   <div className="card2">
     <div className="front2">
     <FiDatabase className="mx-auto h-12 w-12 text-blue-600" />
@@ -57,7 +57,7 @@ function Security() {
   </div>
 </div>
 
-<div className="container2">
+<div className="container2 mb-5 mt-5">
   <div className="card2">
     <div className="front2">
     <FiShield className="mx-auto h-12 w-12 text-blue-600" />
