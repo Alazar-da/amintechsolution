@@ -8,7 +8,7 @@ import "../assets/color.css"
 function Services() {
     return(
       <main className="container-fluid mx-auto bg-third px-5 md:pl-[85px] lg:py-5">
-         <div className='mt-5 flex md:flex-col'>
+         <div className='mt-5 flex flex-col'>
             <div className='mt-3 w-full'>
                <h2 className='font-bold lg:text-3xl text-2xl text-black text-center animate-charcter'>Services</h2>
                <div className='shrink md:w-1/2'>
