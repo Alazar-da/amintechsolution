@@ -175,4 +175,85 @@
   .card4:hover .profile-pic svg {
     transform: scale(2.5);
     transition: all 0.5s ease-in-out 0.5s;
+
+
+
+    /* Glass glow - STARTS */
+:root {
+  --white08: rgba(255, 255, 255, 0.8);
+  --white05: rgba(255, 255, 255, 0.5);
+  --white009: rgba(255, 255, 255, 0.09);
+  --white001: rgba(255, 255, 255, 0.01);
+  --borderSize: 10px;
+}
+.bwGlow {
+  border: black 1px solid;
+  box-shadow: 0 0 0 calc(var(--borderSize) / 2) rgba(255, 255, 255, 0.05);
+}
+
+.bwGlow::before,
+.bwGlow::after {
+  content: "";
+  position: absolute;
+  left: calc((var(--borderSize) / 2) * -1);
+  top: calc((var(--borderSize) / 2) * -1);
+  background: linear-gradient(
+    45deg,
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white009),
+    var(--white05),
+    var(--white08),
+    var(--white05),
+    var(--white009),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001),
+    var(--white001)
+  );
+  background-size: 300%;
+  width: calc(100% + var(--borderSize));
+  height: calc(100% + var(--borderSize));
+  animation: glassBorder 1.7s ease-in-out infinite;
+}
+
+.bwGlow::before {
+  z-index: -1;
+  box-shadow: 0 0 0 1 black;
+}
+.bwGlow::after {
+  filter: blur(40px);
+  z-index: -2;
+  /*   opacity: 0.5; */
+}
+
+@keyframes glassBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 150% 50%;
+  }
+}
+/* Glass glow - ENDS */
   }

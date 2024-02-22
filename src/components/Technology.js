@@ -18,7 +18,7 @@ function Technology() {
       <>
       <main className="bg-third">
       <div className="text-center mt-5">
-      <h2 className="text-3xl font-bold text-blue-500 italic mb-4 animate-charcter">Technology we use</h2>
+      <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center mb-5">Technology we use</h2>
       <p className="text-gray-700">
         Our team utilizes cutting-edge technology to provide innovative solutions to our clients.
         This includes software development tools and machine learning algorithms.

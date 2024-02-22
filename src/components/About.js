@@ -24,7 +24,7 @@ function About() {
 
        <main className="grid grid-cols-1 bg-white px-5 py-5 my-5 md:pl-[85px] box">
          <div className="mt-5 ">
-            <h2 className="font-bold text-textColor lg:text-4xl text-2xl text-center animate-charcter text-center">About us</h2>
+            <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">About us</h2>
          </div>
          <div className="mt-5">
             <p className="font-bold text-2xl text-textColor text-center" > Welcome to our software, web, and mobile development company!</p>

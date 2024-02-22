@@ -10,7 +10,11 @@ function Services() {
       <main className="grid grid-cols-1 bg-third px-5 md:pl-[85px]">
          <div className='mt-5 grid grid-cols-6'>
             <div className='mt-5 col-span-4 col-start-2'>
-               <h2 className='font-bold lg:text-3xl text-2xl text-textColor text-center animate-charcter'>Services</h2>
+               <div className='text-center'>
+               <h2 className='font-bold lg:text-4xl text-2xl  animate-charcter text-center'>Services</h2>
+
+               </div>
+              
                <p className="text-1xl text-textColor py-5">
                   Our website and mobile application development company serves clients with R&D, prototyping, infrastructure
                   and architecture development, and ongoing agile product delivery, all while adhering to strict compliance and

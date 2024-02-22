@@ -4,7 +4,11 @@ import "../assets/color.css"
 function Contactus() {
     return(
       <div className='ml-10 mr-10 mb-5'>
-        <h2 className="text-2xl text-pretty  text-primary animate-charcter text-center">Contact Us</h2>
+        <div className='text-center'>
+        <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">Contact Us</h2>
+
+        </div>
+        
         <div className="grid grid-cols-6 gap-0 mt-5">
           <div className='d-none md:d-grid md:col-span-2 md:col-start-2'>
             <img src={cImage} style={{borderTopLeftRadius:"40px",borderBottomLeftRadius:"40px"}} alt="Contact us" className="w-100" />

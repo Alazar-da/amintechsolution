@@ -23,7 +23,7 @@ function App() {
       <Whyus/>
 
       <Technology/>
-      <Pricing/>
+      
       <Security/>
       <Teams/>
 
