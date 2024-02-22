@@ -3,7 +3,7 @@ import "../assets/why.css"
 
 function Whyus() {
     return(
-      <main className='container bg-white py-3'>
+      <main className='container bg-white py-3 '>
          <div className='md:flex justify-center md:flex-row grid justify-items-center lg:w-5/6 md:3/4'>
             <div className='bg-primary grid content-center rounded-l-[15px] rounded-r-[15px] h-48 md:h-auto md:rounded-l-[40px] md:rounded-r-none md:2/3 w-full px-3 p-5'>
                <h2 className="font-bold text-[#FFF] lg:text-3xl text-2xl">Why US?</h2>
