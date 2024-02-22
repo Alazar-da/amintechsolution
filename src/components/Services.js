@@ -7,22 +7,24 @@ import "../assets/color.css"
 
 function Services() {
     return(
-      <main className="container-fluid mx-auto bg-third px-5 md:pl-[85px] lg:py-5">
+      <main className="container-fluid mx-auto bg-third px-5 lg:py-5">
          <div className='mt-5 flex flex-col'>
-            <div className='mt-3 w-full'>
+            <div className='mt-3'>
             <div className='text-center'>
-                  <h2 className="font-bold text-center lg:text-4xl text-2xl animate-charcter">Services</h2>
+                  <h2 className="font-bold lg:text-4xl text-2xl animate-charcter">Services</h2>
 
                   </div>
-               <div className='shrink md:w-3/4'>
+               <div className='shrink md:w-2/3 md:pl-[85px]'>
                <p className="text-1xl text-black py-5">
                   Our website and mobile application development company serves clients with R&D, prototyping, infrastructure
+                  and architecture development, and ongoing agile product delivery, all while adhering to strict compliance and
+                  security standards.Our website and mobile application development company serves clients with R&D, prototyping, infrastructure
                   and architecture development, and ongoing agile product delivery, all while adhering to strict compliance and
                   security standards.
                </p>
             </div>
          </div>
-         <div className='grid grid-cols-7 md:gap-4'>
+         <div className='grid grid-cols-7 md:gap-4 md:pl-[85px]'>
             <div className='col-span-5 md:col-span-2 col-start-2 mt-5'>
                <div>
                   <img src={ui} alt='service1' className="lg:h-[200px] lg:w-[100%] rounded-tl-[20px] rounded-tr-[20px]"></img>
