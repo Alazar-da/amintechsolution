@@ -42,7 +42,7 @@ function Home() {
 
  return(
 
-    <div className="bg-white md:pl-[85px] md:h-[753px] pb-5">
+    <div className="bg-white md:pl-[85px] md:h-[600px] pb-5 lg:h-screen">
        {window.innerWidth < 768 ? (
     <div style={lottieBackground} ref={animationContainer}></div>
   ) : null}

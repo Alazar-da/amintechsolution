@@ -3,13 +3,15 @@ import "../assets/color.css"
 
 function Contactus() {
     return(
-      <div className='ml-10 mr-10 mb-5'>
-        <h2 className="text-2xl text-pretty  text-primary animate-charcter text-center">Contact Us</h2>
-        <div className="grid grid-cols-6 gap-0 mt-5">
-          <div className='d-none md:d-grid md:col-span-2 md:col-start-2'>
-            <img src={cImage} style={{borderTopLeftRadius:"40px",borderBottomLeftRadius:"40px"}} alt="Contact us" className="w-100" />
+      <div className='container my-5 py-5'>
+        <div>
+          <h2 className="text-2xl text-pretty text-primary animate-charcter text-center w-full py-4">Contact Us</h2>
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className='hidden md:flex'>
+            <img src={cImage} className="rounded-l-[30px]" />
           </div>
-          <form className="md:col-span-2" style={{ backgroundColor: "#0b4bb3",borderTopRightRadius:"40px",borderBottomRightRadius:"40px" }}>
+          <form className="rounded-r-[30px] rounded-l-[30px] md:rounded-l-none w-80 md:w-3/5" style={{ backgroundColor: "#0b4bb3" }}>
             <h2 className="text-3xl font-bold text-white italic mb-4 text-center py-3">Get In Touch</h2>
             <label className="input input-bordered input-info bg-white flex items-center gap-2 mb-5 m-5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>

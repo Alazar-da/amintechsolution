@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import "../assets/color.css"
-import "../assets/border.css"
+import "../assets/border.css";
+import Logo from "../img/logo.svg";
 
 
 function About() {
@@ -22,37 +23,41 @@ function About() {
 
     return(
 
-       <main className="grid grid-cols-1 bg-white px-5 py-5 my-5 md:pl-[85px] box">
-         <div className="mt-5 ">
-            <h2 className="font-bold text-textColor lg:text-4xl text-2xl text-center animate-charcter text-center">About us</h2>
-         </div>
-         <div className="mt-5">
-            <p className="font-bold text-2xl text-textColor text-center" > Welcome to our software, web, and mobile development company!</p>
-         </div>
-         <div className="mt-5 grid grid-cols-7">
-            <div className="col-span-5 col-start-2">
-               <p className="text-primary">
-                  At AMINTECH, we are passionate about creating innovative solutions that drive digital transformation for businesses around the world. With a team of highly skilled developers, designers, and technology enthusiasts, we strive to deliver exceptional software products and services that exceed our clients' expectations.
-               </p>
-               <p className="text-primary md:flex mt-1 hidden">
-                  Our mission is to empower businesses by harnessing the power of technology.
-                  We believe that software, web, and mobile applications have the potential to revolutionize industries, streamline processes, and enhance user experiences. Therefore, we work closely with our clients to understand their unique challenges and goals, and then leverage our expertise to develop tailored solutions that address their specific needs.
-                  At the core of our company is a commitment to quality and excellence. We adhere to industry best practices and employ the latest development methodologies to ensure that our projects are executed flawlessly. Our team stays up-to-date with the latest trends and technologies, allowing us to deliver cutting-edge solutions that give our clients a competitive edge in the market.
-               </p>
-               <p className="text-primary mt-1 hidden" id="readmore">
-                  Collaboration is key to our success. We believe in building strong partnerships with our clients, working hand-in-hand throughout the development process. We value open communication and transparency, ensuring that our clients are involved at every stage and have full visibility into the progress of their projects. Our goal is to build long-term relationships based on trust, reliability, and mutual success.
-               </p>
-               <button className="text-black hover:text-primary" id="change" onClick={Readmore}>
-               {buttonText}
-               </button>
+       <main className="container bg-white mb-3">
+         <div className="mt-2 flex justify-center">
+             {/* <div className='grid content-center justify-items-center'>
+               <h1 className="leading-none text-2xl text-grey-darkest">
+                  <a className="no-underline text-grey-darkest hover:text-black" href="#">
+                     <img src={Logo} alt='logo'></img>
+                  </a>
+               </h1>
+            </div> */}
+            <div className='w-2/3 box'>
+               <div className="mt-3">
+                  <h2 className="font-bold text-black lg:text-4xl text-2xl animate-charcter">About us</h2>
+               </div>
+               <div className="mt-3">
+                  <p className="font-bold text-2xl text-black" > Welcome to our software, web, and mobile development company!</p>
+               </div>
+               <div className="mt-3">
+                  <p className="text-black">
+                     At AMINTECH, we are passionate about creating innovative solutions that drive digital transformation for businesses around the world. With a team of highly skilled developers, designers, and technology enthusiasts, we strive to deliver exceptional software products and services that exceed our clients' expectations.
+                  </p>
+                  <p className="text-black md:flex mt-1 hidden">
+                     Our mission is to empower businesses by harnessing the power of technology.
+                     We believe that software, web, and mobile applications have the potential to revolutionize industries, streamline processes, and enhance user experiences. Therefore, we work closely with our clients to understand their unique challenges and goals, and then leverage our expertise to develop tailored solutions that address their specific needs.
+                     At the core of our company is a commitment to quality and excellence. We adhere to industry best practices and employ the latest development methodologies to ensure that our projects are executed flawlessly. Our team stays up-to-date with the latest trends and technologies, allowing us to deliver cutting-edge solutions that give our clients a competitive edge in the market.
+                  </p>
+                  <p className="text-black mt-1 hidden" id="readmore">
+                     Collaboration is key to our success. We believe in building strong partnerships with our clients, working hand-in-hand throughout the development process. We value open communication and transparency, ensuring that our clients are involved at every stage and have full visibility into the progress of their projects. Our goal is to build long-term relationships based on trust, reliability, and mutual success.
+                  </p>
+                  <button className="text-primary hover:text-green btn-read" id="change" onClick={Readmore}>
+                  {buttonText}
+                  </button>
+               </div>
             </div>
          </div>
-
-   
-		
-	
-
-       </main>
+      </main>
 
     );
    }

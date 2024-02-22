@@ -4,20 +4,29 @@
     box-sizing: border-box;
   }
   .body {
-  
+/* 
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     min-height: 100vh;
     background: white;
-    
+
+
   }
   .box p {
     position: relative;
-    text-align: center;
-    
- 
-    padding: 1rem;
- 
+  /*   text-align: center; */
+
+
+    padding: .5rem 1rem;
+
+    z-index: 10;
+    text-decoration: none;
+    color: black;
+  }
+  .box .btn-read{
+    position: relative;
+    padding: 0 1rem 1rem 1rem;
+
     z-index: 10;
     text-decoration: none;
     color: black;
@@ -28,7 +37,7 @@
 
   .box h2 {
     position: relative;
-    text-align: center;
+    /* text-align: center; */
     
  
     padding: 1rem;
@@ -51,10 +60,9 @@
     position: relative;
     display: flex;
     flex-direction: column; /* Added flex-direction property */
-    justify-content: center;
-    align-items: center;
+  /*   justify-content: center;
+    align-items: center; */
     width: var(--size);
-    height: var(--size);
     border-radius: var(--rounded);
     background: repeating-conic-gradient(
       from var(--angle),
@@ -87,7 +95,6 @@
     --size: 100%;
     position: absolute;
     width: var(--size);
-    height: var(--size);
     --cone-color: #45f3ff;
     background: repeating-conic-gradient(
       from var(--angle),
