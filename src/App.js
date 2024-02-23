@@ -17,6 +17,7 @@ import Trial from './components/Trial';
 function App() {
   return (
     <div className="App font-mainFont bg-white">
+        
       <Home/>
       <About/>
       <Services/>
@@ -30,6 +31,8 @@ function App() {
       <Portfolio/>
       <Customers/>
       <Contactus/>
+      <Trial/>
+   
     
       <Footer/>
     </div>
