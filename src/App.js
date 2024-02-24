@@ -17,14 +17,12 @@ import Trial from './components/Trial';
 function App() {
   return (
     <div className="App font-mainFont bg-white">
-        
       <Home/>
       <About/>
       <Services/>
       <Whyus/>
 
       <Technology/>
-      
       <Security/>
       <Teams/>
 
