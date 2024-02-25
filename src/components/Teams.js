@@ -1,102 +1,113 @@
-/* import "./Teams.css"
-import 'swiper/swiper-bundle.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; */
-/* import React from 'react';
-import './CircularCarousel.css'; */
-import React from 'react';
-import Palm from '../assets/palm.png'
-import "../assets/color.css"
-
+//import "../assets/why.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import styled from 'styled-components';
+import React from "react";
 
-import Slider from "react-slick";
+import Work1 from "../assets/palm.png";
+import Work2 from "../assets/blue2.png";
+import Work3 from "../assets/sup2.jpg";
 
-function Teams() {
-  const handleClick = (event) => {
-    event.preventDefault();
-    // Add your custom logic or actions here
-  };
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
+const Container = styled.div`
+  /* your regular styles here */
+
+  @media (max-width: 768px) {
+    display:none;
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* styles for screens between 769px and 1024px width */
+  }
+
+  @media (min-width: 1025px) {
+    /* styles for screens larger than 1024px width */
+  }
+`;
+
+
+
+/* function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", borderRadius:"10px", background: "#3f51b5" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, borderRadius:"10px", background: "#3f51b5"}}
+      onClick={onClick}
+    />
+  );
+} */
+
+function Teams()
+{/* 
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  };
-
-
-
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
+  }; */
 
     return(
-      <>
-        <div className="grid grid-cols-1 py-5">
-        <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center mb-5" id='hi'>Portfolio</h2>
-        <div className="grid md:grid-cols-6 grid-cols-10">
-        <div className="carousel w-full md:col-start-2 md:col-span-4 col-start-2 col-span-8 ">
-          <div id="slide1" className="carousel-item relative w-full">
-            {/* <img src={Palm} alt="img1" className="w-full lg:h-[400px] md:h-[300px] h-[200px]" /> */}
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" className="btn btn-circle text-white">❮</a>
-              <a href="#slide2" className="btn btn-circle text-white">❯</a>
-            </div>
-            <div className="card card-side bg-base-100 shadow-xl w-full absolute">
-  <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
-  <div className="card-body">
-    <h2 className="card-title">New movie is released!</h2>
-    <p>Click the button to watch on Jetflix app.</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Watch</button>
-    </div>
-  </div>
-</div>
-          </div>
-          <div id="slide2" className="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" alt="img2" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" className="btn btn-circle" >❮</a>
-              <a href="#slide3" className="btn btn-circle" >❯</a>
-            </div>
-            <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-3/4">
-              <div className="grid grid-cols-1">
-                <h2 className="text-black text-3xl">new text</h2>
-                <p className="text-black text-1xl">discription text here....</p>
-              </div>
-            </div>
-          </div>
-          <div id="slide3" className="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" alt="img3" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" className="btn btn-circle" >❮</a>
-              <a href="#slide4" className="btn btn-circle" >❯</a>
-            </div>
-            <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-3/4">
-              <div className="grid grid-cols-1">
-                <h2 className="text-black text-3xl">new text</h2>
-                <p className="text-black text-1xl">discription text here....</p>
-              </div>
-            </div>
-          </div>
-          <div id="slide4" className="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" alt="img4" className="w-full" />
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" className="btn btn-circle">❮</a>
-              <a href="#slide1" className="btn btn-circle">❯</a>
-            </div>
-            <div className="absolute flex justify-center transform -translate-y-1/2 left-5 right-5 top-3/4">
-              <div className="grid grid-cols-1">
-                <h2 className="text-black text-3xl">new text</h2>
-                <p className="text-black text-1xl">discription text here....</p>
-              </div>
-            </div>
-          </div>
-        </div>
+<>
+<div className="container mt-5">
+  <Carousel>
+    <div className="flex flex-row">
+      <div className="w-1/2 md:w-1/3 rounded-l-lg">
+        <img className="h-64" src={Work1} alt="Movie"/>
+      </div>
+      <div className="w-1/2 md:w-2/3 grid content-center bg-[#3f51b5] rounded-r-lg">
+        <h2 className="text-center">Title 1</h2>
+        <p className="text-center">Click the button to watch on Jetflix app.</p>
+          {/* <div className="card-actions justify-end">
+            <button className="btn btn-primary">Watch</button>
+          </div> */}
       </div>
     </div>
-      </>
+    <div className="flex flex-row">
+      <div className="w-1/2 md:w-1/3 rounded-l-lg">
+        <img className="h-64" src={Work2} alt="Movie"/>
+      </div>
+      <div className="w-1/2 md:w-2/3 grid content-center bg-[#3f51b5] rounded-r-lg">
+        <h2 className="text-center">Title 1</h2>
+        <p className="text-center">Click the button to watch on Jetflix app.</p>
+          {/* <div className="card-actions justify-end">
+            <button className="btn btn-primary">Watch</button>
+          </div> */}
+      </div>
+    </div>
+    <div className="flex flex-row ">
+      <div className="w-1/2 md:w-1/3 rounded-l-lg">
+        <img className="h-64" src={Work3} alt="Movie"/>
+      </div>
+      <div className="w-1/2 md:w-2/3 grid content-center bg-[#3f51b5] rounded-r-lg">
+        <h2 className="text-center">Title 1</h2>
+        <p className="text-center">Click the button to watch on Jetflix app.</p>
+          {/* <div className="card-actions justify-end">
+            <button className="btn btn-primary">Watch</button>
+          </div> */}
+      </div>
+    </div>
+  </Carousel>
+</div>
+</>
 
-    );
-   }
 
-   export default Teams;
+    )
+}
+
+export default Teams;
