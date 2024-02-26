@@ -13,7 +13,6 @@ function Portfolio() {
 
             <div className="flex flex-wrap justify-evenly space-x-4 ">
 
-         
 
             <div className="card4 mt-4 mb-4 ">
         <button className="mail">
@@ -22,8 +21,6 @@ function Portfolio() {
         <div className="profile-pic">
 
          <img src={cImage} alt="imran"/>
-            
-        
         </div>
         <div className="bottom">
             <div className="content">
@@ -111,9 +108,7 @@ function Portfolio() {
         </button>
         <div className="profile-pic">
 
-        
-            
-        
+
         </div>
         <div className="bottom">
             <div className="content">
