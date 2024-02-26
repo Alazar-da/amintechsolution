@@ -31,7 +31,7 @@ function App() {
       <Portfolio/>
       <Customers/>
       <Contactus/>
-      <Trial/>
+     
    
     
       <Footer/>
