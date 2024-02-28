@@ -65,12 +65,17 @@ function Teams()
     return(
 <>
 <div className="container mt-5">
+  <div className="text-center mt-10">
+  <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center mb-5">Our Previous Works</h2>
+
+  </div>
+
   <Carousel>
     <div className="flex flex-row">
       <div className="w-1/2 md:w-1/3 rounded-l-lg">
         <img className="h-64" src={Work1} alt="Movie"/>
       </div>
-      <div className="w-1/2 md:w-2/3 grid content-center bg-[#3f51b5] rounded-r-lg">
+      <div className="w-1/2 md:w-2/3 grid content-center bg-[#012236] rounded-r-lg">
         <h2 className="text-center">Title 1</h2>
         <p className="text-center">Click the button to watch on Jetflix app.</p>
           {/* <div className="card-actions justify-end">
@@ -82,7 +87,7 @@ function Teams()
       <div className="w-1/2 md:w-1/3 rounded-l-lg">
         <img className="h-64" src={Work2} alt="Movie"/>
       </div>
-      <div className="w-1/2 md:w-2/3 grid content-center bg-[#3f51b5] rounded-r-lg">
+      <div className="w-1/2 md:w-2/3 grid content-center bg-[#012236] rounded-r-lg">
         <h2 className="text-center">Title 1</h2>
         <p className="text-center">Click the button to watch on Jetflix app.</p>
           {/* <div className="card-actions justify-end">
@@ -94,7 +99,7 @@ function Teams()
       <div className="w-1/2 md:w-1/3 rounded-l-lg">
         <img className="h-64" src={Work3} alt="Movie"/>
       </div>
-      <div className="w-1/2 md:w-2/3 grid content-center bg-[#3f51b5] rounded-r-lg">
+      <div className="w-1/2 md:w-2/3 grid content-center bg-[#012236] rounded-r-lg">
         <h2 className="text-center">Title 1</h2>
         <p className="text-center">Click the button to watch on Jetflix app.</p>
           {/* <div className="card-actions justify-end">
