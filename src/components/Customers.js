@@ -128,7 +128,7 @@ function Customers() {
             <li className="dot"></li>
             <li className="dot"></li>
         </ul>
-        <div id="testim-content" className="cont">
+        <div id="testim-content" ref={testimContentRef} className="cont">
             <div className="active">
                 <div className="img">
                   <img src={Pic} alt='pic 1' />
