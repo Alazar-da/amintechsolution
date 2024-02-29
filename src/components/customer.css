@@ -19,16 +19,11 @@
     cursor: default;
 }
 
-.testim {
+/* .testim {
 		width: 100%;
         background-color: #0b476c;
-		/* top: 50%; */
-		-webkit-transform: translatey(-50%);
-		-moz-transform: translatey(-50%);
-		-ms-transform: translatey(-50%);
-		-o-transform: translatey(-50%);
-		transform: translatey(-50%);
-}
+		/* top: 50%; 
+} */
 
 .testim .wrap {
     position: relative;
@@ -229,8 +224,8 @@
     }
 
     100% {
-        -webkit-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
+        -webkit-box-shadow: 0px 0px 0px 0px #ea830e;
+        box-shadow: 0px 0px 0px 0px #ea830e;
     }
 }
 

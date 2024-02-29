@@ -3,8 +3,8 @@ import "../assets/why.css"
 
 function Whyus() {
     return(
-      <main className='container bg-white py-3 mb-10'>
-         <div className='md:flex justify-center md:flex-row grid justify-items-center lg:w-5/6 md:3/4'>
+      <main className='container bg-white py-5'>
+         <div className='md:flex justify-center md:flex-row grid justify-items-center lg:w-5/6 relative mt-7'>
             <div className='bg-primary grid content-center rounded-l-[15px] rounded-r-[15px] h-48 md:h-auto md:rounded-l-[40px] md:rounded-r-none md:2/3 w-full px-3 p-5'>
                <h2 className="font-bold text-[#FFF] lg:text-3xl text-2xl">Why US?</h2>
                <p className="text-[#FFF] md:flex text-xs md:text-base mt-1">
@@ -14,7 +14,7 @@ function Whyus() {
                maintain top-notch code standards.
                </p>
             </div>
-            <div className='p-5 grid content-center rounded-r-[20px] md:rounded-r-[40px] flex justify-center'>
+            <div className='p-5 content-center rounded-r-[20px] md:rounded-r-[40px] flex justify-center'>
                 <div className="cards">
                     <div className="card red md:w-[350px] w-full px-3">
                         <p className="tip">Mission</p>

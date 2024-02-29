@@ -1,6 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import Pic from '../assets/me2.jpg';
-import './customer.css';
+import "../assets/color.css"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
+
+
+import "./Customer.css";
+
+
 
 
 
@@ -42,12 +50,12 @@ function Customers() {
         slide = currentSlide = 0;
       }
 
-      if (currentActive !== currentSlide) {
-        /* testimContent[currentActive].classList.add("inactive"); */
+      /* if (currentActive !== currentSlide) {
+         testimContent[currentActive].classList.add("inactive");
       }
-      /* testimContent[slide].classList.add("active");
-      testimDots[slide].classList.add("active"); */
- 
+       testimContent[slide].classList.add("active");
+      testimDots[slide].classList.add("active");
+ */
       currentActive = currentSlide;
 
       clearTimeout(testimTimer);
@@ -117,17 +125,21 @@ function Customers() {
 
   return (
     <>
-      <section id="testim" ref={testimRef}>
+    <div className='grid grid-cols-1 gap-4'>
+      <div className='text-center'>
+        <h2 className='font-bold lg:text-4xl text-2xl text-center animate-charcter mt-7'>Testimonial</h2>
+      </div>
+      <section className='container bg-[#0b476c] testim' id="testim" ref={testimRef}>
 
       <div className="wrap">
 
       <div id="left-arrow" ref={testimLeftArrowRef}>
-      <span id="left-arrow" className="arrow left fa fa-chevron-left ">l</span>
+      <span className="arrow left"><FontAwesomeIcon icon={faChevronCircleLeft} /></span>
         </div>
 
         {/* Right Arrow */}
         <div id="right-arrow" ref={testimRightArrowRef}>
-        <span id="right-arrow" className="arrow right fa fa-chevron-right">r</span>
+        <span className="arrow right"><FontAwesomeIcon icon={faChevronCircleRight} /></span>
         </div>
 
 
@@ -178,6 +190,7 @@ function Customers() {
 
       </div>
       </section>
+    </div>
     </>
   );
 }

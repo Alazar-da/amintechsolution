@@ -5,14 +5,13 @@ import "../assets/security.css"
 
 function Security() {
     return(
-      <div className="text-center mt-5 ">
 
-       <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">Security</h2>
 
-       <section className="bg-gray-100 py-12">
+    <section className="bg-third py-12 mt-7">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h3 className="text-3xl font-extrabold text-gray-900 sm:text-4xl unreal">
+        <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">Security</h2>
+          <h3 className="text-3xl font-extrabold text-gray-900 sm:text-4xl unreal mt-3">
             Your Data is Safe with Us
           </h3>
           <p className="mt-4 text-lg text-gray-600">
@@ -77,19 +76,9 @@ function Security() {
         </div>
       </div>
     </section>
-
-      
-
-
-
-
-     
-
-       </div>
-   
     );
    }
-   
+
    export default Security;
 
    /*

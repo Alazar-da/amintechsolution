@@ -7,7 +7,7 @@ import "../assets/color.css"
 
 function Services() {
     return(
-      <main className="container-fluid grid grid-cols-1 content-center bg-third px-5 mb-10 h-dvh" id='services'>
+      <main className="container-fluid grid grid-cols-1 content-center bg-third px-5 mt-7 relative" id='services'>
          <div className='mt-5 flex flex-col'>
             <div className='mt-3'>
             <div className='text-center'>
