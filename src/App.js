@@ -17,6 +17,9 @@ import Trial from './components/Trial';
 import Nav from './components/Nav';
 
 
+import "./App.css"
+
+
 
 import React, { useEffect, useRef } from 'react';
 
@@ -48,6 +51,70 @@ function App() {
       }
     });
   })
+
+  /////////////////////////////////////////////////////////////////////////////////////////
+  useEffect(() => {
+   
+
+    // Scroll back to top
+    const progressPath = document.querySelector('.progress-wrap path');
+    const pathLength = progressPath.getTotalLength();
+    progressPath.style.transition = 'none';
+    progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+    progressPath.style.strokeDashoffset = pathLength;
+    progressPath.getBoundingClientRect();
+    progressPath.style.transition = 'stroke-dashoffset 10ms linear';
+
+    const updateProgress = () => {
+      const scroll = window.pageYOffset || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const progress = pathLength - (scroll * pathLength) / height;
+      progressPath.style.strokeDashoffset = progress;
+    };
+
+    updateProgress();
+    window.addEventListener('scroll', updateProgress);
+
+    const offset = 50;
+    const duration = 550;
+    const handleScroll = () => {
+      const progressWrap = document.querySelector('.progress-wrap');
+      if (window.pageYOffset > offset) {
+        progressWrap.classList.add('active-progress');
+      } else {
+        progressWrap.classList.remove('active-progress');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    const handleProgressWrapClick = (event) => {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    };
+
+    // Clean up event listeners on component unmount
+    return () => {
+      window.removeEventListener('scroll', updateProgress);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+
+  const handleProgressWrapclick = () => {
+   // event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+
+  /////////////////////////////////////////////////////////////////////////////////////////
   return (
     <div className="App font-mainFont bg-white" style={{scrollBehavior:'smooth'}}>
       <Nav home={"#home"} service={"#services"} team={"#portfolio"} portfolio={"#team"} contact={"#contactus"}/>
@@ -119,6 +186,12 @@ function App() {
    
     
       <Footer/>
+
+      <div className="progress-wrap" onClick={handleProgressWrapclick}>
+      <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+  <path d="M50,25 L75,50 L62,50 L62,75 L38,75 L38,50 L25,50 Z" />
+</svg>
+	</div>
     
       
     </div>
