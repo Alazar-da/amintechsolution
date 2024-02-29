@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import Pic from '../assets/me2.jpg';
 import './customer.css';
 
+
+
 function Customers() {
   const testimRef = useRef(null);
   const testimDotsRef = useRef([]);
