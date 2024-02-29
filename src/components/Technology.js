@@ -16,7 +16,7 @@ import "../assets/color.css"
 function Technology() {
     return(
       <>
-      <main className="container">
+      <main className="container mb-10">
         <div className="text-center mt-5">
           <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center mb-5">Technology we use</h2>
           <p className="text-gray-700">

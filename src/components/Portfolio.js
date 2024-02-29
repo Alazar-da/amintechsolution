@@ -10,10 +10,10 @@ function Portfolio() {
     return(
 
        <>
-         <div className='grid grid-cols-1 bg-third px-5 py-5 md:pl-[85px]'>
-            <h3 className='font-bold lg:text-4xl text-2xl  animate-charcter text-center'>OUR TEAM</h3>
+         <div className='container px-5 py-5 md:pl-[85px] h-dvh'>
+            <h3 className='font-bold lg:text-4xl text-2xl  animate-charcter text-center w-full'>OUR TEAM</h3>
 
-            <div className="flex flex-wrap justify-evenly  ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
 
 
             <div className="card4 m-6">

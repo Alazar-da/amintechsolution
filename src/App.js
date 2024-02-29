@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+
 
 import Home from './components/Home';
 import About from './components/About';
@@ -102,10 +102,10 @@ function App() {
       </section>
      
  
-       <section id='customers'>
+      {/*  <section id='customers'>
        <Customers/>
 
-       </section>
+       </section> */}
   
     
 
