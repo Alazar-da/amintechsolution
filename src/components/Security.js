@@ -5,7 +5,7 @@ import "../assets/security.css"
 
 function Security() {
     return(
-      <div className="text-center mt-5">
+      <div className="text-center mt-5 ">
 
        <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">Security</h2>
 

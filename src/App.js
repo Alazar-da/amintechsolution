@@ -169,10 +169,10 @@ function App() {
       </section>
      
  
-       <section id='customers'>
+      {/*  <section id='customers'>
        <Customers/>
 
-       </section>
+       </section> */}
   
     
 
