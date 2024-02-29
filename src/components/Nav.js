@@ -37,7 +37,7 @@ const Nav = ({home,service,team,portfolio,contact})=>{
       })
 
     return(
-        <header className="md:flex md:items-center md:justify-between p-4 pb-0 md:pb-4 text-textColor p-">
+        <header className="md:flex md:items-center md:justify-between p-4 pb-0 md:pb-4 text-textColor p- ">
 
 <div className="flex items-center justify-between mb-4 md:mb-0">
   <h1 className="leading-none text-2xl text-grey-darkest">
