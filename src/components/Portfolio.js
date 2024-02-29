@@ -4,6 +4,7 @@ import "../assets/portfolio.css"
 import cImage from '../assets/me.jpg';
 import cImage2 from '../assets/me2.jpg';
 import cImage3 from '../assets/me3.jpg';
+import cImage4 from '../assets/me4.jpg';
 function Portfolio() {
     return(
 
@@ -136,7 +137,7 @@ function Portfolio() {
         </button>
         <div className="profile-pic">
 
-         <img src={cImage3} alt="sofi"/>
+         <img src={cImage4} alt="sofi"/>
             
         
         </div>

@@ -11,8 +11,8 @@ function Contactus() {
           <div className='hidden md:flex'>
             <img src={cImage} className="rounded-l-[30px]" />
           </div>
-          <form className="rounded-r-[30px] rounded-l-[30px] md:rounded-l-none w-80 md:w-3/5" style={{ backgroundColor: "#0b4bb3" }}>
-            <h2 className="text-3xl font-bold text-white italic mb-4 text-center py-3">Get In Touch</h2>
+          <form className="rounded-r-[30px] rounded-l-[30px] md:rounded-l-none w-80 md:w-3/5" style={{ backgroundColor: "#F7FDFF" }}>
+            <h2 className="text-3xl font-bold text-black italic mb-4 text-center py-3">Get In Touch</h2>
             <label className="input input-bordered input-info bg-white flex items-center gap-2 mb-5 m-5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
               <input type="text" className="grow " placeholder="Name" />
