@@ -1,9 +1,9 @@
 function Footer() {
     return(
       <>
-      <div className="relative mt-16 bg-deep-purple-accent-400">
+      <div className="relative mt-16 bg-cyan-800">
       <svg
-        className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
+        className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-cyan-600"
         preserveAspectRatio="none"
         viewBox="0 0 1440 54"
       >
@@ -37,7 +37,7 @@ function Footer() {
                 <rect x="14" y="11" width="7" height="12" />
               </svg>
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Company
+                MINA TECH
               </span>
             </a>
             <div className="mt-4 lg:max-w-sm">
@@ -228,7 +228,7 @@ function Footer() {
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
           <p className="text-sm text-gray-100">
-            © Copyright 2020 Lorem Inc. All rights reserved.
+            © Copyright 2024 MINA TECH. All rights reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <a

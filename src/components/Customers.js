@@ -27,9 +27,9 @@ function Customers() {
     // Testim Script
     function playSlide(slide) {
       for (let k = 0; k < testimDots.length; k++) {
-        testimContent[k].classList.remove("active");
-        testimContent[k].classList.remove("inactive");
-        testimDots[k].classList.remove("active");
+       /// testimContent[k].classList.remove("active");
+        ////testimContent[k].classList.remove("inactive");
+     //   testimDots[k].classList.remove("active");
       }
 
       if (slide < 0) {
@@ -41,10 +41,10 @@ function Customers() {
       }
 
       if (currentActive !== currentSlide) {
-        testimContent[currentActive].classList.add("inactive");
+      //  testimContent[currentActive].classList.add("inactive");
       }
-      testimContent[slide].classList.add("active");
-      testimDots[slide].classList.add("active");
+     // testimContent[slide].classList.add("active");
+     // testimDots[slide].classList.add("active");
 
       currentActive = currentSlide;
 
