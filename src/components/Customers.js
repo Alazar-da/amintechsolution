@@ -1,117 +1,175 @@
-import Pic from '../img/pic.png';
-import "../assets/color.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-
+import React, { useEffect, useRef } from 'react';
+import Pic from '../assets/me2.jpg';
+import './customer.css';
 
 function Customers() {
-  const Customer=[
-    {
-      rating:5,
-      discription:"The leadership of the organization is impressive. I can't say enough about how aligned they have been with both of us achieving our business goals. Secondly the willingness to adapt to our Product and Engineering practices instead of forcing their own us. The transparency of the engineering teams they push us hard on what is going right and wrong.",
-      name:"Tyler Downs",
-      img:Pic,
-    },
-    {
-      rating:5,
-      discription:"The leadership of the organization is impressive. I can't say enough about how aligned they have been with both of us achieving our business goals. Secondly the willingness to adapt to our Product and Engineering practices instead of forcing their own us. The transparency of the engineering teams they push us hard on what is going right and wrong.",
-      name:"Tyler Downs",
-      img:Pic,
-    },
-    {
-      rating:5,
-      discription:"The leadership of the organization is impressive. I can't say enough about how aligned they have been with both of us achieving our business goals. Secondly the willingness to adapt to our Product and Engineering practices instead of forcing their own us. The transparency of the engineering teams they push us hard on what is going right and wrong.",
-      name:"Tyler Downs",
-      img:Pic,
-    },
-  ];
+  const testimRef = useRef(null);
+  const testimDotsRef = useRef([]);
+  const testimContentRef = useRef([]);
+  const testimLeftArrowRef = useRef(null);
+  const testimRightArrowRef = useRef(null);
+  const testimSpeed = 4500;
+  let currentSlide = 0;
+  let currentActive = 0;
+  let testimTimer;
+  let touchStartPos;
+  let touchEndPos;
+  let touchPosDiff;
+  const ignoreTouch = 30;
 
-  const getStarRating = stars => {
-    let rating = [];
-    let i=0;
-    while (i < stars) {
-        rating.push(<li key={i}>
-            { <FontAwesomeIcon icon={faStar}/> }
-        </li>
-            );
-      i++;
+  useEffect(() => {
+    const testim = testimRef.current;
+    const testimDots = testimDotsRef.current;
+    const testimContent = testimContentRef.current;
+    const testimLeftArrow = testimLeftArrowRef.current;
+    const testimRightArrow = testimRightArrowRef.current;
+
+    // Testim Script
+    function playSlide(slide) {
+      for (let k = 0; k < testimDots.length; k++) {
+        testimContent[k].classList.remove("active");
+        testimContent[k].classList.remove("inactive");
+        testimDots[k].classList.remove("active");
+      }
+
+      if (slide < 0) {
+        slide = currentSlide = testimContent.length - 1;
+      }
+
+      if (slide > testimContent.length - 1) {
+        slide = currentSlide = 0;
+      }
+
+      if (currentActive !== currentSlide) {
+        testimContent[currentActive].classList.add("inactive");
+      }
+      testimContent[slide].classList.add("active");
+      testimDots[slide].classList.add("active");
+
+      currentActive = currentSlide;
+
+      clearTimeout(testimTimer);
+      testimTimer = setTimeout(function () {
+        playSlide(currentSlide += 1);
+      }, testimSpeed);
     }
-    return rating;
-  };
-    return(
-      <div className='grid grid-cols-1 py-5'>
-        <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">What our Customers say</h2>
-        <p className='text-center text-black'>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring
-        to the table win-win strategies to ensure domination.</p>
 
-        <div className='grid lg:grid-cols-8 md:grid-cols-12 grid-cols-12 pt-4'>
-          <div className='grid md:grid-cols-3 gap-4 md:px-5 lg:col-start-2 col-start-3 md:col-span-12 lg:col-span-6 col-span-8'>
-          {Customer.map((lists)=>
-          <div className='grid grid-cols-1 border p-3 rounded-md'>
-            <ul className='text-yellow flex flex-row'>{getStarRating(lists.rating)
-                    }
-                    </ul>
-            <p className=' text-black'>{lists.discription}</p>
-            <img className='rounded-full' src={lists.img} alt='customer'/>
-            <h6 className=' text-black'>{lists.name}</h6>
-          </div>
-        )}
-          </div>
+    testimLeftArrow.addEventListener("click", function () {
+      playSlide(currentSlide -= 1);
+    });
+
+    testimRightArrow.addEventListener("click", function () {
+      playSlide(currentSlide += 1);
+    });
+
+    for (let l = 0; l < testimDots.length; l++) {
+      testimDots[l].addEventListener("click", function () {
+        playSlide((currentSlide = testimDots.indexOf(this)));
+      });
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function (e) {
+      switch (e.keyCode) {
+        case 37:
+          testimLeftArrow.click();
+          break;
+
+        case 39:
+          testimRightArrow.click();
+          break;
+
+        case 39:
+          testimRightArrow.click();
+          break;
+
+        default:
+          break;
+      }
+    });
+
+    testim.addEventListener("touchstart", function (e) {
+      touchStartPos = e.changedTouches[0].clientX;
+    });
+
+    testim.addEventListener("touchend", function (e) {
+      touchEndPos = e.changedTouches[0].clientX;
+
+      touchPosDiff = touchStartPos - touchEndPos;
+
+      console.log(touchPosDiff);
+      console.log(touchStartPos);
+      console.log(touchEndPos);
+
+      if (touchPosDiff > 0 + ignoreTouch) {
+        testimLeftArrow.click();
+      } else if (touchPosDiff < 0 - ignoreTouch) {
+        testimRightArrow.click();
+      } else {
+        return;
+      }
+    });
+  }, []);
+
+  return (
+    <>
+      <section id="testim" ref={testimRef}>
+
+      <div className="wrap">
+
+        <span id="right-arrow" className="arrow right fa fa-chevron-right" ref={testimRightArrowRef}></span>
+        <span id="left-arrow" className="arrow left fa fa-chevron-left " ref={testimLeftArrowRef}></span>
+        <ul id="testim-dots" className="dots">
+            <li className="dot active"></li>
+            <li className="dot"></li>
+            <li className="dot"></li>
+            <li className="dot"></li>
+            <li className="dot"></li>
+        </ul>
+        <div id="testim-content" className="cont">
+            <div className="active">
+                <div className="img">
+                  <img src={Pic} alt='pic 1' />
+                </div>
+                <h2>Lorem P. Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div>
+                <div className="img">
+                  <img src={Pic} alt='pic 1' />
+                </div>
+                <h2>Lorem P. Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div>
+                <div className="img">
+                  <img src={Pic} alt='pic 1' />
+                </div>
+                <h2>Lorem P. Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div>
+                <div className="img">
+                  <img src={Pic} alt='pic 1' />
+                </div>
+                <h2>Lorem P. Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div>
+                <div className="img">
+                  <img src={Pic} alt='pic 1' />
+                </div>
+                <h2>Lorem P. Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
         </div>
 
-
       </div>
-    );
-   }
-   export default Customers;
+      </section>
+    </>
+  );
+}
 
-   /*    <div className="flex">
-      <div>
-           <h1 className="text-3xl  font-bold text-textColor animate-charcter">What our Customers say</h1>
-         
-
-      </div>
-   
-     
-       
-   
-    );
-   }
-   
-   export default Customers;
-
-   /*
-     <div className="flex">
-
-       
-         <div className="card card-side bg-base-100 shadow-xl">
-  <figure><img src={cImage} alt="Movie"/></figure>
-  <div className="card-body">
-    <h2 className="card-title">Palm Realseate</h2>
-    <p>some jiber jaber about how great outr product was but really it was really good.</p>
-
-  </div>
-</div>
-
-<div className="card card-side bg-base-100 shadow-xl">
-<figure><img src={bImage} alt="Movie"/></figure>
-  <div className="card-body">
-    <h2 className="card-title">Bluebest</h2>
-    <p>some jiber jaber about how great outr product was but really it was really good.</p>
-
-  </div>
-</div>
-
-<div className="card card-side bg-base-100 shadow-xl">
-<figure><img src={sImage} alt="Movie"/></figure>
-  <div className="card-body">
-    <h2 className="card-title">Palm Realseate</h2>
-    <p>some jiber jaber about how great outr product was but really it was really good.</p>
-
-  </div>
-</div>
-
-        </div>
-
-
-   */
+export default Customers;

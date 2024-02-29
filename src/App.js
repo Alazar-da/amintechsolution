@@ -1,3 +1,5 @@
+import React, { useRef } from 'react';
+
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
@@ -15,24 +17,51 @@ import Trial from './components/Trial';
 
 
 function App() {
+
+  const servicesRef = useRef(null);
+  const teamRef = useRef();
+  const portfolioRef = useRef();
+  const contactRef = useRef(null);
+
+ /*  const scrollToServices = () => {
+    servicesRef.current.scrollIntoView({ behavior: 'smooth' });
+  }; */
+
+  const scrollToTeam = () => {
+
+    teamRef.current.scrollIntoView({ behavior: 'smooth' });
+    
+  };
+
+  const scrollToPortfolio = () => {
+
+    portfolioRef.current.scrollIntoView({ behavior: 'smooth' });
+    
+  };
+
+  /* const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: 'smooth' });
+  }; */
+
   return (
-    <div className="App font-mainFont bg-white">
-      <Home/>
+    <div className="App font-mainFont bg-white scroll-smooth ease-in">
+      <Home  Team={scrollToPortfolio} Portfolio={scrollToTeam}/>
       <About/>
-      <Services/>
+      <Services ref={servicesRef}/>
       <Whyus/>
 
       <Technology/>
       <Security/>
-      <Teams/>
+      <Teams ref={portfolioRef}/>
 
-      <Portfolio/>
+      <Portfolio ref={teamRef}/>
       <Customers/>
-      <Contactus/>
-     
-   
-    
+      <Contactus ref={contactRef}/>
+
       <Footer/>
+      <button onClick={scrollToTeam}>Scroll to Technology</button>
+      <button onClick={scrollToPortfolio}>Scroll to Portfolio</button>
+      
     </div>
   );
 }

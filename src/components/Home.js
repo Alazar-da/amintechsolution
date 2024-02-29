@@ -8,9 +8,10 @@ import "../assets/color.css"
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import animationData from '../assets/software3.json';
+/* import Portfolio from './Portfolio'; */
 
 
-function Home() {
+function Home({Portfolio,Team}) {
   const collapse=()=>{
    document.querySelector('#menu').classList.toggle('hidden');
 
@@ -40,7 +41,17 @@ function Home() {
     };
   }, []);
 
+  const handlePortfolio = () => {
+    // Call the handleClick function when the button is clicked
+    Portfolio();
+  };
+  const handleTeam = () => {
+    // Call the handleClick function when the button is clicked
+    Team();
+  };
+
  return(
+
 
     <div className="bg-white md:pl-[85px] md:h-[600px] pb-5 lg:h-screen">
        {window.innerWidth < 768 ? (
@@ -102,24 +113,24 @@ function Home() {
         </a>
       </li>
       <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
+        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#services">
           Services
         </a>
       </li>
       <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
+        <button className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" onClick={handleTeam}>
           Team
-        </a>
+        </button>
       </li>
       <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
+        <button className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" onClick={handlePortfolio}>
           Portfolio
-        </a>
+        </button>
       </li>
     </ul>
     <div className='border-t md:border-none md:flex md:justify-center md:items-center'>
       {/* <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Contact Us</button> */}
-      <a class="py-2 md:mt-2 md:p-0 no-underline hover:underline text-primary text-base font-bold hover:text-[#0b476c] md:border-none" href='#'>Contact Us</a>
+      <a class="py-2 md:mt-2 md:p-0 no-underline hover:underline text-primary text-base font-bold hover:text-[#0b476c] md:border-none" href='#contact'>Contact Us</a>
     </div>
   </nav>
 

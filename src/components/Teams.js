@@ -64,13 +64,13 @@ function Teams()
 
     return(
 <>
-<div className="container mt-5">
+<div className="container my-5" id="portfolio">
   <div className="text-center mt-10">
   <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center mb-5">Our Previous Works</h2>
 
   </div>
 
-  <Carousel>
+  <Carousel className="md:h-64">
     <div className="flex flex-row">
       <div className="w-1/2 md:w-1/3 rounded-l-lg">
         <img className="h-64" src={Work1} alt="Movie"/>
