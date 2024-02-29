@@ -27,9 +27,9 @@ function Customers() {
     // Testim Script
     function playSlide(slide) {
       for (let k = 0; k < testimDots.length; k++) {
-       /// testimContent[k].classList.remove("active");
-        ////testimContent[k].classList.remove("inactive");
-     //   testimDots[k].classList.remove("active");
+      testimContent[k].classList.remove("active");
+      testimContent[k].classList.remove("inactive");
+     testimDots[k].classList.remove("active");
       }
 
       if (slide < 0) {
@@ -41,11 +41,11 @@ function Customers() {
       }
 
       if (currentActive !== currentSlide) {
-      //  testimContent[currentActive].classList.add("inactive");
+        /* testimContent[currentActive].classList.add("inactive"); */
       }
-     // testimContent[slide].classList.add("active");
-     // testimDots[slide].classList.add("active");
-
+      /* testimContent[slide].classList.add("active");
+      testimDots[slide].classList.add("active"); */
+ 
       currentActive = currentSlide;
 
       clearTimeout(testimTimer);
@@ -119,8 +119,16 @@ function Customers() {
 
       <div className="wrap">
 
-        <span id="right-arrow" className="arrow right fa fa-chevron-right" ref={testimRightArrowRef}></span>
-        <span id="left-arrow" className="arrow left fa fa-chevron-left " ref={testimLeftArrowRef}></span>
+      <div id="left-arrow" ref={testimLeftArrowRef}>
+      <span id="left-arrow" className="arrow left fa fa-chevron-left ">l</span>
+        </div>
+
+        {/* Right Arrow */}
+        <div id="right-arrow" ref={testimRightArrowRef}>
+        <span id="right-arrow" className="arrow right fa fa-chevron-right">r</span>
+        </div>
+
+
         <ul id="testim-dots" className="dots">
             <li className="dot active"></li>
             <li className="dot"></li>
@@ -131,35 +139,35 @@ function Customers() {
         <div id="testim-content" ref={testimContentRef} className="cont">
             <div className="active">
                 <div className="img">
-                  <img src={Pic} alt='pic 1' />
+                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
                 </div>
                 <h2>Lorem P. Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
             <div>
                 <div className="img">
-                  <img src={Pic} alt='pic 1' />
+                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
                 </div>
                 <h2>Lorem P. Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
             <div>
                 <div className="img">
-                  <img src={Pic} alt='pic 1' />
+                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
                 </div>
                 <h2>Lorem P. Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
             <div>
                 <div className="img">
-                  <img src={Pic} alt='pic 1' />
+                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
                 </div>
                 <h2>Lorem P. Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
             <div>
                 <div className="img">
-                  <img src={Pic} alt='pic 1' />
+                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
                 </div>
                 <h2>Lorem P. Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
