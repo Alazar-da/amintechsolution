@@ -8,9 +8,10 @@ import "../assets/color.css"
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import animationData from '../assets/software3.json';
+/* import Portfolio from './Portfolio'; */
 
 
-function Home() {
+function Home({Portfolio,Team}) {
   const collapse=()=>{
    document.querySelector('#menu').classList.toggle('hidden');
 
@@ -40,7 +41,17 @@ function Home() {
     };
   }, []);
 
+  const handlePortfolio = () => {
+    // Call the handleClick function when the button is clicked
+    Portfolio();
+  };
+  const handleTeam = () => {
+    // Call the handleClick function when the button is clicked
+    Team();
+  };
+
  return(
+
 
     <div className="bg-white md:pl-[85px] md:h-[600px] pb-5 lg:h-screen">
        {window.innerWidth < 768 ? (
