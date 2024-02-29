@@ -169,17 +169,11 @@ function App() {
       </section>
      
  
-<<<<<<< HEAD
       <section id='customers'>
        <Customers/>
 
        </section> 
-=======
-       <section id='customers'>
-       <Customers/>
-
-       </section>
->>>>>>> 155d050d6e4fb1bd6ad55039cb867b0c14801374
+      
   
     
 
