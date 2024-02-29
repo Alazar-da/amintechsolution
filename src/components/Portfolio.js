@@ -5,6 +5,7 @@ import cImage from '../assets/me.jpg';
 import cImage2 from '../assets/me2.jpg';
 import cImage3 from '../assets/me3.jpg';
 import cImage4 from '../assets/me4.jpg';
+import cImage5 from '../assets/me6.jpg';
 function Portfolio() {
     return(
 
@@ -80,7 +81,6 @@ function Portfolio() {
         <div className="profile-pic">
 
        
-            
         
         </div>
         <div className="bottom">
@@ -108,6 +108,8 @@ function Portfolio() {
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         </button>
         <div className="profile-pic">
+
+        <img src={cImage5} alt="Milkiy"/>
 
 
         </div>
@@ -137,7 +139,7 @@ function Portfolio() {
         </button>
         <div className="profile-pic">
 
-         <img src={cImage4} alt="sofi"/>
+         <img src={cImage3} alt="sofi"/>
             
         
         </div>

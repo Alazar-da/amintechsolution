@@ -14,53 +14,112 @@ import Customers from './components/Customers';
 import Contactus from './components/Contactus';
 import Footer from './components/Footer';
 import Trial from './components/Trial';
+import Nav from './components/Nav';
+
+
+
+import React, { useEffect, useRef } from 'react';
+
+
+
+
+
 
 
 function App() {
 
-  const servicesRef = useRef(null);
-  const teamRef = useRef();
-  const portfolioRef = useRef();
-  const contactRef = useRef(null);
-
- /*  const scrollToServices = () => {
-    servicesRef.current.scrollIntoView({ behavior: 'smooth' });
-  }; */
-
-  const scrollToTeam = () => {
-
-    teamRef.current.scrollIntoView({ behavior: 'smooth' });
+  React.useEffect(()=>{
+    document.addEventListener('click', function (event) {
+      if (event.target.matches('a[href^="#"]')) {
+        event.preventDefault(); // Prevent default link behavior
     
-  };
-
-  const scrollToPortfolio = () => {
-
-    portfolioRef.current.scrollIntoView({ behavior: 'smooth' });
+        // Get the target section ID from the href attribute
+        const targetId = event.target.getAttribute('href').slice(1);
     
-  };
-
-  /* const scrollToContact = () => {
-    contactRef.current.scrollIntoView({ behavior: 'smooth' });
-  }; */
-
+        // Use the target section ID to find the corresponding section element
+        const targetSection = document.getElementById(targetId);
+    
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      }
+    });
+  })
   return (
-    <div className="App font-mainFont bg-white scroll-smooth ease-in">
-      <Home  Team={scrollToPortfolio} Portfolio={scrollToTeam}/>
+    <div className="App font-mainFont bg-white" style={{scrollBehavior:'smooth'}}>
+      <Nav home={"#home"} service={"#services"} team={"#portfolio"} portfolio={"#team"} contact={"#contactus"}/>
+     
+
+      <section id='home'>
+      <Home/>
+
+      </section>
+
+
+      <section>
       <About/>
-      <Services ref={servicesRef}/>
+
+      </section>
+
+
+      <section id='services'>
+
+      <Services/>
+
+      </section>
+
+
+      <section id='whyus'>
       <Whyus/>
 
+      </section>
+    
+     
+    
+      <section id='technology'>
       <Technology/>
-      <Security/>
-      <Teams ref={portfolioRef}/>
 
-      <Portfolio ref={teamRef}/>
-      <Customers/>
-      <Contactus ref={contactRef}/>
+        </section>
 
+        <section id='security'>
+        <Security/>
+
+        </section>
+
+     
+    
+      <section id='team'>
+      <Teams/>
+
+      </section>
+
+      <section id='portfolio'>
+      <Portfolio/>
+
+      </section>
+     
+ 
+       <section id='customers'>
+       <Customers/>
+
+       </section>
+  
+    
+
+
+      <section id='contactus'>
+      <Contactus/>
+
+      </section>
+     
+     
+   
+    
       <Footer/>
-      <button onClick={scrollToTeam}>Scroll to Technology</button>
-      <button onClick={scrollToPortfolio}>Scroll to Portfolio</button>
+    
       
     </div>
   );
