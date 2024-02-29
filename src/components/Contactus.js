@@ -3,14 +3,14 @@ import "../assets/color.css"
 
 function Contactus() {
     return(
-      <div className='container my-5 py-5' id='contact'>
+      <div className='container grid grid-cols-1 gap-4' id='contact'>
         <div>
-          <h2 className="lg:text-4xl text-2xl font-bold text-pretty text-primary animate-charcter text-center w-full py-4">Contact Us</h2>
+          <h2 className="lg:text-4xl text-2xl font-bold text-pretty text-primary animate-charcter text-center w-full py-4 mt-7">Contact Us</h2>
         </div>
         <div className="flex flex-row justify-center">
           <div className='hidden md:flex'>
             <img src={cImage} className="rounded-l-[30px]" />
-          </div> 
+          </div>
           
           <form className="rounded-r-[30px] rounded-l-[30px] md:rounded-l-none w-80 md:w-3/5" style={{ backgroundColor: "#94c3f7" }}>
             <h2 className="text-3xl font-bold text-black italic mb-4 text-center py-3">Get In Touch</h2>
