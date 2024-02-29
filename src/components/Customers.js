@@ -135,7 +135,7 @@ function Customers() {
                 <div className="img">
                   <img src={Pic} alt='pic 1' />
                 </div>
-                <h2>Lorem P. Ipsum</h2>
+                <h2 className=''>Lorem P. Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             </div>
             <div>
