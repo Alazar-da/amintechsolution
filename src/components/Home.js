@@ -76,55 +76,7 @@ function Home() {
           </div>
         </nav>
       </header> */}
-      <header className="md:flex md:items-center md:justify-between p-4 pb-0 md:pb-4 text-textColor p-">
-
-  <div className="flex items-center justify-between mb-4 md:mb-0">
-    <h1 className="leading-none text-2xl text-grey-darkest">
-      <a className="no-underline text-grey-darkest hover:text-black" href="#">
-      <img src={Logo} alt='logo'></img>
-      </a>
-    </h1>
-
-    <button className="text-black hover:text-orange md:hidden" onClick={collapse}>
-    <FaBars icon="fa-solid fa-bars" />
-    </button>
-  </div>
- {/*  <form className="mb-4 w-full md:mb-0 md:w-1/4">
-    <label className="hidden" for="search-form">Search</label>
-    <button >Submit</button>
-  </form> */}
-
-  <nav className='hidden md:grid md:grid-cols-3 md:gap-4 w-full' id='menu'>
-    <ul class="md:flex md:col-span-2 md:justify-center md:items-center">
-      <li className="md:mx-[35px] lg:mx-[40px]">
-        <a className="block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
-          Home
-        </a>
-      </li>
-      <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
-          Services
-        </a>
-      </li>
-      <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
-          Team
-        </a>
-      </li>
-      <li className="md:mx-[15px] lg:mx-[30px]">
-        <a className="border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href="#">
-          Portfolio
-        </a>
-      </li>
-    </ul>
-    <div className='border-t md:border-none md:flex md:justify-center md:items-center'>
-      {/* <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Contact Us</button> */}
-      <a class="py-2 md:mt-2 md:p-0 no-underline hover:underline text-primary text-base font-bold hover:text-[#0b476c] md:border-none" href='#'>Contact Us</a>
-    </div>
-  </nav>
-
-
-</header>
+    
       <div className='md:grid md:grid-cols-2 '>
         <div className='my-auto pt-5 md:pt-0 px-5 md:px-0'>
           <h1 className='font-bold lg:text-3xl text-2xl animate-charcter'>Software Development Services</h1>
