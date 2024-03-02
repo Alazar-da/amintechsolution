@@ -8,7 +8,7 @@ import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-sol
 
 //import "./Customer.css";
 
-import "./customer.css"
+import './Customer.css';
 
 
 
@@ -137,6 +137,11 @@ function Customers() {
 
 
   return (
+    <>
+    <div className='grid grid-cols-1 gap-4'>
+      <div className='text-center'>
+        <h2 className='font-bold lg:text-4xl text-2xl text-center animate-charcter mt-7'>Testimonial</h2>
+      </div>
     <section className="container bg-[#0b476c] testim" id="testim">
       <div className="wrap">
         <span className="arrow left" id="left-arrow">
@@ -230,6 +235,8 @@ function Customers() {
         </div>
       </div>
     </section>
+    </div>
+    </>
   );
 }
 
