@@ -118,7 +118,6 @@ function App() {
   return (
     <div className="App font-mainFont bg-white" style={{scrollBehavior:'smooth'}}>
       <Nav home={"#home"} service={"#services"} team={"#portfolio"} portfolio={"#team"} contact={"#contactus"}/>
-     
 
       <section id='home'>
       <Home/>
