@@ -6,7 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 
-import "./Customer.css";
+//import "./Customer.css";
+
+import "./customer.css"
 
 
 
