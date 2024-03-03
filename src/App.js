@@ -128,7 +128,6 @@ function App() {
 
 
     <Nav home={"#home"} service={"#services"} team={"#portfolio"} portfolio={"#team"} contact={"#contactus"}/>
-     
 
       <section id='home'>
       <Home/>

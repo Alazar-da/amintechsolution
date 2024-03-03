@@ -142,7 +142,6 @@ function Customers() {
       document.getElementById("testim").removeEventListener("touchend", handleTouchEnd);
     };
   }, );
-
   return (
     <>
     <div className='grid grid-cols-1 gap-4'>
