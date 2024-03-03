@@ -5,66 +5,68 @@ import "../assets/color.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 
+import './customer.css';
 
-//import "./Customer.css";
-
-import './Customer.css';
-
-
-
-
+const testimData = [
+  {
+    name: "John Doe",
+    image: {Pic},
+    message: "Testimonial message 1"
+  },
+  {
+    name: "Jane Smith",
+    image: "path/to/image2.jpg",
+    message: "Testimonial message 2"
+  },
+  {
+    name: "JaSmith",
+    image: "path/to/image2.jpg",
+    message: "Testimonial message 3"
+  },
+  {
+    name: "JaSmith",
+    image: "path/to/image2.jpg",
+    message: "Testimonial message 4"
+  },
+  {
+    name: "JaSmith",
+    image: "path/to/image2.jpg",
+    message: "Testimonial message 5"
+  },
+  // Add more testimonial objects as needed
+];
 
 function Customers() {
-
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentActive, setCurrentActive] = useState(0);
-  const [testimTimer, setTestimTimer] = useState(null);
-  const testimSpeed = 4500;
-  const ignoreTouch = 30;
 
   useEffect(() => {
-    const testimContent = Array.from(
-      document.getElementById("testim-content").children
-    );
-    const testimDots = Array.from(
-      document.getElementById("testim-dots").children
-    );
-    const testimLeftArrow = document.getElementById("left-arrow");
-    const testimRightArrow = document.getElementById("right-arrow");
+    let touchStartPos = 0;
+    let touchEndPos = 0;
+    let touchPosDiff = 0;
+
     const playSlide = (slide) => {
+      const numSlides = testimContent.length;
 
+      if (slide < 0) {
+        slide = numSlides - 1;
+      }
 
-      for (let k = 0; k < testimDots.length; k++) {
+      if (slide >= numSlides) {
+        slide = 0;
+      }
+
+      setCurrentSlide(slide);
+      setCurrentActive(slide);
+
+      for (let k = 0; k < numSlides; k++) {
         testimContent[k].classList.remove("active");
         testimContent[k].classList.remove("inactive");
         testimDots[k].classList.remove("active");
       }
 
-      if (slide < 0) {
-        slide  = testimContent.length - 1;
-        setCurrentSlide(testimContent.length - 1);
-      }
-
-      if (slide > testimContent.length - 1) {
-        slide = 0;
-        setCurrentSlide(0);
-      }
-
-      if (currentActive !== currentSlide) {
-        testimContent[currentActive].classList.add("inactive");
-      }
       testimContent[slide].classList.add("active");
       testimDots[slide].classList.add("active");
-
-      setCurrentActive(currentSlide);
-
-      clearTimeout(testimTimer);
-      setTestimTimer(
-        setTimeout(() => {
-          playSlide(currentSlide + 1);
-        }, testimSpeed)
-      );
     };
 
     const handleLeftArrowClick = () => {
@@ -110,32 +112,36 @@ function Customers() {
       }
     };
 
-    testimLeftArrow.addEventListener("click", handleLeftArrowClick);
-      testimRightArrow.addEventListener("click", handleRightArrowClick);
+    const testimContent = Array.from(
+      document.getElementById("testim-content").children
+    );
+    const testimDots = Array.from(
+      document.getElementById("testim-dots").children
+    );
+    const testimLeftArrow = document.getElementById("left-arrow");
+    const testimRightArrow = document.getElementById("right-arrow");
 
-      for (let l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener("click", () => handleDotClick(l));
-      }
-  
+    testimLeftArrow.addEventListener("click", handleLeftArrowClick);
+    testimRightArrow.addEventListener("click", handleRightArrowClick);
+
+    for (let l = 0; l < testimDots.length; l++) {
+      testimDots[l].addEventListener("click", () => handleDotClick(l));
+    }
 
     document.addEventListener("keyup", handleKeyUp);
-    testim.addEventListener("touchstart", handleTouchStart);
-  
-      testim.addEventListener("touchend", handleTouchEnd);
-  
-      playSlide(currentSlide);
+    document.getElementById("testim").addEventListener("touchstart", handleTouchStart);
+    document.getElementById("testim").addEventListener("touchend", handleTouchEnd);
+
+    playSlide(currentSlide);
 
     return () => {
-      clearTimeout(testimTimer);
-        testimLeftArrow.removeEventListener("click", handleLeftArrowClick);
-        testimRightArrow.removeEventListener("click", handleRightArrowClick);
-        document.removeEventListener("keyup", handleKeyUp);
-        testim.removeEventListener("touchstart", handleTouchStart);
-        testim.removeEventListener("touchend", handleTouchEnd);
-      };
-    }, []);
-
-
+      testimLeftArrow.removeEventListener("click", handleLeftArrowClick);
+      testimRightArrow.removeEventListener("click", handleRightArrowClick);
+      document.removeEventListener("keyup", handleKeyUp);
+      document.getElementById("testim").removeEventListener("touchstart", handleTouchStart);
+      document.getElementById("testim").removeEventListener("touchend", handleTouchEnd);
+    };
+  }, );
   return (
     <>
     <div className='grid grid-cols-1 gap-4'>
