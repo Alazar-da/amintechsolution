@@ -1,129 +1,147 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect } from "react";
 import Pic from '../assets/me2.jpg';
 import "../assets/color.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
 
+import './customer.css';
 
-//import "./Customer.css";
-
-import "./customer.css"
-
-
-
-
+const testimData = [
+  {
+    name: "John Doe",
+    image: {Pic},
+    message: "Testimonial message 1"
+  },
+  {
+    name: "Jane Smith",
+    image: "path/to/image2.jpg",
+    message: "Testimonial message 2"
+  },
+  {
+    name: "JaSmith",
+    image: "path/to/image2.jpg",
+    message: "Testimonial message 3"
+  },
+  {
+    name: "JaSmith",
+    image: "path/to/image2.jpg",
+    message: "Testimonial message 4"
+  },
+  {
+    name: "JaSmith",
+    image: "path/to/image2.jpg",
+    message: "Testimonial message 5"
+  },
+  // Add more testimonial objects as needed
+];
 
 function Customers() {
-  const testimRef = useRef(null);
-  const testimDotsRef = useRef([]);
-  const testimContentRef = useRef([]);
-  const testimLeftArrowRef = useRef(null);
-  const testimRightArrowRef = useRef(null);
-  const testimSpeed = 4500;
-  let currentSlide = 0;
-  let currentActive = 0;
-  let testimTimer;
-  let touchStartPos;
-  let touchEndPos;
-  let touchPosDiff;
-  const ignoreTouch = 30;
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentActive, setCurrentActive] = useState(0);
 
   useEffect(() => {
-    const testim = testimRef.current;
-    const testimDots = testimDotsRef.current;
-    const testimContent = testimContentRef.current;
-    const testimLeftArrow = testimLeftArrowRef.current;
-    const testimRightArrow = testimRightArrowRef.current;
+    let touchStartPos = 0;
+    let touchEndPos = 0;
+    let touchPosDiff = 0;
 
-    // Testim Script
-    function playSlide(slide) {
-      for (let k = 0; k < testimDots.length; k++) {
-      testimContent[k].classList.remove("active");
-      testimContent[k].classList.remove("inactive");
-     testimDots[k].classList.remove("active");
-      }
+    const playSlide = (slide) => {
+      const numSlides = testimContent.length;
 
       if (slide < 0) {
-        slide = currentSlide = testimContent.length - 1;
+        slide = numSlides - 1;
       }
 
-      if (slide > testimContent.length - 1) {
-        slide = currentSlide = 0;
+      if (slide >= numSlides) {
+        slide = 0;
       }
 
-      /* if (currentActive !== currentSlide) {
-         testimContent[currentActive].classList.add("inactive");
+      setCurrentSlide(slide);
+      setCurrentActive(slide);
+
+      for (let k = 0; k < numSlides; k++) {
+        testimContent[k].classList.remove("active");
+        testimContent[k].classList.remove("inactive");
+        testimDots[k].classList.remove("active");
       }
-       testimContent[slide].classList.add("active");
+
+      testimContent[slide].classList.add("active");
       testimDots[slide].classList.add("active");
- */
-      currentActive = currentSlide;
+    };
 
-      clearTimeout(testimTimer);
-      testimTimer = setTimeout(function () {
-        playSlide(currentSlide += 1);
-      }, testimSpeed);
-    }
+    const handleLeftArrowClick = () => {
+      playSlide(currentSlide - 1);
+    };
 
-    testimLeftArrow.addEventListener("click", function () {
-      playSlide(currentSlide -= 1);
-    });
+    const handleRightArrowClick = () => {
+      playSlide(currentSlide + 1);
+    };
 
-    testimRightArrow.addEventListener("click", function () {
-      playSlide(currentSlide += 1);
-    });
+    const handleDotClick = (index) => {
+      playSlide(index);
+    };
 
-    for (let l = 0; l < testimDots.length; l++) {
-      testimDots[l].addEventListener("click", function () {
-        playSlide((currentSlide = testimDots.indexOf(this)));
-      });
-    }
-
-    playSlide(currentSlide);
-
-    // keyboard shortcuts
-    document.addEventListener("keyup", function (e) {
+    const handleKeyUp = (e) => {
       switch (e.keyCode) {
         case 37:
-          testimLeftArrow.click();
+          handleLeftArrowClick();
           break;
-
         case 39:
-          testimRightArrow.click();
+          handleRightArrowClick();
           break;
-
-        case 39:
-          testimRightArrow.click();
-          break;
-
         default:
           break;
       }
-    });
+    };
 
-    testim.addEventListener("touchstart", function (e) {
+    const handleTouchStart = (e) => {
       touchStartPos = e.changedTouches[0].clientX;
-    });
+    };
 
-    testim.addEventListener("touchend", function (e) {
+    const handleTouchEnd = (e) => {
       touchEndPos = e.changedTouches[0].clientX;
 
       touchPosDiff = touchStartPos - touchEndPos;
 
-      console.log(touchPosDiff);
-      console.log(touchStartPos);
-      console.log(touchEndPos);
-
       if (touchPosDiff > 0 + ignoreTouch) {
-        testimLeftArrow.click();
+        handleLeftArrowClick();
       } else if (touchPosDiff < 0 - ignoreTouch) {
-        testimRightArrow.click();
+        handleRightArrowClick();
       } else {
         return;
       }
-    });
-  }, []);
+    };
+
+    const testimContent = Array.from(
+      document.getElementById("testim-content").children
+    );
+    const testimDots = Array.from(
+      document.getElementById("testim-dots").children
+    );
+    const testimLeftArrow = document.getElementById("left-arrow");
+    const testimRightArrow = document.getElementById("right-arrow");
+
+    testimLeftArrow.addEventListener("click", handleLeftArrowClick);
+    testimRightArrow.addEventListener("click", handleRightArrowClick);
+
+    for (let l = 0; l < testimDots.length; l++) {
+      testimDots[l].addEventListener("click", () => handleDotClick(l));
+    }
+
+    document.addEventListener("keyup", handleKeyUp);
+    document.getElementById("testim").addEventListener("touchstart", handleTouchStart);
+    document.getElementById("testim").addEventListener("touchend", handleTouchEnd);
+
+    playSlide(currentSlide);
+
+    return () => {
+      testimLeftArrow.removeEventListener("click", handleLeftArrowClick);
+      testimRightArrow.removeEventListener("click", handleRightArrowClick);
+      document.removeEventListener("keyup", handleKeyUp);
+      document.getElementById("testim").removeEventListener("touchstart", handleTouchStart);
+      document.getElementById("testim").removeEventListener("touchend", handleTouchEnd);
+    };
+  }, );
 
   return (
     <>
@@ -131,67 +149,99 @@ function Customers() {
       <div className='text-center'>
         <h2 className='font-bold lg:text-4xl text-2xl text-center animate-charcter mt-7'>Testimonial</h2>
       </div>
-      <section className='container bg-[#0b476c] testim' id="testim" ref={testimRef}>
-
+    <section className="container bg-[#0b476c] testim" id="testim">
       <div className="wrap">
-
-      <div id="left-arrow" ref={testimLeftArrowRef}>
-      <span className="arrow left"><FontAwesomeIcon icon={faChevronCircleLeft} /></span>
-        </div>
-
-        {/* Right Arrow */}
-        <div id="right-arrow" ref={testimRightArrowRef}>
-        <span className="arrow right"><FontAwesomeIcon icon={faChevronCircleRight} /></span>
-        </div>
-
-
+        <span className="arrow left" id="left-arrow">
+          <FontAwesomeIcon icon={faChevronCircleLeft} />
+        </span>
+        <span className="arrow right" id="right-arrow">
+          <FontAwesomeIcon icon={faChevronCircleRight} />
+        </span>
         <ul id="testim-dots" className="dots">
-            <li className="dot active"></li>
-            <li className="dot"></li>
-            <li className="dot"></li>
-            <li className="dot"></li>
-            <li className="dot"></li>
+          <li className="dot active"></li>
+          <li className="dot"></li>
+          <li className="dot"></li>
+          <li className="dot"></li>
+          <li className="dot"></li>
         </ul>
-        <div id="testim-content" ref={testimContentRef} className="cont">
-            <div className="active">
-                <div className="img">
-                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
-                </div>
-                <h2 className=''>Lorem P. Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div id="testim-content" className="cont">
+          <div className="active">
+            <div className="img">
+              <img
+                className="w-[64px] h-[64px] rounded-full"
+                src={Pic}
+                alt="pic 1"
+              />
             </div>
-            <div>
-                <div className="img">
-                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
-                </div>
-                <h2>Lorem P. Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Lorem P. Ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+          </div>
+          <div>
+            <div className="img">
+              <img
+                className="w-[64px] h-[64px] rounded-full"
+                src={Pic}
+                alt="pic 1"
+              />
             </div>
-            <div>
-                <div className="img">
-                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
-                </div>
-                <h2>Lorem P. Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Lorem P. Ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+          </div>
+          <div>
+            <div className="img">
+              <img
+                className="w-[64px] h-[64px] rounded-full"
+                src={Pic}
+                alt="pic 1"
+              />
             </div>
-            <div>
-                <div className="img">
-                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
-                </div>
-                <h2>Lorem P. Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Lorem P. Ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+          </div>
+          <div>
+            <div className="img">
+              <img
+                className="w-[64px] h-[64px] rounded-full"
+                src={Pic}
+                alt="pic 1"
+              />
             </div>
-            <div>
-                <div className="img">
-                  <img className='w-[64px] h-[64px] rounded-full' src={Pic} alt='pic 1' />
-                </div>
-                <h2>Lorem P. Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <h2>Lorem P. Ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+          </div>
+          <div>
+            <div className="img">
+              <img
+                className="w-[64px] h-[64px] rounded-full"
+                src={Pic}
+                alt="pic 1"
+              />
             </div>
+            <h2>Lorem P. Ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+          </div>
         </div>
-
       </div>
-      </section>
+    </section>
     </div>
     </>
   );

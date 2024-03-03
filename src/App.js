@@ -13,8 +13,9 @@ import Portfolio from './components/Portfolio';
 import Customers from './components/Customers';
 import Contactus from './components/Contactus';
 import Footer from './components/Footer';
-import Trial from './components/Trial';
+
 import Nav from './components/Nav';
+import Admin from './components/Admin';
 
 
 import "./App.css"
@@ -50,10 +51,10 @@ function App() {
         }
       }
     });
-  })
+  }) 
 
   /////////////////////////////////////////////////////////////////////////////////////////
-  useEffect(() => {
+   useEffect(() => {
    
 
     // Scroll back to top
@@ -111,13 +112,22 @@ function App() {
       top: 0,
       behavior: 'smooth',
     });
-  };
+  }; 
 
 
   /////////////////////////////////////////////////////////////////////////////////////////
   return (
-    <div className="App font-mainFont bg-white" style={{scrollBehavior:'smooth'}}>
-      <Nav home={"#home"} service={"#services"} team={"#portfolio"} portfolio={"#team"} contact={"#contactus"}/>
+
+    <html data-theme="light">
+
+  
+   
+   
+      
+    <div className="App font-mainFont" style={{scrollBehavior:'smooth'}} >
+
+
+    <Nav home={"#home"} service={"#services"} team={"#portfolio"} portfolio={"#team"} contact={"#contactus"}/>
      
 
       <section id='home'>
@@ -156,6 +166,11 @@ function App() {
 
         </section>
 
+
+        <section id='portfolio'>
+      <Portfolio/>
+
+      </section>
      
     
       <section id='team'>
@@ -163,10 +178,7 @@ function App() {
 
       </section>
 
-      <section id='portfolio'>
-      <Portfolio/>
-
-      </section>
+    
      
  
       <section id='customers'>
@@ -182,8 +194,11 @@ function App() {
       <Contactus/>
 
       </section>
+
+
+    
      
-     
+    
    
     
       <Footer/>
@@ -192,11 +207,18 @@ function App() {
       <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
   <path d="M50,25 L75,50 L62,50 L62,75 L38,75 L38,50 L25,50 Z" />
 </svg>
-	</div>
+	</div> 
+
+
     
       
     </div>
-  );
+
+    </html>
+   
+  
+  ); 
+   
 }
 
 export default App;
