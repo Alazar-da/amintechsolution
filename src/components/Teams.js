@@ -76,8 +76,8 @@ function Teams()
         <img className="h-64" src={Work1} alt="Movie"/>
       </div>
       <div className="w-1/2 md:w-2/3 grid content-center bg-[#012236] rounded-r-lg">
-        <h2 className="text-center text-white">Title 1</h2>
-        <p className="text-center text-white">Click the button to watch on Jetflix app.</p>
+        <h2 className="text-center text-white">Palm Socials</h2>
+        <p className="text-center text-white">Cutting edge social media management App.</p>
           {/* <div className="card-actions justify-end">
             <button className="btn btn-primary">Watch</button>
           </div> */}
@@ -88,8 +88,8 @@ function Teams()
         <img className="h-64" src={Work2} alt="Movie"/>
       </div>
       <div className="w-1/2 md:w-2/3 grid content-center bg-[#012236] rounded-r-lg">
-        <h2 className="text-center text-white">Title 1</h2>
-        <p className="text-center text-white">Click the button to watch on Jetflix app.</p>
+        <h2 className="text-center text-white">Commercial website</h2>
+        <p className="text-center text-white">modern commercial wesite for blubest trading a well known phrarmacutical importing company.</p>
           {/* <div className="card-actions justify-end">
             <button className="btn btn-primary">Watch</button>
           </div> */}
@@ -100,8 +100,8 @@ function Teams()
         <img className="h-64" src={Work3} alt="Movie"/>
       </div>
       <div className="w-1/2 md:w-2/3 grid content-center bg-[#012236] rounded-r-lg">
-        <h2 className="text-center text-white">Title 1</h2>
-        <p className="text-center text-white">Click the button to watch on Jetflix app.</p>
+        <h2 className="text-center text-white">Gym management system</h2>
+        <p className="text-center text-white">intutive and mordern gym managemnt system for superstar gym.</p>
           {/* <div className="card-actions justify-end">
             <button className="btn btn-primary">Watch</button>
           </div> */}

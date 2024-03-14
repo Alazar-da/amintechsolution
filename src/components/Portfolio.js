@@ -175,7 +175,7 @@ function Portfolio() {
         </div>
         <div className="bottom">
             <div className="content">
-                <span className="name">Natf e</span>
+                <span className="name">Amir Hayredin</span>
                 <span className="about-me">Marketing Manager </span>
             </div>
            <div className="bottom-bottom">

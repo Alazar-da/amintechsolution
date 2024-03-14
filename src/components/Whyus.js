@@ -18,15 +18,17 @@ function Whyus() {
                 <div className="cards">
                     <div className="card red md:w-[350px] w-full px-3">
                         <p className="tip">Mission</p>
-                        <p className="second-text">some information about the misio of the companh go  ndsk</p>
+                        <p className="second-text">Our mission is to empower businesses and individuals by providing them with cutting-edge software solutions that enhance their digital presence, streamline their operations, and drive their success. We strive to deliver exceptional value through innovative technologies, superior craftsmanship, and a client-centric approach.</p>
                     </div>
                     <div className="card blue md:w-[350px] w-full px-3">
                         <p className="tip">Vision</p>
-                        <p className="second-text">Lorem Ipsum</p>
+                        <p className="second-text">Our vision is to become a globally recognized software company known for its excellence in delivering transformative digital solutions. We aim to be the preferred partner for businesses seeking reliable and innovative software services, setting new industry standards and inspiring positive change through technology.</p>
                     </div>
                     <div className="card green md:w-[350px] w-full px-3">
                         <p className="tip">Ethics</p>
-                        <p className="second-text">Lorem Ipsum</p>
+                        <p className="second-text">
+                        At our software company, we prioritize our clients' needs and goals, going above and beyond to deliver high-quality software solutions that address their specific requirements. We conduct our business with integrity, maintaining the highest ethical standards in all our interactions while respecting confidentiality and protecting our clients' intellectual property.
+                        </p>
                     </div>
                 </div>
             </div>

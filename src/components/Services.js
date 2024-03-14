@@ -16,11 +16,7 @@ function Services() {
                   </div>
                <div className='shrink md:w-2/3 md:pl-[85px]'>
                <p className="text-1xl text-black py-5">
-                  Our website and mobile application development company serves clients with R&D, prototyping, infrastructure
-                  and architecture development, and ongoing agile product delivery, all while adhering to strict compliance and
-                  security standards.Our website and mobile application development company serves clients with R&D, prototyping, infrastructure
-                  and architecture development, and ongoing agile product delivery, all while adhering to strict compliance and
-                  security standards.
+                  Our Company provides the following services
                </p>
             </div>
          </div>
@@ -31,8 +27,8 @@ function Services() {
                </div>
                <div>
                   <h2 className='font-medium text-2xl pt-4'>UI/UX Design</h2>
-                  <p className="text-1xl text-textColor pt-2 pb-3 w-100">Defining powerful endgames for your business and how to achieve them.</p>
-                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0 inline">Get Started <FaArrowRight className='inline'/></button>
+                  <p className="text-1xl text-textColor pt-2 pb-3 w-100">Our dedicated UI/UX designers craft intuitive and visually appealing user interfaces that enhance the overall user experience of your digital products. We follow a user-centric design approach, conducting thorough research and usability testing to ensure that your applications are not only aesthetically pleasing but also highly user-friendly.</p>
+                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0 inline">Learn More <FaArrowRight className='inline'/></button>
                </div>
             </div>
             <div className='col-span-5 md:col-span-2 col-start-2 md:col-start-auto mt-5'>
@@ -41,8 +37,8 @@ function Services() {
                </div>
                <div>
                   <h2 className='font-medium text-2xl pt-4'>Web Development</h2>
-                  <p className="text-1xl text-textColor pt-2 pb-3">Transforming vision into human-centered digital {/* and physical */} experiences.</p>
-                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Get Started <FaArrowRight className='inline'/></button>
+                  <p className="text-1xl text-textColor pt-2 pb-3">Our expert team designs and develops visually stunning and highly functional websites tailored to meet your business objectives. We create responsive and user-friendly websites that provide an exceptional user experience across all devices and browsers.</p>
+                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Learn More <FaArrowRight className='inline'/></button>
                </div>
             </div>
             <div className='col-span-5 md:col-span-2 col-start-2 md:col-start-auto mt-5'>
@@ -51,8 +47,8 @@ function Services() {
                </div>
                <div>
                   <h2 className='font-medium text-2xl pt-4'>Mobile Application</h2>
-                  <p className="text-1xl text-textColor pt-2 pb-3">Building and developing full stack scalable technology solutions.</p>
-                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Get Started <FaArrowRight className='inline'/></button>
+                  <p className="text-1xl text-textColor pt-2 pb-3">Building and developing full stack scalable technology solutions.We specialize in building native and cross-platform mobile applications that run seamlessly on iOS and Android devices. Our skilled developers leverage the latest technologies and frameworks to create robust and feature-rich mobile apps that cater to your unique requirements.</p>
+                  <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Learn More <FaArrowRight className='inline'/></button>
                </div>
             </div>
          </div>

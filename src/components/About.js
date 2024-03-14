@@ -41,7 +41,7 @@ function About() {
                 
                </div>
                <div className="mt-3">
-                  <p className="font-bold text-2xl text-black" > Welcome to our software, web, and mobile development company!</p>
+                  <p className="font-bold text-2xl text-black" > Welcome to our software development company!</p>
                </div>
                <div className="mt-3">
                   <p className="text-black">

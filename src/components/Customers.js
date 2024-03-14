@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Pic from '../assets/me2.jpg';
+//import Pic from '../assets/me2.jpg';
 import "../assets/color.css"
+import Pic from '../assets/profile.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons'
@@ -160,23 +161,23 @@ function Customers() {
           <li className="dot active"></li>
           <li className="dot"></li>
           <li className="dot"></li>
-          <li className="dot"></li>
-          <li className="dot"></li>
+          
         </ul>
         <div id="testim-content" className="cont">
-          <div className="active">
+          
+        
+          <div>
             <div className="img">
               <img
                 className="w-[64px] h-[64px] rounded-full"
                 src={Pic}
+             
                 alt="pic 1"
               />
             </div>
-            <h2>Lorem P. Ipsum</h2>
+            <h2>Ato Adugna Meamer</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco.
+            "Ever since we started using palm socials, managing our social media presence has become effortless. This app has revolutionized the way we handle our social media accounts. It offers powerful features, intuitive interface, and excellent analytics that have helped us streamline our content creation, scheduling, and engagement. With [App Name], we save valuable time and see noticeable improvements in our social media performance. It's a must-have tool for any business looking to level up their social media game."
             </p>
           </div>
           <div>
@@ -184,13 +185,13 @@ function Customers() {
               <img
                 className="w-[64px] h-[64px] rounded-full"
                 src={Pic}
+            
                 alt="pic 1"
               />
             </div>
-            <h2>Lorem P. Ipsum</h2>
+            <h2>Abdulhamid Ali</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            "Working with Mina Tech was a game-changer for our business. They designed and developed a stunning commercial website that perfectly represents our brand and effectively showcases our products and services. Their team was attentive, responsive, and truly understood our vision. The website they created has not only attracted more traffic but has also significantly increased our online conversions. We couldn't be happier with the results and highly recommend Mina Tech for anyone looking to elevate their online presence."
             </p>
           </div>
           <div>
@@ -198,44 +199,13 @@ function Customers() {
               <img
                 className="w-[64px] h-[64px] rounded-full"
                 src={Pic}
+             
                 alt="pic 1"
               />
             </div>
-            <h2>Lorem P. Ipsum</h2>
+            <h2>Mohammed hassena</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-          </div>
-          <div>
-            <div className="img">
-              <img
-                className="w-[64px] h-[64px] rounded-full"
-                src={Pic}
-                alt="pic 1"
-              />
-            </div>
-            <h2>Lorem P. Ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-          </div>
-          <div>
-            <div className="img">
-              <img
-                className="w-[64px] h-[64px] rounded-full"
-                src={Pic}
-                alt="pic 1"
-              />
-            </div>
-            <h2>Lorem P. Ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco.
+            Implementing the system in our gym has been a game-changer. This attendance management system has simplified our operations and enhanced the overall member experience. It's user-friendly, efficient, and allows us to effortlessly track attendance, manage memberships, and generate insightful reports. Our members love the convenience of checking in with just a tap, and our staff appreciates the seamless integration with other gym management processes. [System Name] has truly transformed the way we run our gym, and we highly recommend it to any fitness facility looking to optimize their operation
             </p>
           </div>
         </div>

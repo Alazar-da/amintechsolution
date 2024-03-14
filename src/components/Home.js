@@ -95,8 +95,7 @@ function Home({Portfolio,Team}) {
               <div className="grid grid-cols-4">
                 <div className="col-span-3">
                 <p className='mt-3'>
-                We help you launch and scale your Mobile and Web Apps. Since 2014 we build
-                custom applications loved by millions
+                We help you launch and scale your Mobile and Web Apps.Building and delivering custom applications that have gotten appreciation from many users
                 </p>
                 </div>
               </div>
