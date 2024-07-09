@@ -53,7 +53,7 @@ function Home({Portfolio,Team}) {
  return(
 
 
-    <div className="bg-white md:pl-[85px] md:h-[600px] pb-5 lg:h-screen">
+    <div className="bg-white md:pl-[85px] md:h-[500px] pb-5 xl:h-screen grid content-center">
        {window.innerWidth < 768 ? (
     <div style={lottieBackground} ref={animationContainer}></div>
   ) : null}
@@ -88,12 +88,12 @@ function Home({Portfolio,Team}) {
         </nav>
       </header> */}
     
-      <div className='md:grid md:grid-cols-2 '>
+      <div className='md:grid md:grid-cols-2 mt-5 md:py-0 py-7'>
         <div className='my-auto pt-5 md:pt-0 px-5 md:px-0'>
-          <h1 className='font-bold lg:text-3xl text-2xl animate-charcter'>Software Development Services</h1>
+          <h1 className='font-bold lg:text-3xl text-2xl animate-charcter text-center md:text-start'>Software Development Services</h1>
            
-              <div className="grid grid-cols-4">
-                <div className="col-span-3">
+              <div className="grid grid-cols-10 md:grid-cols-4">
+                <div className="md:col-span-3 col-span-12">
                 <p className='mt-3'>
                 We help you launch and scale your Mobile and Web Apps.Building and delivering custom applications that have gotten appreciation from many users
                 </p>
