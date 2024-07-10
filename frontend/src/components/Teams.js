@@ -61,10 +61,9 @@ function Teams()
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
   }; */
-
     return(
 <>
-<div className="container my-5 grid grid-cols-1 gap-4 content-center lg:h-[700px]" id="portfolio">
+<div className="container my-5 grid grid-cols-1 gap-4 content-center lg:h-[500px]" id="portfolio">
   <div className="text-center mt-10">
   <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center mb-5">Portfolio</h2>
 

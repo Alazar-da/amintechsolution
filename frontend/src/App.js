@@ -157,6 +157,11 @@ function App() {
       <Whyus/>
 
       </section>
+
+      <section id='team'>
+      <Teams/>
+
+      </section>
     
      
     
@@ -177,10 +182,7 @@ function App() {
       </section>
      
     
-      <section id='team'>
-      <Teams/>
-
-      </section>
+    
 
     
      
