@@ -110,12 +110,13 @@ try {
         <div>
           <h2 className="lg:text-4xl text-2xl font-bold text-pretty text-primary animate-charcter text-center w-full py-4 mt-7">Contact Us</h2>
         </div>
-        <div className="flex flex-row justify-center">
-       {/*    <div className='hidden md:flex'>
+        <div className="flex justify-center">
+       {/*    {/* <div className='hidden md:flex'>
             <img src={cImage} className="rounded-l-[30px]" />
+          </div> 
           </div> */}
           
-          <form className="rounded-r-[30px] rounded-l-[30px] md:rounded-l-none w-80 md:w-3/6 bg-cyan-300" style={{ borderRadius:"30px" }} >
+          <form className="rounded-xl w-5/6 md:w-3/6 bg-cyan-300" style={{ borderRadius:"30px" }} >
             <h2 className="text-3xl font-bold text-teal-100 italic mb-4 text-center py-3">Get In Touch</h2>
             <label className="input input-bordered input-info bg-white flex items-center gap-2 mb-5 m-5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>

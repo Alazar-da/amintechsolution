@@ -11,7 +11,7 @@ import animationData from '../assets/software3.json';
 
 const collapse=()=>{
     document.querySelector('#menu').classList.toggle('hidden');
-  
+    document.querySelector('#menu2').classList.toggle('hidden');
    }
   
 const Nav = ({home,service,team,portfolio,contact})=>{
@@ -37,16 +37,16 @@ const Nav = ({home,service,team,portfolio,contact})=>{
       })
 
     return(
-        <header className=" bg-third md:flex md:items-center md:justify-between p-4 pb-0 md:pb-4 text-textColor p- ">
+        <header className="md:flex md:justify-around p-4 md:py-2 md:px-4 text-textColor border-b">
 
 <div className="flex items-center justify-between mb-4 md:mb-0">
   <h1 className="leading-none text-2xl text-grey-darkest">
     <a className="no-underline text-grey-darkest hover:text-black" href={home}>
-     <img src={Logo} alt='logo'></img> 
+     <img src={Logo} alt='logo' className='h-12'></img>
     </a>
   </h1>
 
-  <button className="text-black hover:text-orange md:hidden" onClick={collapse}>
+  <button className="text-black hover:text-[#0b476c] md:hidden" onClick={collapse}>
   <FaBars icon="fa-solid fa-bars" />
   </button>
 </div>
@@ -55,35 +55,36 @@ const Nav = ({home,service,team,portfolio,contact})=>{
   <button >Submit</button>
 </form> */}
 
-<nav className='hidden md:grid md:grid-cols-3 md:gap-4 w-full' id='menu'>
-  <ul class="md:flex md:col-span-2 md:justify-center md:items-center">
-    <li className="md:mx-[35px] lg:mx-[40px]">
-      <a className=" cursor-pointer hover:text-green-500 transition-colors block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href={home}>
+<div className='hidden md:flex' id='menu'>
+  <ul class="flex md:flex-row flex-col md:gap-10 md:items-center">
+    <li className="">
+      <a className="block no-underline hover:underline py-2 text-primary font-bold hover:text-[#0b476c] md:border-none md:p-0" href={home}>
         Home
       </a>
     </li>
-    <li className="md:mx-[15px] lg:mx-[30px]">
-      <a  className=" cursor-pointer hover:text-green-500 transition-colors border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href={service}>
+    <li className="">
+      <a  className="border-t block no-underline hover:underline py-2 text-primary font-bold hover:text-[#0b476c] md:border-none md:p-0" href={service}>
         Services
       </a>
     </li>
-    <li className="md:mx-[15px] lg:mx-[30px]">
-      <a className=" cursor-pointer hover:text-green-500 transition-colors border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href={team}>
+    <li className="">
+      <a className="border-t block no-underline hover:underline py-2 text-primary font-bold hover:text-[#0b476c] md:border-none md:p-0" href={team}>
         Team
       </a>
     </li>
-    <li className="md:mx-[15px] lg:mx-[30px]">
-      <a className=" cursor-pointer hover:text-green-500 transition-colors border-t block no-underline hover:underline py-2 text-primary text-base font-bold hover:text-[#0b476c] md:border-none md:p-0" href={portfolio}>
+    <li className="">
+      <a className="border-t block no-underline hover:underline py-2 text-primary font-bold hover:text-[#0b476c] md:border-none md:p-0" href={portfolio}>
         Portfolio
       </a>
     </li>
   </ul>
-  <div className='border-t md:border-none md:flex md:justify-center md:items-center'>
-    {/* <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Contact Us</button> */}
-    <a className="cursor-pointer hover:text-green-500 transition-colors py-2 md:mt-2 md:p-0 no-underline hover:underline text-primary text-base font-bold hover:text-[#0b476c] md:border-none" href={contact}>Contact Us</a>
-  </div>
-</nav>
+  
+</div>
 
+<div className='border-t md:border-none md:flex md:justify-center md:items-center py-2 hidden' id='menu2'>
+    {/* <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0">Contact Us</button> */}
+    <a class=" md:mt-2 md:p-0 no-underline hover:underline text-primary font-bold hover:text-[#0b476c] md:border-none" href={contact}>Contact Us</a>
+  </div>
 
 </header>
     )
