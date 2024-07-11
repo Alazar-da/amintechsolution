@@ -170,60 +170,60 @@ function Portfolio() {
         <div id="testim-content" className="cont">
           
         
-          <div>
-            <div className="img">
-              <img
-                className="w-[64px] h-[64px] rounded-full bg-white"
-                src={Work1}
-             
-                alt="pic 1"
-              />
-            </div>
-            <h2>Ato Adugna Meamer</h2>
-            <p>
-            "Ever since we started using palm socials, managing our social media presence has become effortless. This app has revolutionized the way we handle our social media accounts. It offers powerful features, intuitive interface, and excellent analytics that have helped us streamline our content creation, scheduling, and engagement. With [App Name], we save valuable time and see noticeable improvements in our social media performance. It's a must-have tool for any business looking to level up their social media game."
-            </p>
-            <h2>Testimonial</h2>
-            <p>
-            "Ever since we started using palm socials, managing our social media presence has become effortless. This app has revolutionized the way we handle our social media accounts. It offers powerful features, intuitive interface, and excellent analytics that have helped us streamline our content creation, scheduling, and engagement. With [App Name], we save valuable time and see noticeable improvements in our social media performance. It's a must-have tool for any business looking to level up their social media game."
-            </p>
-          </div>
-          <div>
-            <div className="img">
-              <img
-                className="w-[64px] h-[64px] rounded-full"
-                src={Work2}
-            
-                alt="pic 1"
-              />
-            </div>
-            <h2>Abdulhamid Ali</h2>
-            <p>
-            "Working with Mina Tech was a game-changer for our business. They designed and developed a stunning commercial website that perfectly represents our brand and effectively showcases our products and services. Their team was attentive, responsive, and truly understood our vision. The website they created has not only attracted more traffic but has also significantly increased our online conversions. We couldn't be happier with the results and highly recommend Mina Tech for anyone looking to elevate their online presence."
-            </p>
-            <h2>Testimonial</h2>
-            <p>
-            "Working with Mina Tech was a game-changer for our business. They designed and developed a stunning commercial website that perfectly represents our brand and effectively showcases our products and services. Their team was attentive, responsive, and truly understood our vision. The website they created has not only attracted more traffic but has also significantly increased our online conversions. We couldn't be happier with the results and highly recommend Mina Tech for anyone looking to elevate their online presence."
-            </p>
-          </div>
-          <div>
-            <div className="img">
-              <img
-                className="w-[64px] h-[64px] rounded-full"
-                src={Work3}
-             
-                alt="pic 1"
-              />
-            </div>
-            <h2>Mohammed hassena</h2>
-            <p>
-            Implementing the system in our gym has been a game-changer. This attendance management system has simplified our operations and enhanced the overall member experience. It's user-friendly, efficient, and allows us to effortlessly track attendance, manage memberships, and generate insightful reports. Our members love the convenience of checking in with just a tap, and our staff appreciates the seamless integration with other gym management processes. [System Name] has truly transformed the way we run our gym, and we highly recommend it to any fitness facility looking to optimize their operation
-            </p>
-            <h2>Testimonial</h2>
-            <p>
-            Implementing the system in our gym has been a game-changer. This attendance management system has simplified our operations and enhanced the overall member experience. It's user-friendly, efficient, and allows us to effortlessly track attendance, manage memberships, and generate insightful reports. Our members love the convenience of checking in with just a tap, and our staff appreciates the seamless integration with other gym management processes. [System Name] has truly transformed the way we run our gym, and we highly recommend it to any fitness facility looking to optimize their operation
-            </p>
-          </div>
+        <div>
+  <div className="img">
+    <img
+      className="w-[64px] h-[64px] rounded-full bg-white"
+      src={Work1}
+      alt="Company Logo"
+    />
+  </div>
+  <h2>Palm Socials</h2>
+  <p>
+    "Ever since we started using Palm Socials, managing our social media presence has become effortless. This app has revolutionized the way we handle our social media accounts. It offers powerful features, intuitive interface, and excellent analytics that have helped us streamline our content creation, scheduling, and engagement. With Palm Socials, we save valuable time and see noticeable improvements in our social media performance. It's a must-have tool for any business looking to level up their social media game."
+  </p>
+  <h2>Selamawit Ayalew, General Manager</h2>
+  {/* <a href="https://www.palmsocials.com" target="_blank" className="text-emerald-400 cursor-pointer hover:text-cyan-900 transition-colors duration-300">Visit Palm Socials</a> */}
+</div>
+
+<div>
+  <div className="img">
+    <img
+      className="w-[64px] h-[64px] rounded-full bg-white"
+      src={Work2}
+      alt="Company Logo"
+    />
+  </div>
+  <h2>BlueBest Trading Commercial Website</h2>
+  <p>
+  "Working with Mina Tech was a game-changer for our business. They designed and developed a stunning commercial website that perfectly represents our brand and effectively showcases our products and services. Their team was attentive, responsive, and truly understood our vision. The website they created has not only attracted more traffic but has also significantly increased our online conversions. We couldn't be happier with the results and highly recommend Mina Tech for anyone looking to elevate their online presence."
+  </p>
+  <h2>Ato Abdulhamid ALi, General Manager</h2>
+  <div>
+  <a target="_blank" href="#" className="text-emerald-400 cursor-pointer hover:text-cyan-900 transition-colors duration-300">Visit BlueBest Trading</a>
+
+  </div>
+ 
+</div>
+
+<div>
+  <div className="img">
+    <img
+      className="w-[64px] h-[64px] rounded-full bg-white"
+      src={Work3}
+      alt="Company Logo"
+    />
+  </div>
+  <h2>SuperStar Gym management</h2>
+  <p>
+  "Implementing the system in our gym has been a game-changer. This attendance management system has simplified our operations and enhanced the overall member experience. It's user-friendly, efficient, and allows us to effortlessly track attendance, manage memberships, and generate insightful reports. Our members love the convenience of checking in with just a tap, and our staff appreciates the seamless integration with other gym management processes. This system has truly transformed the way we run our gym, and we highly recommend it to any fitness facility looking to optimize their operation"
+  </p>
+  <h2>Ato Mohammed Hassena, General Manager</h2>
+ {/*  <a href="#" target="_blank" className="text-emerald-400 cursor-pointer hover:text-cyan-900 transition-colors duration-300">Visit Palm Socials</a> */}
+</div>
+
+        
+         
         </div>
       </div>
     </section>
