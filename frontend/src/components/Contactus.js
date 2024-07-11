@@ -116,8 +116,8 @@ try {
           </div> 
           </div> */}
           
-          <form className="rounded-xl w-5/6 md:w-3/6 bg-cyan-300" style={{ borderRadius:"30px" }} >
-            <h2 className="text-3xl font-bold text-teal-100 italic mb-4 text-center py-3">Get In Touch</h2>
+          <form className="rounded-xl w-5/6 md:w-3/6 bg-cyan-700" style={{ borderRadius:"30px" }} >
+            <h2 className="text-3xl font-bold text-teal-200 italic mb-4 text-center py-3 special">Get In Touch</h2>
             <label className="input input-bordered input-info bg-white flex items-center gap-2 mb-5 m-5">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
               <input type="text" className="grow " placeholder="Name" value={formData.name} onChange={(e)=>setFromData({...formData,name:e.target.value})} />  {errors.name && <span className=' text-rose-700 text-xs'>{errors.name}</span>}
@@ -143,7 +143,12 @@ try {
               <input type="text" className="grow" style={{width:"110px"}} placeholder="Message" value={formData.message} onChange={(e)=>setFromData({...formData,message:e.target.value})} />  {errors.message && <span className=' text-rose-700 text-xs'>{errors.message}</span>}
             </label>
 
-            <button onClick={handleSubmit} className="btn btn-outline btn-success justify-items-center justify-center ml-10 mb-5 w-20">Send</button>
+            <div className='text-center'>
+            <button onClick={handleSubmit} style={{width:"10rem"}} className="btn btn-outline btn-success mb-5 w-20">Send</button>
+
+            </div>
+
+           
             <p className="text-center text-sm text-gray-500">{message}</p>
           </form>
         </div>

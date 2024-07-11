@@ -14,7 +14,7 @@ function Security() {
           <h3 className="text-3xl font-extrabold text-gray-900 sm:text-4xl unreal mt-3">
             Your Data is Safe with Us
           </h3>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-lg text-slate-600 special">
             We prioritize the security of your information
           </p>
         </div>

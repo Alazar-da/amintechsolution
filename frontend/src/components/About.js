@@ -40,8 +40,8 @@ function About() {
                   </div>
                 
                </div>
-               <div className="mt-3">
-                  <p className="font-bold text-2xl text-black" > Welcome to our software development company!</p>
+               <div className="mt-3 text-center special">
+                  <p className="font-bold text-cyan-400 text-2xl" > Welcome to our software development company!</p>
                </div>
                <div className="mt-3">
                   <p className="text-black">
@@ -50,9 +50,10 @@ function About() {
                   <p className="text-black md:flex mt-1 hidden">
                      Our mission is to empower businesses by harnessing the power of technology.
                      We believe that software, web, and mobile applications have the potential to revolutionize industries, streamline processes, and enhance user experiences. Therefore, we work closely with our clients to understand their unique challenges and goals, and then leverage our expertise to develop tailored solutions that address their specific needs.
-                     At the core of our company is a commitment to quality and excellence. We adhere to industry best practices and employ the latest development methodologies to ensure that our projects are executed flawlessly. Our team stays up-to-date with the latest trends and technologies, allowing us to deliver cutting-edge solutions that give our clients a competitive edge in the market.
+                    
                   </p>
                   <p className="text-black mt-1 hidden" id="readmore">
+                  At the core of our company is a commitment to quality and excellence. We adhere to industry best practices and employ the latest development methodologies to ensure that our projects are executed flawlessly. Our team stays up-to-date with the latest trends and technologies, allowing us to deliver cutting-edge solutions that give our clients a competitive edge in the market.
                      Collaboration is key to our success. We believe in building strong partnerships with our clients, working hand-in-hand throughout the development process. We value open communication and transparency, ensuring that our clients are involved at every stage and have full visibility into the progress of their projects. Our goal is to build long-term relationships based on trust, reliability, and mutual success.
                   </p>
                   <button className="text-primary hover:text-green btn-read" style={{"color":"blue"}} id="change" onClick={Readmore}>

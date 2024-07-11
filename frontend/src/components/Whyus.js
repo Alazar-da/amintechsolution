@@ -3,9 +3,9 @@ import "../assets/why.css"
 
 function Whyus() {
     return(
-      <main className='container bg-white py-5'>
+      <main className='container bg-white py-5 text-center'>
          <div className='md:flex justify-center md:flex-row grid justify-items-center lg:w-5/6 relative mt-7'>
-            <div className='bg-primary grid content-center rounded-l-[15px] rounded-r-[15px] h-48 md:h-auto md:rounded-l-[40px] md:rounded-r-none md:2/3 w-full px-3 p-5'>
+            <div className='bg-cyan-800 grid content-center rounded-l-[15px] rounded-r-[15px] h-48 md:h-auto md:rounded-l-[40px] md:rounded-r-none md:2/3 w-full px-3 p-5'>
                <h2 className="font-bold text-[#FFF] lg:text-3xl text-2xl">Why US?</h2>
                <p className="text-[#FFF] md:flex text-xs md:text-base mt-1">
                We deliver web app development services for our clients

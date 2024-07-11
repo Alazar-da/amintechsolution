@@ -94,12 +94,17 @@ function Home({Portfolio,Team}) {
            
               <div className="grid grid-cols-10 md:grid-cols-4">
                 <div className="md:col-span-3 col-span-12">
-                <p className='mt-3'>
-                We help you launch and scale your Mobile and Web Apps.Building and delivering custom applications that have gotten appreciation from many users
+                <p className='mt-3 text-stone-800'>
+                Crafting digital experiences that captivate and inspire. From sleek websites to innovative apps, our custom solutions elevate your online presence. Unlock your brand's full potential with our design expertise.
                 </p>
                 </div>
               </div>
-              <button className="btn btn-outline btn-info px-8 py-2 mt-3"><a href='#contact'>Get in touch</a></button>
+              <button className="btn btn-outline btn-info px-8 py-2 mt-3" onClick={()=>{
+                  const contactSection = document.getElementById('services');
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+              }}>Learn More</button>
 
         </div>
         <div className='hidden md:inline'>

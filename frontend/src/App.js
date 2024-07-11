@@ -13,9 +13,11 @@ import Portfolio from './components/Portfolio';
 import Customers from './components/Customers';
 import Contactus from './components/Contactus';
 import Footer from './components/Footer';
+import BuPortfolio from './components/BuPortfolio';
 
 import Nav from './components/Nav';
 import Admin from './components/Admin';
+import Testimonial from './components/Testimonial';
 
 import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
 
@@ -132,7 +134,7 @@ function App() {
     <div className="App font-mainFont" style={{scrollBehavior:'smooth'}} >
 
 
-    <Nav home={"#home"} service={"#services"} team={"#portfolio"} portfolio={"#team"} contact={"#contactus"}/>
+    <Nav home={"#home"} service={"#services"} team={"#about"} portfolio={"#team"} contact={"#contactus"}/>
 
       <section id='home'>
       <Home/>
@@ -140,7 +142,7 @@ function App() {
       </section>
 
 
-      <section>
+      <section id="about">
       <About/>
 
       </section>
@@ -159,7 +161,8 @@ function App() {
       </section>
 
       <section id='team'>
-      <Teams/>
+      <Teams/> 
+ 
 
       </section>
     
@@ -177,7 +180,7 @@ function App() {
 
 
         <section id='portfolio'>
-      <Portfolio/>
+      <BuPortfolio/>
 
       </section>
      

@@ -19,10 +19,10 @@ function Technology() {
       <main className="container">
         <div className="text-center mt-7">
           <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center mb-5">Technology we use</h2>
-          <p className="text-gray-700">
+        {/*   <p className="text-gray-700">
             Our team utilizes cutting-edge technology to provide innovative solutions to our clients.
             This includes software development tools and machine learning algorithms.
-          </p>
+          </p> */}
       </div>
   <div className="flex flex-col mt-5">
   <h2 className="text-xl font-bold text-blue ml-10">Front-End</h2>

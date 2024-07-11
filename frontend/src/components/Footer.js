@@ -11,13 +11,13 @@ function Footer() {
               <div className="md:w-2/5">
              
                  
-                   <iframe className="border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.64121134244!2d38.694204199999994!3d9.0051232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b878a9bf299c9%3A0x9a1f51e74e262f37!2sFAMILY%20TOWER!5e0!3m2!1sen!2set!4v1689333869222!5m2!1sen!2set" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe className="border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.5463105112794!2d38.76487527399504!3d8.921699790661435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b83634475d515%3A0xb32dbcddff38da0c!2sKaliti!5e0!3m2!1sen!2set!4v1720683605671!5m2!1sen!2set" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
               </div>
               <div className="flex flex-col md:w-2/5 pt-3 text-center">
                  <h2 className="font-bold text-1xl">Address</h2>
                  <ul className="text-sm"> 
-                  <li className="flex justify-center items-center flex-col"> <ul> <li className="flex justify-center items-center"> Addis Ababa City </li> <li className="flex justify-center items-center"> Meskel flower Rahmet Tower 4th floor #402 </li> </ul> </li>
+                  <li className="flex justify-center items-center flex-col"> <ul> <li className="flex justify-center items-center"> Addis Ababa City </li> <li className="flex justify-center items-center"> Kaliti Yemin Tower 0th floor #00 </li> </ul> </li>
                  <li className="flex justify-center items-center flex-row"> 
                   <span className="pr-3">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -25,7 +25,7 @@ function Footer() {
                       </svg>
                     </span>
                     <span>
-                      +251115589794
+                      <a className="" href="tel:+251927727196">+251927727196</a>
                     </span>
                   </li>
                   <li className="flex justify-center items-center flex-row"> 
@@ -35,29 +35,11 @@ function Footer() {
                         </svg>
                       </span>
                       <span>
-                        +251116671376
+                      <a className="" href="tel:+251922313333">+251922313333</a>
                       </span>
                     </li>
-                    <li className="flex justify-center items-center flex-row"> 
-                      <span className="pr-3">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                          </svg>
-                        </span>
-                        <span>
-                          +251116671693
-                        </span>
-                      </li>
-                  <li className="flex justify-center items-center flex-row">
-                     <span className="pr-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                      </svg>
-                    </span>
-                    <span>
-                      +251942129611
-                    </span>
-                  </li>
+                   
+                
                   <li className="flex justify-center items-center flex-row">
                     <span className="pr-3">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-fill" viewBox="0 0 16 16">
@@ -65,7 +47,7 @@ function Footer() {
                       </svg>
                     </span>
                     <span>
-                      <a href="#">info@Milkomiiconsultancy.com</a>
+                      <a href="#">info@Minatech.com</a>
                     </span>
                   </li>
                   <li className="flex justify-center items-center flex-row">
@@ -75,7 +57,7 @@ function Footer() {
                       </svg>
                     </span>
                     <span>
-                      <a href="#">https://www.Milkomiiconsultancy.com</a>
+                      <a href="#">https://www.Minatech.com</a>
                     </span>
                   </li>
            
@@ -89,13 +71,14 @@ function Footer() {
               <div className="flex flex-col gap-1">
                 <h2 className="font-bold text-1xl english-content">Links</h2>
             
-                <a href="#home" className="cursor-pointer hover:text-green-500 transition-colors duration-300 english-content text-sm">Home</a>
-                <a href="#about" className="cursor-pointer hover:text-green-500 transition-colors duration-300 english-content text-sm">About</a>
-                <a href="#what" className="cursor-pointer hover:text-green-500 transition-colors duration-300 english-content text-sm">Expertise</a>
+                <a href="#home" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">Home</a>
+                <a href="#about" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">About</a>
+                <a href="#services" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">Services</a>
+                <a href="#customers" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">Portfolio</a>
   
               </div>
               <div className="flex justify-around w-5/6 mt-5">
-                <div>
+                <div className="">
                   <a className="" href="#">
                     <svg className="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
                       <path className="footer-social-amoeba-path" d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"></path>
@@ -141,7 +124,7 @@ function Footer() {
         <div className="block w-full bg-primary py-2">
           <div className="text-center">
             <p className="">
-              <a className="" href="#" target="_self"> ©2024. | Designed By: MINA. | All rights reserved. </a>
+              <a className="cursor-pointer hover:text-cyan-900 transition-colors duration-300 " href="#" target="_self"> ©2024. | Designed By: <span className="text-rose-700">MINA.</span> | All rights reserved. </a>
             </p>
           </div>
         </div>
