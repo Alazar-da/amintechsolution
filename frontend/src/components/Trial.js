@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import React, { useState, useEffect } from "react";
 import Pic from '../assets/me2.jpg';
 import "../assets/color.css"
@@ -209,4 +207,3 @@ function Customers() {
 }
 
 export default Customers;
->>>>>>> a79c67d0716e2229b4d16c4bcdd06014f025e5cd

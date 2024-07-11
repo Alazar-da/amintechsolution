@@ -10,6 +10,7 @@ import lottie from 'lottie-web';
 import animationData from '../assets/software3.json';
 /* import Portfolio from './Portfolio'; */
 
+
 function Home({Portfolio,Team}) {
   const collapse=()=>{
    document.querySelector('#menu').classList.toggle('hidden');
