@@ -53,7 +53,7 @@ function Home({Portfolio,Team}) {
  return(
 
 
-    <div className="bg-white md:pl-[85px] md:h-[500px] pb-5 xl:h-screen grid content-center">
+    <div className="md:pl-[85px] md:h-[500px] pb-5 xl:h-screen grid content-center">
        {window.innerWidth < 768 ? (
     <div style={lottieBackground} ref={animationContainer}></div>
   ) : null}

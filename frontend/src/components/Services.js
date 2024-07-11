@@ -7,7 +7,7 @@ import "../assets/color.css"
 
 function Services() {
     return(
-      <main className=" flex flex-col content-center bg-third py-5 mt-7" id='services'>
+      <main className=" flex flex-col content-center py-5 mt-7" id='services'>
          <div className='container mt-5 flex flex-col'>
             <div className='mt-3'>
             <div className='text-center'>
@@ -25,7 +25,7 @@ function Services() {
                </div>
                <div>
                   <h2 className='text-2xl pt-4 special text-emerald-500'>UI/UX Design</h2>
-                  <p className="text-md text-stone-700 pt-2 pb-3">Our dedicated UI/UX designers craft intuitive and visually appealing user interfaces that enhance the overall user experience of your digital products. We follow a user-centric design approach, conducting thorough research and usability testing to ensure that your applications are not only aesthetically pleasing but also highly user-friendly.</p>
+                  <p className="text-md text-stone-700 pt-2 pb-3">Our dedicated UI/UX designers craft intuitive and visually appealing user interfaces that enhance the overall user experience of your digital products. We follow a user-centric design approach, conducting thorough research and usability testing to ensure that your applications are not only aesthetically pleasing but also highly user-friendly.aesthetically pleasing.</p>
                   <button class="border border-black rounded-full px-8 py-2 mt-3 md:mt-0 inline">Learn More <FaArrowRight className='inline'/></button>
                </div>
             </div>

@@ -14,7 +14,7 @@ const collapse=()=>{
     document.querySelector('#menu2').classList.toggle('hidden');
    }
   
-const Nav = ({home,service,team,portfolio,contact})=>{
+const Nav = ({home,about,service,contact})=>{
     React.useEffect(()=>{
         document.addEventListener('click', function (event) {
           if (event.target.matches('a[href^="#"]')) {
@@ -63,7 +63,7 @@ const Nav = ({home,service,team,portfolio,contact})=>{
       </a>
     </li>
     <li className="">
-      <a className="border-t block no-underline hover:underline py-2  text-emerald-900  hover:text-[#0b476c] md:border-none md:p-0 cursor-pointer hover:text-blue-800 transition-colors" href={team}>
+      <a className="border-t block no-underline hover:underline py-2  text-emerald-900  hover:text-[#0b476c] md:border-none md:p-0 cursor-pointer hover:text-blue-800 transition-colors" href={about}>
         About us
       </a>
     </li>

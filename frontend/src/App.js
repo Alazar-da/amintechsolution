@@ -131,10 +131,10 @@ function App() {
    
    
       
-    <div className="App font-mainFont" style={{scrollBehavior:'smooth'}} >
+    <div className="App font-mainFont bg-slate-50" style={{scrollBehavior:'smooth'}} >
 
 
-    <Nav home={"#home"} service={"#services"} team={"#about"} portfolio={"#team"} contact={"#contactus"}/>
+    <Nav home={"#home"} service={"#services"} about={"#about"} contact={"#contactus"}/>
 
       <section id='home'>
       <Home/>
@@ -160,8 +160,10 @@ function App() {
 
       </section>
 
-      <section id='team'>
-      <Teams/> 
+
+
+      <section>
+      <Portfolio /> 
  
 
       </section>
@@ -178,22 +180,10 @@ function App() {
 
         </section>
 
-
-        <section id='portfolio'>
-      <BuPortfolio/>
-
-      </section>
-     
-    
-    
-
-    
-     
- 
-      <section id='customers'>
+     {/*  <section id='customers'>
        <Customers/>
 
-       </section> 
+       </section>  */}
       
   
     

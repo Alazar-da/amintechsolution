@@ -23,7 +23,7 @@ function About() {
 
     return(
 
-       <main className="container relative bg-white">
+       <main className="container relative">
          <div className="mt-2 flex justify-center " >
              {/* <div className='grid content-center justify-items-center'>
                <h1 className="leading-none text-2xl text-grey-darkest">
