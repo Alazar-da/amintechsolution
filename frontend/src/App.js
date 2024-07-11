@@ -19,8 +19,6 @@ import Nav from './components/Nav';
 import Admin from './components/Admin';
 
 
-import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
-
 
 
 import "./App.css"
