@@ -17,7 +17,7 @@ import BuPortfolio from './components/BuPortfolio';
 
 import Nav from './components/Nav';
 import Admin from './components/Admin';
-import Testimonial from './components/Testimonial';
+
 
 import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
 
