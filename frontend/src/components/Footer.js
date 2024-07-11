@@ -121,7 +121,7 @@ function Footer() {
           
           
         </div>
-        <div className="block w-full bg-primary py-2">
+        <div className="block w-full bg-cyan-600 py-2">
           <div className="text-center">
             <p className="">
               <a className="cursor-pointer hover:text-cyan-900 transition-colors duration-300 " href="#" target="_self"> ©2024. | Designed By: <span className="text-rose-700">MINA.</span> | All rights reserved. </a>
