@@ -1,8 +1,8 @@
 {
   "name": "amintechsolution",
   "version": "0.1.0",
-  "homepage": "https://alazar-da.github.io/amintechsolution/frontend",
-  "proxy": "http://localhost:5000",
+  "homepage": "https://alazar-da.github.io/amintechsolution/",
+  "proxy": "http://localhost:5000/frontend",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
