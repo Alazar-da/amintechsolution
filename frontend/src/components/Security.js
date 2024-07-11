@@ -7,7 +7,7 @@ function Security() {
     return(
 
 
-    <section className="bg-third py-12 mt-7">
+    <section className="py-12 mt-7">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
         <h2 className="font-bold lg:text-4xl text-2xl  animate-charcter text-center">Security</h2>

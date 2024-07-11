@@ -129,7 +129,7 @@ function App() {
    
    
       
-    <div className="App font-mainFont bg-slate-50" style={{scrollBehavior:'smooth'}} >
+    <div className="App font-mainFont bg-emerald-100" style={{scrollBehavior:'smooth'}} >
 
 
     <Nav home={"#home"} service={"#services"} about={"#about"} contact={"#contactus"}/>
