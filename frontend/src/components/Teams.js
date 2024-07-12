@@ -6,6 +6,7 @@ import cImage2 from '../assets/me2.jpg';
 import cImage3 from '../assets/me3.jpg';
 import cImage4 from '../assets/me4.jpg';
 import cImage5 from '../assets/me6.jpg';
+import cImage6 from '../assets/me7.jpg';
 function Teams() {
     return(
 
