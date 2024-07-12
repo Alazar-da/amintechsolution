@@ -74,7 +74,7 @@ function Footer() {
                 <a href="#home" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">Home</a>
                 <a href="#about" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">About</a>
                 <a href="#services" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">Services</a>
-                <a href="#customers" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">Portfolio</a>
+                <a href="#portfolio" className="cursor-pointer hover:text-cyan-500 transition-colors duration-300 english-content text-sm">Portfolio</a>
   
               </div>
               <div className="flex justify-around w-5/6 mt-5">
