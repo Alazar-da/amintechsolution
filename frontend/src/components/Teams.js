@@ -10,8 +10,8 @@ function Teams() {
     return(
 
        <>
-         <div className='container px-5 py-5 md:pl-[85px] lg:h-[900px] mt-7'>
-            <h3 className='font-bold lg:text-4xl text-2xl  animate-charcter text-center w-full mt-7'>OUR TEAM</h3>
+         <div className='container px-5 py-5 md:pl-[85px] lg:h-[800px]' style={{"margin-top":"20px"}}>
+            <h3 className='font-bold lg:text-4xl text-2xl  animate-charcter text-center w-full mt-7 mb-5'>OUR TEAM</h3>
 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center">
 
