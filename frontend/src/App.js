@@ -163,7 +163,7 @@ function App() {
 </section>
 
 
-      <section>
+    <section>
       <Portfolio /> 
  
 
