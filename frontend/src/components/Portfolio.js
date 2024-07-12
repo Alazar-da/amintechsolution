@@ -179,7 +179,7 @@ function Portfolio() {
     />
   </div>
   <h2>Palm Socials</h2>
-  <p>
+  <p className="w-full md:w-5/6 md:m-auto text-white">
     "Ever since we started using Palm Socials, managing our social media presence has become effortless. This app has revolutionized the way we handle our social media accounts. It offers powerful features, intuitive interface, and excellent analytics that have helped us streamline our content creation, scheduling, and engagement. With Palm Socials, we save valuable time and see noticeable improvements in our social media performance. It's a must-have tool for any business looking to level up their social media game."
   </p>
   <h2>Selamawit Ayalew, General Manager</h2>
@@ -195,7 +195,7 @@ function Portfolio() {
     />
   </div>
   <h2>BlueBest Trading Commercial Website</h2>
-  <p>
+  <p className="w-full md:w-5/6 md:m-auto text-white">
   "Working with Mina Tech was a game-changer for our business. They designed and developed a stunning commercial website that perfectly represents our brand and effectively showcases our products and services. Their team was attentive, responsive, and truly understood our vision. The website they created has not only attracted more traffic but has also significantly increased our online conversions. We couldn't be happier with the results and highly recommend Mina Tech for anyone looking to elevate their online presence."
   </p>
   <h2>Ato Abdulhamid ALi, General Manager</h2>
@@ -215,7 +215,7 @@ function Portfolio() {
     />
   </div>
   <h2>SuperStar Gym management</h2>
-  <p>
+  <p className="w-full md:w-5/6 md:m-auto text-white">
   "Implementing the system in our gym has been a game-changer. This attendance management system has simplified our operations and enhanced the overall member experience. It's user-friendly, efficient, and allows us to effortlessly track attendance, manage memberships, and generate insightful reports. Our members love the convenience of checking in with just a tap, and our staff appreciates the seamless integration with other gym management processes. This system has truly transformed the way we run our gym, and we highly recommend it to any fitness facility looking to optimize their operation"
   </p>
   <h2>Ato Mohammed Hassena, General Manager</h2>
