@@ -158,6 +158,9 @@ function App() {
 
       </section>
 
+<section>
+  <Teams/>
+</section>
 
 
       <section>
