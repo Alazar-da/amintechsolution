@@ -6,17 +6,37 @@ import cImage2 from '../assets/me2.jpg';
 import cImage3 from '../assets/me3.jpg';
 import cImage4 from '../assets/me4.jpg';
 import cImage5 from '../assets/me6.jpg';
+import { useState,useEffect } from "react";
+
+
 function Teams() {
+  const [mainHeader,setMainHeader]=useState();
+  const [teams,setTeams]=useState();
+
+  useEffect(() => {
+    window.innerWidth < 768 ? (
+      setMainHeader("grid w-full items-center justify-center carousel carousel-vertical rounded-box h-96")
+    ) : setMainHeader("grid w-full lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center")
+    
+    window.innerWidth < 768 ? (
+      setTeams("carousel-item h-full card4 my-4")
+    ) : setTeams("card4 my-4")
+  });
+
+
+
+
+
     return(
 
        <>
-         <div className='container px-5 py-5 md:pl-[85px] lg:h-[800px]' style={{"margin-top":"20px"}}>
+         <div className='m-auto lg:h-[800px]' style={{"margin-top":"20px"}}>
             <h3 className='font-bold lg:text-4xl text-2xl  animate-charcter text-center w-full mt-7 mb-5'>OUR TEAM</h3>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center">
+            <div className={mainHeader} >
 
 
-            <div className="card4 m-6">
+            <div className={teams}>
                 <button className="mail">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                 </button>
@@ -44,7 +64,7 @@ function Teams() {
                 </div>
     </div>
     
-    <div className="card4 m-6">
+    <div className={teams}>
         <button className="mail">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         </button>
@@ -74,7 +94,7 @@ function Teams() {
         </div>
     </div>
     
-    <div className="card4 m-6">
+    <div className={teams}>
         <button className="mail">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         </button>
@@ -103,7 +123,7 @@ function Teams() {
         </div>
     </div>
 
-    <div className="card4 m-6">
+    <div className={teams}>
         <button className="mail">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         </button>
@@ -133,7 +153,7 @@ function Teams() {
         </div>
     </div>
 
-    <div className="card4  m-6">
+    <div className={teams}>
         <button className="mail">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         </button>
@@ -163,7 +183,7 @@ function Teams() {
         </div>
     </div>
 
-    <div className="card4 m-6">
+    <div className={teams}>
         <button className="mail">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         </button>
