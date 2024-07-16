@@ -1,5 +1,6 @@
 require('dotenv').config()
 require("./config/database").connect()
+const path = require('path')
 
 
 
@@ -28,12 +29,22 @@ app.use(cors(corsOptions))
 
 
 
+
 //var urlencodedParser = bodyparser.urlencoded({extended:true})
 var urlencodedParser2 = express.urlencoded({extended:true})
 
 app.use(urlencodedParser2);
 
 app.use(express.json())
+
+
+app.use(express.static(path.join(__dirname, "public")));
+
+
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 
 
 

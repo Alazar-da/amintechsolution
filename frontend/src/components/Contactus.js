@@ -137,9 +137,8 @@ try {
 
 
             <label className="input input-bordered input-info flex bg-white items-center gap-2 mb-10 m-5">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 opacity-70">
-                <path d="M12 2C5.373 2 0 6.373 0 12c0 2.77 1.19 5.282 3.086 7.03A11.936 11.936 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm1 17h-2v-2h2v2zm4-4H7v-1h10v1zm0-3H7V8h10v4z" />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="message"><path d="M5.2 22c-.4 0-.9-.1-1.3-.2s-.6-.3-.8-.5l-.1-.1c-.1-.1-.2-.3-.2-.4 0-.2.1-.3.3-.4.8-.4 1.5-1.1 1.9-1.9 0-.1 0-.2.1-.3C2.3 16.5.7 13.8.7 11 .6 6 5.7 2 12 2c6.3 0 11.4 4 11.4 9s-5.1 9.1-11.4 9.1c-.6 0-1.3 0-1.9-.1-1.5 1.3-3.2 2-4.9 2zm-1-1.1c1.7.4 3.7-.3 5.5-1.8 0-.1.2-.2.3-.1.6.1 1.3.1 2 .1 5.7 0 10.4-3.6 10.4-8.1S17.7 3 12 3 1.6 6.6 1.6 11c0 2.6 1.6 5 4.3 6.5.2.1.3.4.2.6 0 .3-.1.6-.3.9-.4.8-1 1.4-1.6 1.9z"></path></svg>
+
               <input type="text" className="grow" style={{width:"110px"}} placeholder="Message" value={formData.message} onChange={(e)=>setFromData({...formData,message:e.target.value})} />  {errors.message && <span className=' text-rose-700 text-xs'>{errors.message}</span>}
             </label>
 

@@ -41,11 +41,11 @@ function About() {
                 
                </div>
                <div className="mt-3 text-center special">
-                  <p className="font-bold text-cyan-400 text-2xl" > Welcome to our software development company!</p>
+                  <p className="font-bold text-emerald-400 text-2xl" > Welcome to our software development company!</p>
                </div>
                <div className="mt-3">
                   <p className="text-black">
-                     At AMINTECH, we are passionate about creating innovative solutions that drive digital transformation for businesses around the world. With a team of highly skilled developers, designers, and technology enthusiasts, we strive to deliver exceptional software products and services that exceed our clients' expectations.
+                     At MINA TECH, we are passionate about creating innovative solutions that drive digital transformation for businesses around the world. With a team of highly skilled developers, designers, and technology enthusiasts, we strive to deliver exceptional software products and services that exceed our clients' expectations.
                   </p>
                   <p className="text-black md:flex mt-1 hidden">
                      Our mission is to empower businesses by harnessing the power of technology.

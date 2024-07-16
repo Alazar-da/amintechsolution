@@ -52,7 +52,7 @@
   
   .box {
     --size: fit-content;
-    --cone-color: #ff2770;
+    --cone-color: #245a8a;
     --rounded: 16px;
     --border-size: 1px;
     transition: border-width 1s linear;
