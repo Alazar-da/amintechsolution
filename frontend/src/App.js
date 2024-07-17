@@ -18,6 +18,8 @@ import BuPortfolio from './components/BuPortfolio';
 import Nav from './components/Nav';
 import Admin from './components/Admin';
 
+import { Helmet } from 'react-helmet';
+
 
 
 
@@ -122,11 +124,22 @@ function App() {
   /////////////////////////////////////////////////////////////////////////////////////////
   return (
 
+
+
     
     <html data-theme="light">
 
   
-   
+   <Helmet>
+   <title>Mina Tech</title>
+   <meta name="description" content="Mina tech is the next gen tech company"/>
+   <meta name="keywords" content="Mina, mina tech, web development" />
+
+   <meta property="og:title" content="Mina Tech" />
+    <meta property="og:description" content="Mina tech is the next gen tech company" />
+    <meta property="og:image" content="%PUBLIC_URL%/mina.png" />
+    
+   </Helmet>
    
       
     <div className="App font-mainFont bg-emerald-100" style={{scrollBehavior:'smooth'}} >
