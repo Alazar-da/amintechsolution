@@ -200,11 +200,14 @@ function Portfolio() {
   </p>
   <h2>Ato Abdulhamid ALi, General Manager</h2>
   <div>
-  <a target="_blank" href="#" className="text-emerald-400 cursor-pointer hover:text-cyan-900 transition-colors duration-300">Visit BlueBest Trading</a>
+ 
 
   </div>
+  <a target="_blank" href="#" className="text-emerald-400 cursor-pointer hover:text-cyan-900 transition-colors duration-300">Visit BlueBest Trading</a>
+  
  
 </div>
+
 
 <div>
   <div className="img">

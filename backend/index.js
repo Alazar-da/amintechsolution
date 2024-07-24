@@ -1,6 +1,7 @@
 require('dotenv').config()
 require("./config/database").connect()
 const path = require('path')
+const cors = require('cors')
 
 
 
@@ -10,7 +11,7 @@ const express = require('express')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const cookieParser = require('cookie-parser')
-const cors = require('cors')
+
 
 var corsOptions = {
   origin: "http://localhost:3000"
@@ -25,7 +26,7 @@ const message = require("./routes/Message").message
 app.use(cookieParser())
 app.use("/message",message)
 
-app.use(cors(corsOptions))
+app.use(cors())
 
 
 

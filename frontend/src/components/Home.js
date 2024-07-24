@@ -90,7 +90,7 @@ function Home({Portfolio,Team}) {
     
       <div className='md:grid md:grid-cols-2 mt-5 md:py-0 py-7'>
         <div className='my-auto pt-5 md:pt-0 px-5 md:px-0'>
-          <h1 className='font-bold lg:text-3xl text-2xl animate-charcter text-center md:text-start'>Software Development Services</h1>
+          <h1 className='font-bold lg:text-3xl text-2xl animate-charcter text-center md:text-start'>Mina Technologies</h1>
            
               <div className="grid grid-cols-10 md:grid-cols-4">
                 <div className="md:col-span-3 col-span-12">

@@ -131,13 +131,15 @@ function App() {
 
   
    <Helmet>
-   <title>Mina Tech</title>
-   <meta name="description" content="Mina tech is the next gen tech company"/>
-   <meta name="keywords" content="Mina, mina tech, web development" />
+   <title>Mina Technologies</title>
+   <meta property="title" content="mina technologies" />
+    <meta name="description" content="Mina Tech is a visionary, next-generation technology company dedicated to innovating and shaping the future of digital solutions."/>
+    <meta name="keywords" content="mina, mina technologies, web development,web development,technologies" />
+ 
+    <meta property="og:title" content="mina technologies" />
+     <meta property="og:description" content="mina technologies is a visionary, next-generation technology company dedicated to innovating and shaping the future of digital solutions." />
 
-   <meta property="og:title" content="Mina Tech" />
-    <meta property="og:description" content="Mina tech is the next gen tech company" />
-    <meta property="og:image" content="%PUBLIC_URL%/mina.png" />
+    <meta property="og:image" content="%PUBLIC_URL%/mina2.jpg" />
     
    </Helmet>
    

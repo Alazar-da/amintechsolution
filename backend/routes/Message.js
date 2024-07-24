@@ -172,7 +172,7 @@ message.post("/send",async(req,res)=>{
           name: "MINA TECH",
           address: "contactminatech@gmail.com",
         },
-        to: data.email,
+        to: "imranhayredin89@gmail.com",
         subject: "Message from MINA Tech ✔",
         html: `
           <div style="font-family: Arial, sans-serif; padding: 20px;">

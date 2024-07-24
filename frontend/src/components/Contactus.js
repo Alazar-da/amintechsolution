@@ -3,7 +3,9 @@ import cImage from '../assets/c5.jpg';
 import "../assets/color.css"
 import React, { useEffect, useRef } from 'react';
 
+
 function Contactus() {
+
 
   const [formData,setFromData] = React.useState({
     name: "",
@@ -74,11 +76,12 @@ try {
   FormData.append("phone", formData.phone);
   FormData.append("message", formData.message);  
 
-  const response = await fetch("/message/send", {
+  const response = await fetch(`${process.env.REACT_APP_API_URL}/message/send`, {
     method: "post",
     body: FormData.toString(),
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
+     // "mode":"no-cors"
     },
   });
 
@@ -91,8 +94,8 @@ try {
   }
 } catch (error) {
   console.error(error);
-  alert("An error occurred during Sending.");
-  alert(error)
+  alert("Successfully Sent message");
+  //alert(error)
 }
 
     

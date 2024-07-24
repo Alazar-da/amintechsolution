@@ -1,5 +1,5 @@
 import Lotti from '../img/lotti.svg';
-import Logo from '../img/logo.svg';
+import Logo from '../img/mina2.jpg';
 import { FaBars } from "react-icons/fa";
 
 import '../index.css';
@@ -39,10 +39,10 @@ const Nav = ({home,about,service,contact})=>{
     return(
         <header className="md:flex md:justify-around p-4 md:py-2 md:px-4 text-textColor border-b">
 
-<div className="flex items-center justify-between mb-4 md:mb-0">
+<div className="flex items-center justify-between mb-4 md:mb-0 bg-emerald-100">
   <h1 className="leading-none text-2xl text-grey-darkest">
     <a className="no-underline text-grey-darkest hover:text-black" href={home}>
-     <img src={Logo} alt='logo' className='h-12'></img>
+     <img src={Logo} alt='logo' className='h-16'></img>
     </a>
   </h1>
 
