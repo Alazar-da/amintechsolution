@@ -39,7 +39,7 @@ const Nav = ({home,about,service,contact})=>{
     return(
         <header className="md:flex md:justify-around p-4 md:py-2 md:px-4 text-textColor border-b">
 
-<div className="flex items-center justify-between mb-4 md:mb-0 bg-emerald-100">
+<div className="flex items-center justify-between mb-4 md:mb-0 bg-emerald-100" style={{borderRadius:"2px"}}>
   <h1 className="leading-none text-2xl text-grey-darkest">
     <a className="no-underline text-grey-darkest hover:text-black" href={home}>
      <img src={Logo} alt='logo' className='h-16'></img>
