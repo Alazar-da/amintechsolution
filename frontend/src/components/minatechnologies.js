@@ -11,7 +11,7 @@ import animationData from '../assets/software3.json';
 /* import Portfolio from './Portfolio'; */
 
 
-function Home({Portfolio,Team}) {
+function minatechnologies({Portfolio,Team}) {
   const collapse=()=>{
    document.querySelector('#menu').classList.toggle('hidden');
 
@@ -116,7 +116,7 @@ function Home({Portfolio,Team}) {
  );
 }
 
-export default Home;
+export default minatechnologies;
 
 
 //<img src={Lotti} alt="logo" className='h-[600px] w-100 float-right'></img>

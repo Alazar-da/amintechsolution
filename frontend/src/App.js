@@ -1,6 +1,6 @@
 
 
-import Home from './components/Home';
+import Minatechnologies from './components/minatechnologies';
 import About from './components/About';
 import Services from './components/Services';
 import Whyus from './components/Whyus';
@@ -131,9 +131,9 @@ function App() {
 
   
    <Helmet>
-   <title>Mina Technologies</title>
+   <title>mina technologies</title>
    <meta property="title" content="mina technologies" />
-    <meta name="description" content="Mina Tech is a visionary, next-generation technology company dedicated to innovating and shaping the future of digital solutions."/>
+    <meta name="description" content="mina technologies is a visionary, next-generation technology company dedicated to innovating and shaping the future of digital solutions."/>
     <meta name="keywords" content="mina, mina technologies, web development,web development,technologies" />
  
     <meta property="og:title" content="mina technologies" />
@@ -150,7 +150,7 @@ function App() {
     <Nav home={"#home"} service={"#services"} about={"#about"} contact={"#contactus"}/>
 
       <section id='home'>
-      <Home/>
+      <Minatechnologies/>
 
       </section>
 
