@@ -9,14 +9,7 @@ import { Helmet } from 'react-helmet-async';
 function Servicesminatechnologies() {
     return(
       <>
-         <Helmet>
-   <title>services- mina technologies</title>
-   <meta property="title" content="Our Services - Mina Technologies" />
-   <meta name="description" content="Explore our expertise in UI/UX design, website development, and mobile app creation. We craft innovative solutions tailored to your needs." />
-    <link rel='canonical' href='/service'></link>
-   
-    
-   </Helmet>
+        
   
       <main className=" flex flex-col content-center py-5 mt-7" id='services'>
          <div className='container mt-5 flex flex-col'>

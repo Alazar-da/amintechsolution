@@ -7,13 +7,7 @@ function Whyus() {
         <>
 
         
-  <Helmet>
-   <title>why choose mina technologies</title>
-   <meta property="title" content="Why Choose Mina Technologies" />
-   <meta name="description" content="Choose Mina Technologies for our expertise in UI/UX, web, and mobile app development. We deliver innovative, tailored solutions for your unique needs." />
-    <link rel='canonical' href='/whyus'></link>
- 
-   </Helmet>
+
      
       <main className='container flex justify-center  py-5 text-center'>
          <div className='md:flex justify-center md:flex-row grid justify-items-center lg:w-5/6 relative mt-7'>

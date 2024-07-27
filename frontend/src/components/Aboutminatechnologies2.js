@@ -24,14 +24,7 @@ function Aboutminatechnologies() {
 
     return(
       <>
-       <Helmet>
-   <title>about mina technologies</title>
-   <meta property="title" content="About Us - Mina Technologies" />
-   <meta name="description" content="Learn more about Mina Technologies, our mission, vision, and the dedicated team driving innovation in the tech industry." />
-    <link rel='canonical' href='/about'></link>
-   
     
-   </Helmet>
     
 
        <main className="container relative">

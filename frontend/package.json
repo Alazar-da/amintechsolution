@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
+    "@types/react-router-dom": "^5.3.3",
     "@types/react-slick": "^0.23.13",
     "daisyui": "^4.4.23",
     "gh-pages": "^6.1.0",
