@@ -47,7 +47,7 @@ function Teams() {
                 </button>
                 <div className="profile-pic">
 
-                <img src={cImage} alt="imran"/>
+                <img src={cImage} alt="imran@minatechnologies.com"/>
                 </div>
                 <div className="bottom">
                     <div className="content">
@@ -85,7 +85,7 @@ function Teams() {
 </button>
         <div className="profile-pic">
 
-         <img src={cImage2} alt="Alazar"/>
+         <img src={cImage2} alt="Alazar@minatechnologies.com"/>
             
         
         </div>
@@ -164,7 +164,7 @@ function Teams() {
         </button>
         <div className="profile-pic">
 
-        <img src={cImage5} alt="Milkiy"/>
+        <img src={cImage5} alt="Milkiy@minatechnologies.com"/>
 
 
         </div>
@@ -203,7 +203,7 @@ function Teams() {
         </button>
         <div className="profile-pic">
 
-         <img src={cImage3} alt="sofi"/>
+         <img src={cImage3} alt="sofonias@minatechnologies.com"/>
             
         
         </div>
@@ -243,7 +243,7 @@ function Teams() {
         </button>
         <div className="profile-pic">
 
-        <img src={cImage10} alt="sofi"/>
+        <img src={cImage10} alt="amir@minatechnologies.com"/>
 
        
             

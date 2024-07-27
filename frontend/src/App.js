@@ -1,8 +1,8 @@
 
 
 import Minatechnologies from './components/minatechnologies';
-import About from './components/About';
-import Services from './components/Services';
+import Aboutminatechnologies from './components/Aboutminatechnologies';
+import Services from './components/Servicesminatechnologies';
 import Whyus from './components/Whyus';
 
 import Technology from './components/Technology';
@@ -134,7 +134,7 @@ function App() {
    <title>mina technologies</title>
    <meta property="title" content="mina technologies" />
     <meta name="description" content="mina technologies is a visionary, next-generation technology company dedicated to innovating and shaping the future of digital solutions."/>
-    <meta name="keywords" content="mina, mina technologies, web development,web development,technologies" />
+    <meta name="keywords" content="mina, mina technologies, web development,website development ethiopia,technologies,website development,technology,ethiopia technology,software development,mobile app development" />
  
     <meta property="og:title" content="mina technologies" />
      <meta property="og:description" content="mina technologies is a visionary, next-generation technology company dedicated to innovating and shaping the future of digital solutions." />
@@ -156,7 +156,7 @@ function App() {
 
 
       <section id="about">
-      <About/>
+      <Aboutminatechnologies/>
 
       </section>
 

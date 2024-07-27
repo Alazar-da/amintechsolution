@@ -8,7 +8,7 @@ function Whyus() {
             <div className='bg-cyan-800 grid content-center rounded-l-[15px] rounded-r-[15px] h-48 md:h-auto md:rounded-l-[40px] md:rounded-r-none md:2/3 w-full px-3 p-5'>
                <h2 className="font-bold text-[#FFF] lg:text-3xl text-2xl">Why US?</h2>
                <p className="text-[#FFF] md:flex text-xs md:text-base mt-1">
-               We deliver web app development services for our clients
+               mina technologies delivers web app development services for our clients
                with predictable outcomes. For this, we hire brilliant web
                and mobile app developers to deliver projects on time and
                maintain top-notch code standards.
@@ -27,7 +27,7 @@ function Whyus() {
                     <div className="card green md:w-[350px] w-full px-3">
                         <p className="tip">Ethics</p>
                         <p className="second-text">
-                        At our software company, we prioritize our clients' needs and goals, going above and beyond to deliver high-quality software solutions that address their specific requirements. We conduct our business with integrity, maintaining the highest ethical standards in all our interactions while respecting confidentiality and protecting our clients' intellectual property.
+                        At mina technologies, we prioritize our clients' needs and goals, going above and beyond to deliver high-quality software solutions that address their specific requirements. We conduct our business with integrity, maintaining the highest ethical standards in all our interactions while respecting confidentiality and protecting our clients' intellectual property.
                         </p>
                     </div>
                 </div>

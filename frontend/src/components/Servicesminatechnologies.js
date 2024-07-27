@@ -5,7 +5,7 @@ import  {FaArrowRight} from "react-icons/fa";
 import "../assets/color.css"
 
 
-function Services() {
+function Servicesminatechnologies() {
     return(
       <main className=" flex flex-col content-center py-5 mt-7" id='services'>
          <div className='container mt-5 flex flex-col'>
@@ -21,7 +21,7 @@ function Services() {
          <div className='flex flex-col md:flex-row items-center gap-4 mt-5'>
             <div className='sm:w-4/5 w-5/6 md:w-full'>
                <div>
-                  <img src={ui} alt='service1' className="h-[200px] w-full rounded-t-xl"></img>
+                  <img src={ui} alt='mina technologies service1' className="h-[200px] w-full rounded-t-xl"></img>
                </div>
                <div>
                   <h2 className='text-2xl pt-4 special text-emerald-500'>UI/UX Design</h2>
@@ -31,7 +31,7 @@ function Services() {
             </div>
             <div className='sm:w-4/5 w-5/6 md:w-full'>
                <div>
-                  <img src={web} alt='service2' className="h-[200px] w-full  rounded-t-xl"></img>
+                  <img src={web} alt='mina technologies service2' className="h-[200px] w-full  rounded-t-xl"></img>
                </div>
                <div>
                   <h2 className='text-2xl pt-4 special text-emerald-500'>Web Development</h2>
@@ -41,7 +41,7 @@ function Services() {
             </div>
             <div className='sm:w-4/5 w-5/6 md:w-full'>
                <div>
-                  <img src={mobile} alt='service3' className="h-[200px] w-full rounded-t-xl"></img>
+                  <img src={mobile} alt='mina technologies service3' className="h-[200px] w-full rounded-t-xl"></img>
                </div>
                <div>
                   <h2 className='text-2xl pt-4 special text-emerald-500'>Mobile Application</h2>
@@ -55,4 +55,4 @@ function Services() {
     );
    }
 
-   export default Services;
+   export default Servicesminatechnologies;
