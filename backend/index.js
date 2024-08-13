@@ -24,14 +24,20 @@ const app = express()
 
 const message = require("./routes/Message").message
 app.use(cookieParser())
+app.use(cors())
 app.use("/message",message)
 
-app.use(cors())
+app.get('/',(req,res)=>{
+  console.log("Server is running" )
+  res.send("Hello World!")
+
+})
 
 
 
 
-//var urlencodedParser = bodyparser.urlencoded({extended:true})
+
+
 var urlencodedParser2 = express.urlencoded({extended:true})
 
 app.use(urlencodedParser2);
@@ -39,26 +45,8 @@ app.use(urlencodedParser2);
 app.use(express.json())
 
 
-app.use(express.static(path.join(__dirname, "public")));
 
-
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-var port = 5000
+var port = 8800
 
 
 app.listen(port,()=>{
