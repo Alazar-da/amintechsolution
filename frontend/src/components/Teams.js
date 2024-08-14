@@ -2,8 +2,9 @@
 import "../assets/color.css"
 import "../assets/portfolio.css"
 import cImage from '../assets/me.jpg';
+import cImage1 from '../assets/me9.jpg';
 import cImage2 from '../assets/me2.jpg';
-import cImage3 from '../assets/me3.jpg';
+import cImage3 from '../assets/me10.jpg';
 import cImage4 from '../assets/me4.jpg';
 import cImage5 from '../assets/me6.jpg';
 import cImage10 from '../assets/me8.jpg'
@@ -124,6 +125,7 @@ function Teams() {
 </a>
         </button>
         <div className="profile-pic">
+        <img src={cImage1} alt="Natnael@minatechnologies.com"/>
 
        
         
@@ -274,6 +276,10 @@ function Teams() {
            </div>
         </div>
     </div>
+
+
+
+    
 
    
 

@@ -17,7 +17,7 @@ function Footer() {
               <div className="flex flex-col md:w-2/5 pt-3 text-center">
                  <h2 className="font-bold text-1xl">Address</h2>
                  <ul className="text-sm"> 
-                  <li className="flex justify-center items-center flex-col"> <ul> <li className="flex justify-center items-center"> Addis Ababa City </li> <li className="flex justify-center items-center"> Kaliti Yemin Tower 0th floor #00 </li> </ul> </li>
+                  <li className="flex justify-center items-center flex-col"> <ul> <li className="flex justify-center items-center"> Addis Ababa City </li> <li className="flex justify-center items-center"> Kaliti Yemin Tower 1th floor #010 </li> </ul> </li>
                  <li className="flex justify-center items-center flex-row"> 
                   <span className="pr-3">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -47,7 +47,7 @@ function Footer() {
                       </svg>
                     </span>
                     <span>
-                      <a href="#">info@Minatech.com</a>
+                      <a href="#">info@minatechnologies.com</a>
                     </span>
                   </li>
                   <li className="flex justify-center items-center flex-row">
@@ -57,7 +57,7 @@ function Footer() {
                       </svg>
                     </span>
                     <span>
-                      <a href="#">https://www.Minatech.com</a>
+                      <a href="#">https://www.minatechnologies.com</a>
                     </span>
                   </li>
            

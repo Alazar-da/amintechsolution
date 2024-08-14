@@ -42,7 +42,7 @@ const Nav = ({home,about,service,contact})=>{
 <div className="flex items-center justify-between mb-4 md:mb-0 bg-emerald-100" style={{borderRadius:"2px"}}>
   <h1 className="leading-none text-2xl text-grey-darkest">
     <a className="no-underline text-grey-darkest hover:text-black" href={home}>
-     <img src={Logo} alt='logo' className='h-16'></img>
+     <img src={Logo} alt='logo' className='h-16'   style={{ backgroundColor: 'transparent',borderRadius:"2px" }}></img>
     </a>
   </h1>
 
