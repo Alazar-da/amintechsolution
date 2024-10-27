@@ -8,6 +8,7 @@ import cImage3 from '../assets/me10.jpg';
 import cImage4 from '../assets/me4.jpg';
 import cImage5 from '../assets/me6.jpg';
 import cImage10 from '../assets/me8.jpg'
+import cImage11 from '../assets/me12.jpg'
 import { useState,useEffect } from "react";
 
 
@@ -245,7 +246,7 @@ function Teams() {
         </button>
         <div className="profile-pic">
 
-        <img src={cImage10} alt="amir@minatechnologies.com"/>
+        <img src={cImage11} alt="amir@minatechnologies.com"/>
 
        
             
@@ -253,8 +254,8 @@ function Teams() {
         </div>
         <div className="bottom">
             <div className="content">
-                <span className="name">Amir Hayredin</span>
-                <span className="about-me">Marketing Manager </span>
+                <span className="name">Imran Usman</span>
+                <span className="about-me">Buisness developer </span>
             </div>
            <div className="bottom-bottom">
             <div className="social-links-container">
@@ -275,6 +276,8 @@ function Teams() {
           
            </div>
         </div>
+
+        
     </div>
 
 
