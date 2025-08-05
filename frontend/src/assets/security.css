@@ -33,7 +33,7 @@
     backface-visibility: hidden;
     color: aliceblue;
     background: linear-gradient(-135deg, 
-    cyan, blue);
+    cyan,rgb(6, 129, 129));
   }
   
   .front2, .back2 {

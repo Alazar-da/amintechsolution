@@ -3,12 +3,13 @@ import "../assets/color.css"
 import "../assets/portfolio.css"
 import cImage from '../assets/me.jpg';
 import cImage1 from '../assets/me9.jpg';
-import cImage2 from '../assets/me2.jpg';
 import cImage3 from '../assets/me10.jpg';
-import cImage4 from '../assets/me4.jpg';
+
 import cImage5 from '../assets/me6.jpg';
 import cImage10 from '../assets/me8.jpg'
-import cImage11 from '../assets/me12.jpg'
+
+import cImage13 from '../assets/me13.jpg'
+import cImage6 from '../assets/me14.jpg';
 import { useState,useEffect } from "react";
 
 
@@ -34,7 +35,7 @@ function Teams() {
 
        <>
          <div className='m-auto lg:h-[800px]' style={{"margin-top":"20px"}}>
-            <h3 className='font-bold lg:text-4xl text-2xl  animate-charcter text-center w-full mt-7 mb-5'>OUR TEAM</h3>
+            <h3 className='font-bold lg:text-4xl text-2xl  animate-charcter text-center w-full mt-7 mb-5'>Meet the Leaders</h3>
 
             <div className={mainHeader} >
 
@@ -54,7 +55,7 @@ function Teams() {
                 <div className="bottom">
                     <div className="content">
                         <span className="name">Emran Hayredin</span>
-                        <span className="about-me">Senior Software Engineer </span>
+                        <span className="about-me">Co-founder and CEO </span>
                     </div>
                 <div className="bottom-bottom">
                     <div className="social-links-container">
@@ -87,14 +88,14 @@ function Teams() {
 </button>
         <div className="profile-pic">
 
-         <img src={cImage2} alt="Alazar@minatechnologies.com"/>
+         <img src={cImage13} alt="Alazar@minatechnologies.com"/>
             
         
         </div>
         <div className="bottom">
             <div className="content">
                 <span className="name">Alazar Damena</span>
-                <span className="about-me">Senior Software Engineer </span>
+                <span className="about-me">Co-founder and Head of Development </span>
             </div>
            <div className="bottom-bottom">
             <div className="social-links-container">
@@ -134,7 +135,7 @@ function Teams() {
         <div className="bottom">
             <div className="content">
                 <span className="name">Natnael Mengistu</span>
-                <span className="about-me">Senior Software Engineer </span>
+                <span className="about-me">CTO </span>
             </div>
            <div className="bottom-bottom">
             <div className="social-links-container">
@@ -174,7 +175,7 @@ function Teams() {
         <div className="bottom">
             <div className="content">
                 <span className="name">Milkiy Mohammed</span>
-                <span className="about-me"> Design Expert </span>
+                <span className="about-me"> Co-founder and UI/UX lead </span>
             </div>
            <div className="bottom-bottom">
             <div className="social-links-container">
@@ -206,14 +207,14 @@ function Teams() {
         </button>
         <div className="profile-pic">
 
-         <img src={cImage3} alt="sofonias@minatechnologies.com"/>
+         <img src={cImage6} alt="sofonias@minatechnologies.com"/>
             
         
         </div>
         <div className="bottom">
             <div className="content">
                 <span className="name">Sofonias Birhanu</span>
-                <span className="about-me">Buisness Manager </span>
+                <span className="about-me">Co-founder and Head of Business development </span>
             </div>
            <div className="bottom-bottom">
             <div className="social-links-container">
@@ -246,7 +247,7 @@ function Teams() {
         </button>
         <div className="profile-pic">
 
-        <img src={cImage11} alt="amir@minatechnologies.com"/>
+        <img src={cImage10} alt="amir@minatechnologies.com"/>
 
        
             
@@ -254,8 +255,8 @@ function Teams() {
         </div>
         <div className="bottom">
             <div className="content">
-                <span className="name">Imran Usman</span>
-                <span className="about-me">Buisness developer </span>
+                <span className="name">Amir Hayredin</span>
+                <span className="about-me">Marketing Manager </span>
             </div>
            <div className="bottom-bottom">
             <div className="social-links-container">

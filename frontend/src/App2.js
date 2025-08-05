@@ -143,7 +143,7 @@ function App2() {
     <meta property="og:title" content="mina technologies" />
      <meta property="og:description" content="mina technologies is a visionary, next-generation technology company dedicated to innovating and shaping the future of digital solutions." />
 
-    <meta property="og:image" content="%PUBLIC_URL%/mina2.jpg" />
+    <meta property="og:image" content="%PUBLIC_URL%/mina4.jpg" />
     
    </Helmet>
     
@@ -191,10 +191,10 @@ function App2() {
     
      
     
-      <section id='technology'>
+    {/*   <section id='technology'>
       <Technology/>
 
-        </section>
+        </section> */}
 
         <section id='security'>
         <Security/>

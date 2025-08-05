@@ -87,7 +87,7 @@ function App() {
       <Route exact path={"/whyus"} component={Whyus}></Route>
       <Route exact path={"/team"} component={Teams}></Route>
       <Route exact path={"/portfolio"} component={Portfolio}></Route>
-      <Route exact path={"/technology"} component={Technology}></Route>
+  {/*     <Route exact path={"/technology"} component={Technology}></Route> */}
 
       <Route exact path={"/security"} component={Security}></Route>
       <Route exact path={"/contactus"} component={Contactus}></Route>

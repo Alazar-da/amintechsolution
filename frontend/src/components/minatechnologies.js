@@ -94,10 +94,9 @@ function minatechnologies({Portfolio,Team}) {
            
               <div className="grid grid-cols-10 md:grid-cols-4">
                 <div className="md:col-span-3 col-span-12">
-                <p className='mt-3 text-stone-800'>
-                Crafting digital experiences that captivate and inspire. From sleek websites to innovative apps, our custom solutions elevate your online presence. Unlock your brand's full potential with our design expertise.
-                </p>
-                </div>
+ <p className='mt-3 text-stone-800'>
+We build high-performing websites and apps that attract customers and grow your business. Let’s create your ideal digital presence.  
+</p>           </div>
               </div>
               <button className="btn btn-outline btn-info px-8 py-2 mt-3" onClick={()=>{
                   const contactSection = document.getElementById('services');
